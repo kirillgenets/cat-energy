@@ -1,3 +1,39 @@
 /**********
 SPECIFICATION
 **********/
+
+@font-face{
+	font-family: 'Oswald';
+	src: url('../fonts/oswaldregular.woff') format('woff'),
+		url('../fonts/oswaldmedium.woff') format('woff');
+}
+
+div, nav, button, ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+body {
+	font-family: 'Oswald', Arial, sans-serif;
+}
+
+.hidden {
+	display: none;
+}
+
+.button {
+	background-color: $green;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding: 15px 75px;
+}

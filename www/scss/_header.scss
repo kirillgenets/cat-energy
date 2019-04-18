@@ -1,0 +1,67 @@
+/**********
+NAVIGATION
+**********/
+
+.header {
+	padding: 20px 0;
+}
+
+.header__images {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 20px 20px 20px;
+}
+
+.header__toggle-nav {
+	background: none;
+	border: none;
+}
+
+.header__nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.header__nav-item {
+	width: 100%;
+	text-align: center;
+	padding: 25px 0;
+	border-top: 1px solid lightgrey;
+}
+
+.header__nav-item--link {
+	color: $dark-grey;
+	font-weight: 500;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.header__intro {
+	background-image: url(../img/index-background-mobile@1x.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header__title, .header__subtitle {
+	color: #fff;
+}
+
+.header__title {
+	font-size: 36px;
+	text-align: center;
+	font-weight: normal;
+	margin: 30px 40px 20px 40px;
+}
+
+.header__subtitle {
+	font-size: 14px;
+	text-align: center;
+	font-weight: normal;
+	margin: 20px 40px 30px 40px;
+}
+
+/*RESPONSIVE*/
