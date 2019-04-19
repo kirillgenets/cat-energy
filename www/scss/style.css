@@ -1,0 +1,89 @@
+/*
+Error: Invalid CSS after "...om, center top/": expected expression (e.g. 1px, bold), was ";"
+        on line 49 of _header.scss
+        from line 4 of style.scss
+
+44: 
+45: .header__intro {
+46: 	background-image: linear-gradient(to top,#fff 175px,transparent 175px),url(../img/index-background-mobile@1x.jpg);
+47: 	background-size: 100%;
+48: 	background-repeat: no-repeat;
+49: 	background-position: center bottom, center top/;
+50: 	display: flex;
+51: 	flex-direction: column;
+52: 	align-items: center;
+53: }
+54: 
+
+Backtrace:
+_header.scss:49
+style.scss:4
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/lexer.rb:240:in `expected!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:855:in `assert_expr'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:284:in `times_div_or_mod'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:272:in `plus_or_minus'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:272:in `relational'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:272:in `eq_or_neq'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:272:in `and_expr'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:272:in `or_expr'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:484:in `space'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:422:in `interpolation'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:359:in `list'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:345:in `expr'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:853:in `assert_expr'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/script/parser.rb:68:in `parse'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1164:in `sass_script'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1002:in `value!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:807:in `block in try_declaration'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1284:in `rethrow'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:820:in `try_declaration'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/exec/sass_scss.rb:387:in `run'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/exec/base.rb:50:in `parse'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/exec/base.rb:18:in `parse!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/bin/sass:13:in `<top (required)>'
+C:/Ruby26-x64/bin/sass:23:in `load'
+C:/Ruby26-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...om, center top/\": expected expression (e.g. 1px, bold), was \";\"\A         on line 49 of _header.scss\A         from line 4 of style.scss\A \A 44: \A 45: .header__intro {\A 46: 	background-image: linear-gradient(to top,#fff 175px,transparent 175px),url(../img/index-background-mobile@1x.jpg);\A 47: 	background-size: 100%;\A 48: 	background-repeat: no-repeat;\A 49: 	background-position: center bottom, center top/;\A 50: 	display: flex;\A 51: 	flex-direction: column;\A 52: 	align-items: center;\A 53: }\A 54: "; }
