@@ -3,12 +3,12 @@ CATEGORIES
 ***********/
 
 .categories {
-	padding: 0 20px 20px 20px;
+	padding: 20px;
 }
 
 .categories__item {
 	padding: 20px;
-	background-color: #f2f2f2; 
+	background-color: $bg-grey; 
 }
 
 .categories__item--slim {
@@ -59,3 +59,5 @@ CATEGORIES
 	width: 25px;
   	height: 10px;
 }
+
+/*RESPONSIVE*/

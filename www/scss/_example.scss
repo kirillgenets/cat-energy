@@ -1,0 +1,46 @@
+/**********	
+EXAMPLE
+**********/
+
+.example {
+	background-color: $bg-grey;
+	padding: 30px 20px 40px 20px;
+}
+
+.example__text {
+	margin-bottom: 30px;
+}
+
+.example__indicators {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.example__indicator {
+	width: 120px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.example__indicator-info {
+	position: relative;
+	padding: 15px 10px;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: $dark-grey;
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+}
+
+.example__indicator-name {
+	display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    padding: 0 19px;
+    font-size: 12px;
+    color: $light-grey;
+    background-color: $bg-grey;
+    font-family: Arial, sans-serif;
+    transform: translateY(-8px);
+}

@@ -4,11 +4,11 @@ INDEX PAGE STYLES
 ______________________*/
 
 /**********
-NAVIGATION
+HEADER
 **********/
 
-.header {
-	padding: 20px 0;
+.header__heading {
+	padding-top: 20px;
 }
 
 .header__images {
@@ -70,4 +70,15 @@ NAVIGATION
 	margin: 20px 40px 30px 40px;
 }
 
+.header__button {
+	padding: 15px 63px;
+}
+
 /*RESPONSIVE*/
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+	.header__intro {
+		background-image: linear-gradient(to top,#fff 175px,transparent 175px),url(../img/index-background-mobile@2x.jpg);
+	}
+}
