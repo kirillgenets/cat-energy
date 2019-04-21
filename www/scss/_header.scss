@@ -50,9 +50,6 @@ HEADER
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-.header__title, .header__subtitle {
 	color: #fff;
 }
 
@@ -60,14 +57,15 @@ HEADER
 	font-size: 36px;
 	text-align: center;
 	font-weight: normal;
-	margin: 30px 40px 20px 40px;
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
 .header__subtitle {
 	font-size: 14px;
 	text-align: center;
 	font-weight: normal;
-	margin: 20px 40px 30px 40px;
+	margin-bottom: 30px;
 }
 
 .header__button {

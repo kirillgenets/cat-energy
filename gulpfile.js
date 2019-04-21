@@ -16,6 +16,8 @@ var include = require("posthtml-include");
 
 var server = require("browser-sync").create();
 
+var minify = require('gulp-minify');
+
 var del = require("del");
 
 gulp.task('css', function () {
@@ -86,7 +88,8 @@ gulp.task('server', function () {
 
 });
 
-gulp.task("copy", function () {
+gulp.task('copy', function () {
+
 	return gulp.src([
 			'www/fonts/**/*.{woff,woff2}',
 			'www/img/**',
@@ -95,20 +98,33 @@ gulp.task("copy", function () {
 			base: 'www'
 		})
 		.pipe(gulp.dest('build'));
-});
-
-gulp.task("clean", function () {
-
-	return del("build");
 
 });
+
+gulp.task('clean', function () {
+
+	return del('build');
+
+});
+
+gulp.task('js', function() {
+
+	return gulp.src('www/js/script.js')
+		.pipe(minify({
+			ext:{
+	            min:'.min.js'
+	        },
+		}))
+		.pipe(gulp.dest('build/js'));
+})
 
 gulp.task('build', gulp.series(
 	'clean',
 	'copy',
 	'css',
 	'sprite', 
-	'html'));
+	'html',
+	'js'));
 
 gulp.task('start', gulp.series('build', 'server'));
 

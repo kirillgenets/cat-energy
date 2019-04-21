@@ -6,6 +6,7 @@
     "del": "^4.1.0",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
+    "gulp-minify": "^3.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-posthtml": "^3.0.4",

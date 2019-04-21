@@ -15,6 +15,7 @@ EXAMPLE
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-bottom: 25px;
 }
 
 .example__indicator {
@@ -43,4 +44,61 @@ EXAMPLE
     background-color: $bg-grey;
     font-family: Arial, sans-serif;
     transform: translateY(-8px);
+}
+
+.example__expences {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.example__cat {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0 auto 35px auto;
+}
+
+.example__changes {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.example__button {
+	background: none;
+	border: none;
+	font-size: 16px;
+	text-transform: uppercase;
+
+	&--before {
+		margin-right: 20px;
+	}
+}
+
+.example__slider {
+	margin-right: 20px;
+
+	&-container {
+		background-color: #fff;
+		height: 14px;
+		width: 85px;
+		border-radius: 6px;
+		border: 1px solid #cdcdcd;
+		position: relative;
+	}
+
+	&-thumb {
+		background-color: $green;
+		width: calc(50% - 6px);
+		height: 50%;
+		border-radius: 3px;
+		position: absolute;
+		left: 6px;
+		top: 25%;
+	}
+
 }
