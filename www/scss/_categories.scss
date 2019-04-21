@@ -9,10 +9,10 @@ CATEGORIES
 .categories__item {
 	padding: 20px;
 	background-color: $bg-grey; 
-}
 
-.categories__item--slim {
-	margin-bottom: 20px;
+	&--slim {
+		margin-bottom: 20px;
+	}	
 }
 
 .categories__item-heading {
@@ -47,17 +47,16 @@ CATEGORIES
 .categories__item-link {
 	text-transform: uppercase;
 	position: relative;
-}
-
-.categories__item-link::after {
-	content: "";
-	position: absolute;
-	right: -40%;
-	top: 25%;
-	background-image: url(../img/icon-right-arrow-long.svg);
-	background-repeat: no-repeat;
-	width: 25px;
-  	height: 10px;
+	&::after {
+		content: "";
+		position: absolute;
+		right: -40%;
+		top: 25%;
+		background-image: url(../img/icon-right-arrow-long.svg);
+		background-repeat: no-repeat;
+		width: 25px;
+	  	height: 10px;
+	}
 }
 
 /*RESPONSIVE*/

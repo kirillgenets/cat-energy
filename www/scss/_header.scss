@@ -26,6 +26,8 @@ HEADER
 .header__nav {
 	display: flex;
 	flex-direction: column;
+
+
 }
 
 .header__nav-item {
@@ -33,13 +35,13 @@ HEADER
 	text-align: center;
 	padding: 25px 0;
 	border-top: 1px solid lightgrey;
-}
 
-.header__nav-item--link {
-	color: $dark-grey;
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: 500;
+	&--link {
+		color: $dark-grey;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
 }
 
 .header__intro {

@@ -81,24 +81,23 @@ EXAMPLE
 
 .example__slider {
 	margin-right: 20px;
+}
 
-	&-container {
-		background-color: #fff;
-		height: 14px;
-		width: 85px;
-		border-radius: 6px;
-		border: 1px solid #cdcdcd;
-		position: relative;
-	}
+.example__slider-container {
+	background-color: #fff;
+	height: 14px;
+	width: 85px;
+	border-radius: 6px;
+	border: 1px solid #cdcdcd;
+	position: relative;
+}
 
-	&-thumb {
-		background-color: $green;
-		width: calc(50% - 6px);
-		height: 50%;
-		border-radius: 3px;
-		position: absolute;
-		left: 6px;
-		top: 25%;
-	}
-
+.example__slider-thumb {
+	background-color: $green;
+	width: calc(50% - 6px);
+	height: 50%;
+	border-radius: 3px;
+	position: absolute;
+	left: 6px;
+	top: 25%;
 }

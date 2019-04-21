@@ -1,0 +1,25 @@
+/********
+CONTACTS
+********/
+
+.contacts {
+	padding: 30px 0 0 0;
+}
+
+.contacts__info {
+	padding: 0 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contacts__offer {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+
+.contacts__map {
+	width: 100%;
+}
