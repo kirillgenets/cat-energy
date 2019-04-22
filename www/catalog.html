@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cat Energy</title>
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+	<body>
+		<!-- SVG SPRITE -->
+
+		<div style="display:none">
+			<include src="build/img/sprite.svg"></include>
+		</div>
+
+		<header class="header">
+			<!-- HEADING -->
+			<div class="header__heading">
+				<div class="header__logo-container">
+					<picture>
+					  <!-- <source srcset="img/logo-desktop.svg" media="(min-width: 1200px)" type="image/svg+xml">
+					  <source srcset="img/logo-tablet.svg" media="(min-width: 768px)" type="image/svg+xml"> -->
+					  <img class="header__logo" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="190" height="38">
+					</picture>
+					<button class="header__toggle-nav">
+						<img src="img/icon-close.svg" height="18" width="18" alt="Открыть меню">
+					</button>
+				</div>
+				<nav>
+					<ul class="header__nav">
+						<li class="header__nav-item">
+							<a href="index.html" class="header__nav-item--link">
+								Главная
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="catalog.html" class="header__nav-item--link">
+								Каталог продукции
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#" class="header__nav-item--link">
+								Подбор программы
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="catalog">
+			<h3 class="catalog__title section-title">
+				Каталог продукции
+			</h3>
+			<div class="catalog__goods-container">
+				<ul class="catalog__goods-list">
+					<li class="catalog__item">
+						<div class="catalog__item-info">
+							<picture>
+								<img src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" height="140" width="144px" alt="Фото товара" class="catalog__item-image">
+							</picture>
+							<div class="catalog__item-content">
+								<h4 class="catalog__item-title">
+									Cat Energy Pro 500 Г
+								</h4>
+								<ul class="catalog__item-indicators">
+									<li class="catalog__item-indicator">
+										<div class="catalog__item-indicator-container">
+											<p class="catalog_item-indicator-text text">
+												Объем
+											</p>
+										</div>
+										<div class="catalog__item-indicator-value-container">
+											<p class="catalog_item-indicator-value-text text">
+												500 г
+											</p>
+										</div>
+									</li>
+									<li class="catalog__item-indicator">
+										<div class="catalog__item-indicator-container">
+											<p class="catalog_item-indicator-text text">
+												Вкус
+											</p>
+										</div>
+										<div class="catalog__item-indicator-value-container">
+											<p class="catalog_item-indicator-value-text text">
+												Курица
+											</p>
+										</div>
+									</li>
+									<li class="catalog__item-indicator">
+										<div class="catalog__item-indicator-container">
+											<p class="catalog_item-indicator-text text">
+												Цена
+											</p>
+										</div>
+										<div class="catalog__item-indicator-value-container">
+											<p class="catalog_item-indicator-value-text text">
+												700 Р.
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="catalog__item-order button">
+							<p class="catalog__item-order-text">
+								заказать
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</body>
+</html>

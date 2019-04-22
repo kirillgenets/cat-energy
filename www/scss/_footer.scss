@@ -1,8 +1,9 @@
 /********	
 FOOTER	
 ********/
+@import 'contacts';
 
-.footer {
+.footer__content {
 	background-color: $bg-grey;
 	padding: 40px 20px 20px 20px;
 	display: flex;
