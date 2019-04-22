@@ -34,12 +34,16 @@ HEADER
 	padding: 25px 0;
 	border-top: 1px solid #cdcdcd;
 
-	&--link {
-		color: $dark-grey;
-		font-size: 20px;
-		text-transform: uppercase;
-		font-weight: 500;
+	&--choose-program {
+		border-bottom: 1px solid #cdcdcd;
 	}
+}
+
+.header__nav-link {
+	color: $dark-grey;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
 }
 
 .header__intro {
