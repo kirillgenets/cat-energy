@@ -15,15 +15,9 @@ CATALOG SECTION
 	padding: 30px 20px 35px 20px;
 }
 
-.catalog__item {
-	display: flex;
-	flex-direction: column;
-	border-top: 1px solid #cdcdcd;
-	padding: 25px 20px;
-}
-
-.catalog__item--rice-small {
+.catalog__item--find-more {
 	border-bottom: 1px solid #cdcdcd;
+	align-items: center;
 }
 
 .catalog__item-info {
@@ -34,15 +28,24 @@ CATALOG SECTION
 }
 
 .catalog__item-title {
-	text-transform: uppercase;
-	font-size: 16px;
 	max-width: 75px;
 	margin-bottom: 20px;
+	&--find-more {
+		max-width: 320px;
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
 }
 
 .catalog__item-order {
 	width: 100%;
 	padding: 12px 0;
+
+	&--find-more {
+		background-color: #f2f2f2;
+		color: $light-grey;
+		margin-top: 20px;
+	}
 }
 
 .catalog__item-content {
