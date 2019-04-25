@@ -5,6 +5,10 @@ FORM
 .form__block {
 	padding: 20px;
 	border-bottom: 1px solid $bg-grey;
+
+	&--no-border {
+		border-bottom: none;
+	}
 }
 
 .form__row {
@@ -14,7 +18,7 @@ FORM
 	align-items: center;
 	margin-bottom: 15px;
 
-	&--radio {
+	&--radio, &--checkbox {
 		justify-content: flex-start;
 	}
 
@@ -32,30 +36,55 @@ FORM
 	margin-right: 15px;
 	max-width: 50%;
 
-	&--radio {
+	&--radio, &--checkbox {
 		max-width: 100%;
 		cursor: pointer;
 		position: relative;
 	    display: block;
-	    padding-top: 12px;	
-		padding-bottom: 12px;
-	    padding-left: 46px;
+	    padding-top: 11px;	
+	    padding-left: 45px;
+	}
+
+	&--radio::before, &--checkbox::before {
+		cursor: pointer;
+		content: '';
+		position: absolute;
+	    display: block;
+	    width: 30px;
+	    height: 30px;
+	    border: 1px solid #cdcdcd;
+	    box-sizing: border-box;
 	}
 
 	&--radio::before {
-		cursor: pointer;
-		content: '';
-	    position: absolute;
-	    display: block;
 	    top: 6px;
 	    left: 0;
-	    width: 30px;
-	    height: 30px;
 	    padding: 8px;
-	    border: 1px solid #cdcdcd;
-	    box-sizing: border-box;
 	    border-radius: 50%;
 	}
+
+	&--checkbox::before {
+		top: 6px;
+		left: 0;
+		background-repeat: no-repeat;
+	}
+}
+
+.form__radio-input, .form__checkbox-input {
+	display: none;
+}
+
+.form__radio-input:checked + .form__label--radio::before {
+	content: '';
+	background-color: $green;
+	background-clip: content-box;
+}
+
+.form__checkbox-input:checked + .form__label--checkbox::before {
+	content: '';
+	background-image: url(../img/icon-tick.svg);
+	background-size: 80%;
+	background-position: center;
 }
 
 .form__field {
@@ -64,6 +93,12 @@ FORM
 	color: $light-grey;
 	text-transform: uppercase;
 	width: 100%;
+	font-size: 16px;
+
+	&--comment {
+		width: calc(100% - 35px);
+		height: 150px;
+	}
 }
 
 .form__field:focus {
@@ -72,12 +107,11 @@ FORM
     outline: 0;
 }
 
-.form__radio-input {
-	opacity: 0;
-}
+.form__block-title {
+	font-size: 24px;
+	margin-bottom: 30px;
 
-.form__radio-input:checked ~ .form__label--radio::before {
-	content: '';
-	background-color: $green;
-	background-clip: content-box;
+	&--extra {
+		display: block;
+	}
 }

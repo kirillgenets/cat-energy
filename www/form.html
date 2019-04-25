@@ -95,6 +95,57 @@
 							</label>
 						</div>
 					</div>
+					<div class="form__block form__block--owner-info form__block--no-border">
+						<h3 class="form__block-title title-selected">
+							Контактные данные <span class="form__block-title--extra">(владельца кота)</span>
+						</h3>
+						<div class="form__row">
+							<label for="cat-name" class="form__label">E-mail:*</label>
+							<input type="email" class="form__field" id="cat-name" placeholder="kuklachev@gmail.com">
+						</div>
+						<div class="form__row">
+							<label for="cat-weight" class="form__label">Телефон (кг):*</label>
+							<input type="tel" class="form__field" id="cat-weight" placeholder="8 (960) 900-60-90">
+						</div>
+					</div>
+					<div class="form__block form__block--comment form__block--no-border">
+						<h3 class="form__block-title title-selected">
+							Комментарий
+						</h3>
+						<textarea name="comment" id="comment" class="form__field form__field--comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+					</div>
+					<div class="form__block form__block--extra form__block--no-border">
+						<h3 class="form__block-title title-selected">
+							Дополнительно
+						</h3>
+						<div class="form__row form__row--checkbox">
+							<input type="checkbox" name="form-checkbox-buttons" class="form__checkbox-input" id="sugar" checked>
+							<label for="sugar" class="form__label form__label--checkbox">
+								сахарозаменитель
+							</label>
+						</div>
+						<div class="form__row form__row--checkbox">
+							<input type="checkbox" name="form-checkbox-buttons" class="form__checkbox-input" id="sugar">
+							<label for="sugar" class="form__label form__label--checkbox">
+								питьевая вода
+							</label>
+						</div>
+						<div class="form__row form__row--checkbox">
+							<input type="checkbox" name="form-checkbox-buttons" class="form__checkbox-input" id="sugar">
+							<label for="sugar" class="form__label form__label--checkbox">
+								молоко
+							</label>
+						</div>
+						<div class="form__row form__row--checkbox">
+							<input type="checkbox" name="form-checkbox-buttons" class="form__checkbox-input" id="sugar">
+							<label for="sugar" class="form__label form__label--checkbox">
+								витамины
+							</label>
+						</div>
+					</div>
+					<button class="form__submit button" type="submit">
+						отправить заявку
+					</button>
 				</form>
 			</section>
 		</main>
