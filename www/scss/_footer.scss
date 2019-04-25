@@ -45,3 +45,11 @@ FOOTER
 	justify-content: space-between;
 	align-items: center;
 }
+
+.footer__map-container {
+	background-color: #fff;
+
+	&--catalog {
+		background-color: $bg-grey;
+	}
+}
