@@ -47,6 +47,7 @@ HEADER
 }
 
 .header__intro {
+	background-color: $green;
 	background-image: linear-gradient(to top,#fff 175px,transparent 175px),url(../img/index-background-mobile@1x.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;

@@ -6,6 +6,7 @@ SPECIFICATION
 	font-family: 'Oswald';
 	src: url('../fonts/oswaldregular.woff') format('woff'),
 		url('../fonts/oswaldmedium.woff') format('woff');
+	font-display: swap;
 }
 
 div, nav, button, ul, p, h1, h2, h3, h4 {
@@ -13,26 +14,23 @@ div, nav, button, ul, p, h1, h2, h3, h4 {
 	padding: 0;
 }
 
-body {
+.body {
 	color: $dark-grey;
+	font-family: 'Oswald', Arial, sans-serif;
 }
 
-ul {
-	list-style: none;
+.section {
+	padding: 0 20px;
+	margin: 0;
 }
 
-a {
+.link {
 	text-decoration: none;
 	color: #000;
 }
 
-body {
-	font-family: 'Oswald', Arial, sans-serif;
-}
-
-section {
-	padding: 0 20px;
-	margin: 0;
+.list {
+	list-style: none;
 }
 
 .text {

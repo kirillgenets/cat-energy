@@ -6,7 +6,7 @@
 		<title>Cat Energy / Подбор программы</title>
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
-	<body>
+	<body class="body">
 		<!-- SVG SPRITE -->
 
 		<div style="display:none">
@@ -29,20 +29,26 @@
 					</button>
 				</div>
 				<nav>
-					<ul class="header__nav">
+					<ul class="header__nav list">
 						<li class="header__nav-item">
-							<a href="index.html" class="header__nav-link">
-								Главная
+							<a href="index.html" class="header__nav-link link">
+								<p>
+									Главная
+								</p>
 							</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="catalog.html" class="header__nav-link">
-								Каталог продукции
+							<a href="catalog.html" class="header__nav-link link">
+								<p>
+									Каталог продукции
+								</p>
 							</a>
 						</li>
 						<li class="header__nav-item--choose-program header__nav-item">
-							<a href="form.html" class="header__nav-link">
-								Подбор программы
+							<a href="form.html" class="header__nav-link link">
+								<p>
+									Подбор программы
+								</p>
 							</a>
 						</li>
 					</ul>
@@ -53,7 +59,7 @@
 
 			<!-- SELECTION SECTION -->
 
-			<section class="selection">
+			<section class="selection section">
 				<h3 class="selection__title section-title">
 					Подбор программы
 				</h3>
@@ -100,12 +106,22 @@
 							Контактные данные <span class="form__block-title--extra">(владельца кота)</span>
 						</h3>
 						<div class="form__row">
-							<label for="cat-name" class="form__label">E-mail:*</label>
-							<input type="email" class="form__field" id="cat-name" placeholder="kuklachev@gmail.com">
+							<label for="email" class="form__label">E-mail:*</label>
+							<div class="form__field-container">
+								<input type="email" class="form__field form__field--email" id="email" placeholder="kuklachev@gmail.com">
+								<svg class="form__field-icon form__field-icon--email" width="17" height="13">
+									<use xlink:href="#icon-mail"></use>
+								</svg>
+							</div>
 						</div>
 						<div class="form__row">
-							<label for="cat-weight" class="form__label">Телефон (кг):*</label>
-							<input type="tel" class="form__field" id="cat-weight" placeholder="8 (960) 900-60-90">
+							<label for="phone" class="form__label">Телефон (кг):*</label>
+							<div class="form__field-container">
+								<input type="tel" class="form__field form__field--phone" id="phone" placeholder="8 (960) 900-60-90">
+								<svg class="form__field-icon form__field-icon--phone" width="20" height="20">
+									<use xlink:href="#icon-phone"></use>
+								</svg>
+							</div>
 						</div>
 					</div>
 					<div class="form__block form__block--comment form__block--no-border">
@@ -125,20 +141,20 @@
 							</label>
 						</div>
 						<div class="form__row form__row--checkbox">
-							<input type="checkbox" name="form-checkbox-buttons" class="form__checkbox-input" id="sugar">
-							<label for="sugar" class="form__label form__label--checkbox">
+							<input type="checkbox" name="form-checkbox-buttons" class="form__checkbox-input" id="water">
+							<label for="water" class="form__label form__label--checkbox">
 								питьевая вода
 							</label>
 						</div>
 						<div class="form__row form__row--checkbox">
-							<input type="checkbox" name="form-checkbox-buttons" class="form__checkbox-input" id="sugar">
-							<label for="sugar" class="form__label form__label--checkbox">
+							<input type="checkbox" name="form-checkbox-buttons" class="form__checkbox-input" id="milk">
+							<label for="milk" class="form__label form__label--checkbox">
 								молоко
 							</label>
 						</div>
 						<div class="form__row form__row--checkbox">
-							<input type="checkbox" name="form-checkbox-buttons" class="form__checkbox-input" id="sugar">
-							<label for="sugar" class="form__label form__label--checkbox">
+							<input type="checkbox" name="form-checkbox-buttons" class="form__checkbox-input" id="vitamins">
+							<label for="vitamins" class="form__label form__label--checkbox">
 								витамины
 							</label>
 						</div>
@@ -173,23 +189,23 @@
 					<img class="footer__logo" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="130" height="25">
 				</picture>
 				<div class="footer__social-container">
-					<ul class="footer__social">
+					<ul class="footer__social list">
 						<li class="footer__social-item--vk footer__social-item">
-							<a href="https://vk.com" target="_blank">
+							<a href="https://vk.com" target="_blank" class="link">
 								<svg fill="#444444" height="16" width="16">
 									<use xlink:href="#icon-vk"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="footer__social-item--insta footer__social-item">
-							<a href="https://instagram.com" target="_blank">
+							<a href="https://instagram.com" target="_blank" class="link">
 								<svg fill="#444444" height="16" width="16" class="footer__social-icon--insta footer__social-icon">
 									<use xlink:href="#icon-insta"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="footer__social-item--fb footer__social-item">
-							<a href="https://facebook.com" target="_blank">
+							<a href="https://facebook.com" target="_blank" class="link">
 								<svg fill="#444444" height="16" width="16" class="footer__social-icon--fb footer__social-icon">
 									<use xlink:href="#icon-fb"></use>
 								</svg>
@@ -198,12 +214,12 @@
 					</ul>
 				</div>
 				<div class="footer__htmlacademy">
-					<a href="https://htmlacademy.ru" target="_blank" class="footer__htmlacademy-link">
+					<a href="https://htmlacademy.ru" target="_blank" class="footer__htmlacademy-link link">
 						<p class="footer__htmlacademy-text text">
 							HTML Academy
 						</p>
 					</a>
-					<a href="https://htmlacademy.ru" target="_blank">
+					<a href="https://htmlacademy.ru" target="_blank" class="link">
 						<svg fill="#444444" width="30" height="35" class="footer__htmlacademy-icon">
 							<use xlink:href="#htmlacademy"></use>
 						</svg>
