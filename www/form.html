@@ -36,7 +36,7 @@
 						</a>
 					</li>
 					<li class="header__nav-item header__nav-item--choose-program">
-						<a class="header__nav-link" href="form.html"">
+						<a class="header__nav-link" href="form.html">
 							Подбор программы
 						</a>
 					</li>
@@ -53,11 +53,14 @@
 				<h3 class="selection__title title--section">
 					Подбор программы
 				</h3>
-				<h5 class="selection__subtitle">
-					заполните анкету и мы подберем программу питания для вашего кота
-				</h5>
-				<form class="selection__form form" method="post">
-					<div class="form__block form__block--cat-info">
+				<form class="selection__form form" action="https://echo.htmlacademy.ru" method="post">
+					<h5 class="selection__subtitle">
+						заполните анкету и мы подберем программу питания для вашего кота
+					</h5>
+					<fieldset class="form__block form__block--cat-info">
+						<h3 class="visually-hidden">
+							Информация о коте
+						</h3>
 						<div class="form__row">
 							<label class="form__label" for="cat-name">Имя:*</label>
 							<input class="form__field" type="text" id="cat-name" placeholder="Барсик" name="cat-info">
@@ -70,8 +73,11 @@
 							<label class="form__label" for="cat-age">Возраст (лет):*</label>
 							<input class="form__field" type="text" id="cat-age" placeholder="7" name="cat-info">
 						</div>
-					</div>
-					<div class="form__block form__block--type">
+					</fieldset>
+					<fieldset class="form__block form__block--type">
+						<h3 class="visually-hidden">
+							Тип питания
+						</h3>
 						<div class="form__row form__row--radio">
 							<input class="form__radio-input" type="radio" id="slim" checked name="form-radio-buttons">
 							<label class="form__label form__label--radio" for="slim">
@@ -90,8 +96,11 @@
 								не знаю (нужен ваш совет)
 							</label>
 						</div>
-					</div>
-					<div class="form__block form__block--owner-info form__block--no-border">
+					</fieldset>
+					<fieldset class="form__block form__block--owner-info">
+						<h3 class="visually-hidden">
+							Информация о владельце кота
+						</h3>
 						<h3 class="form__block-title title--selected">
 							Контактные данные <span class="form__block-title--extra">(владельца кота)</span>
 						</h3>
@@ -113,14 +122,20 @@
 								</svg>
 							</div>
 						</div>
-					</div>
-					<div class="form__block form__block--comment form__block--no-border">
+					</fieldset>
+					<fieldset class="form__block form__block--comment">
+						<h3 class="visually-hidden">
+							Дополнительная информация о коте
+						</h3>
 						<h3 class="form__block-title title--selected">
 							Комментарий
 						</h3>
 						<textarea class="form__field form__field--comment" id="comment" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
-					</div>
-					<div class="form__block form__block--extra form__block--no-border">
+					</fieldset>
+					<fieldset class="form__block form__block--extra">
+						<h3 class="visually-hidden">
+							Дополнительные товары
+						</h3>
 						<h3 class="form__block-title title--selected">
 							Дополнительно
 						</h3>
@@ -148,7 +163,7 @@
 								витамины
 							</label>
 						</div>
-					</div>
+					</fieldset>
 					<button class="form__submit button" type="submit">
 						отправить заявку
 					</button>
@@ -211,7 +226,7 @@
 						HTML Academy
 					</a>
 					<a href="https://htmlacademy.ru" target="_blank">
-						<svg class="footer__htmlacademy-icon" width="30" height="35">
+						<svg class="footer__htmlacademy-icon" width="42" height="49">
 							<use xlink:href="#htmlacademy"></use>
 						</svg>
 					</a>

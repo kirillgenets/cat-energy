@@ -4,7 +4,7 @@ EXAMPLE
 
 .example {
 	background-color: $bg-grey;
-	padding: 30px 20px 40px 20px;
+	padding: 30px 20px 38px 20px;
 }
 
 .example__title {
@@ -13,7 +13,7 @@ EXAMPLE
 }
 
 .example__text {
-	margin: 30px 0;
+	margin: 33px 0 27px 0;
 	padding: 0;
 }
 
@@ -21,19 +21,20 @@ EXAMPLE
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 
 .example__indicator {
 	width: 120px;
     text-align: center;
     border-radius: 3px;
+    padding: 0;
 }
 
 .example__indicator-info {
 	position: relative;
 	margin: 0;
-	padding: 15px 10px;
+	padding: 10px 10px;
 	font-size: 24px;
 	text-transform: uppercase;
 	color: $dark-grey;
@@ -67,7 +68,8 @@ EXAMPLE
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin: 0 auto 35px auto;
+	margin: 0 auto 30px auto;
+	padding: 0;
 }
 
 .example__changes {
@@ -75,6 +77,8 @@ EXAMPLE
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	padding: 0;
+	margin: 0;
 }
 
 .example__button {
@@ -84,12 +88,12 @@ EXAMPLE
 	text-transform: uppercase;
 
 	&--before {
-		margin-right: 20px;
+		margin-right: 19px;
 	}
 }
 
 .example__slider {
-	margin-right: 20px;
+	margin-right: 18px;
 }
 
 .example__slider-container {

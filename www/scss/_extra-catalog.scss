@@ -62,16 +62,25 @@ EXTRA CATALOG
 	background-size: 100%;
 }
 
-.extra-catalog__gift-icon {
-	margin-bottom: 65px;
-}
-
 .extra-catalog__gift-text {
 	font-size: 16px;
 	color: #fff;
 	text-align: center;
 	font-family: Arial, sans-serif;
 	max-width: 160px;
+	padding-top: 125px;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: calc(50% - 27.5px);
+		height: 60px;
+		width: 55px;
+		background-repeat: no-repeat;
+		background-image: url(../img/icon-gift.svg);
+	}
 }
 
 

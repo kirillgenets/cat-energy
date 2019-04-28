@@ -3,7 +3,7 @@ CATEGORIES
 ***********/
 
 .categories {
-	padding: 20px;
+	padding: 20px 20px 0 20px;
 }
 
 .categories__features {
@@ -13,7 +13,7 @@ CATEGORIES
 }
 
 .categories__item {
-	padding: 20px;
+	padding: 25px 20px 22px 20px;
 	background-color: $bg-grey; 
 	margin: 0;
 
@@ -26,6 +26,11 @@ CATEGORIES
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin-bottom: 25px;
+
+	&--pro {
+		margin-bottom: 20px;
+	}
 }
 
 .categories__item-image {
@@ -79,20 +84,22 @@ CATEGORIES
 	margin-top: 0;
 }
 
-.categories__item-text {
+.categories__item-text {	
 	padding-bottom: 20px;
-	margin-bottom: 20px;
 	position: relative;
 	border-bottom: 1px solid #d9d9d9;
+	margin-bottom: 20px;
 }
 
 .categories__item-link {
 	text-transform: uppercase;
 	position: relative;
+	padding: 0;
+
 	&::after {
 		content: "";
 		position: absolute;
-		right: -40%;
+		right: -36px;
 		top: 25%;
 		background-image: url(../img/icon-right-arrow-long.svg);
 		background-repeat: no-repeat;
