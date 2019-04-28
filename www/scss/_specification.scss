@@ -5,87 +5,32 @@ SPECIFICATION
 @font-face{
 	font-family: 'Oswald';
 	src: url('../fonts/oswaldregular.woff') format('woff'),
-		url('../fonts/oswaldmedium.woff') format('woff');
+		url('../fonts/oswaldregular.woff2') format('woff2'),
+		url('../fonts/oswaldmedium.woff') format('woff'),
+		url('../fonts/oswaldmedium.woff2') format('woff2');
 	font-display: swap;
 }
 
-div, nav, button, ul, p, h1, h2, h3, h4 {
-	margin: 0;
-	padding: 0;
+a {
+	text-decoration: none;
+	color: #111111;
 }
 
-.body {
+body {
 	color: $dark-grey;
 	font-family: 'Oswald', Arial, sans-serif;
 }
 
-.section {
-	padding: 0 20px;
-	margin: 0;
-}
-
-.link {
-	text-decoration: none;
-	color: #000;
-}
-
-.list {
-	list-style: none;
-}
-
-.text {
-	font-family: Arial, sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	text-align: left;
-	color: $light-grey;
-}
-
-.hidden {
-	display: none;
-}
-
-.button {
-	background-color: $green;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: normal;
-	text-align: center;
-	width: 100%;
-	border: none;
-}
-
-.section-title {
-	font-size: 36px;
-	font-weight: normal;
-}
-
-.title-selected {
-	position: relative;
-	display: inline-block;
-	padding-right: 20px;
-	background-color: #fff;
-	font-weight: normal;
-}
-
-.title-selected::after {
-	content: "";
-    position: absolute;
-    top: 50%;
-    width: calc(100vw - 20px);
-    height: 3px;
-    background-color: $green;
-    z-index: -1;
-}
-
-.item-container {
-	display: flex;
-	flex-direction: column;
-	border-top: 1px solid #cdcdcd;
-	padding: 25px 20px;
-}
-
-.item-title {
-	text-transform: uppercase;
-	font-size: 16px;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }

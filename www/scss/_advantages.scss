@@ -3,6 +3,7 @@ ADVANTAGES
 **********/
 
 .advantages {
+	padding: 0 20px;
 	margin-bottom: 40px;
 }
 
@@ -11,62 +12,105 @@ ADVANTAGES
 	margin-bottom: 35px;
 }
 
+.advantages__features {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 .advantages__item {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-top: 0;
+	margin-bottom: 30px;
 }
 
-.advantages__item-image {
-	background-color: $green;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 60px;
-	width: 60px;
-	margin-right: 20px;
+.advantages__item-text {
+	position: relative;
+	margin: 0;
+	max-width: 200px;
+	padding: 0 0 0 80px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0px;
+		top: calc(50% - 30px);
+		background-color: $green;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 60px;
+		width: 60px;
+		margin-right: 20px;
+	}
 
 	&--leaf {
-		background-image: url(../img/advantage-leaf@1x.png);	
+
+		&::before {
+			background-image: url(../img/advantage-leaf@1x.png);	
+		}
 	}
 
 	&--powder {
-		background-image: url(../img/advantage-powder@1x.png);	
+
+		&::before {
+			background-image: url(../img/advantage-powder@1x.png);	
+		}
 	}
 
 	&--dining {
-		background-image: url(../img/advantage-dining@1x.png);
+
+		&::before {
+			background-image: url(../img/advantage-dining@1x.png);
+		}
 	}
 
 	&--clock {
-		background-image: url(../img/advantage-clock@1x.png);
+		margin: 0;
+
+		&::before {
+			background-image: url(../img/advantage-clock@1x.png);
+		}
 	}
-}
-.advantages__item-text {
-	max-width: 200px;
 }
 
 /*RESPONSIVE*/
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 	
-	.advantages__item-image {
-		background-size: 80%;
+	
+	.advantages__item-text {
+		&::before {
+			background-size: 80%;
+		}
 
 		&--leaf {
-			background-image: url(../img/advantage-leaf@2x.png);	
+
+			&::before {
+				background-image: url(../img/advantage-leaf@2x.png);	
+			}
 		}
 
 		&--powder {
-			background-image: url(../img/advantage-powder@2x.png);	
+
+			&::before {
+				background-image: url(../img/advantage-powder@2x.png);	
+			}
 		}
 
 		&--dining {
-			background-image: url(../img/advantage-dining@2x.png);
+
+			&::before {
+				background-image: url(../img/advantage-dining@2x.png);
+			}
 		}
 
 		&--clock {
-			background-image: url(../img/advantage-clock@2x.png);
+
+			&::before {
+				background-image: url(../img/advantage-clock@2x.png);
+			}
 		}
 	}
 

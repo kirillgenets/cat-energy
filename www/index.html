@@ -6,7 +6,7 @@
 		<title>Cat Energy / Главная</title>
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
-	<body class="body">
+	<body>
 
 		<!-- SVG SPRITE -->
 
@@ -18,146 +18,118 @@
 		
 		<header class="header">
 			<!-- HEADING -->
-			<div class="header__heading">
-				<div class="header__logo-container">
-					<picture>
-					  <!-- <source srcset="img/logo-desktop.svg" media="(min-width: 1200px)" type="image/svg+xml">
-					  <source srcset="img/logo-tablet.svg" media="(min-width: 768px)" type="image/svg+xml"> -->
-					  <img class="header__logo" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="190" height="38">
-					</picture>
+			<nav class="header__heading">
+				<div class="header__higher-panel">
+					<a class="header__logo" href="index.html"></a>
 					<button class="header__toggle-nav">
-						<img src="img/icon-close.svg" height="18" width="18" alt="Открыть меню">
+						<span class="visually-hidden">Открыть меню</span>
 					</button>
 				</div>
-				<nav>
-					<ul class="header__nav list">
-						<li class="header__nav-item">
-							<a href="index.html" class="header__nav-link link link">
-								<p>
-									Главная
-								</p>
-							</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="catalog.html" class="header__nav-link link link">
-								<p>
-									Каталог продукции
-								</p>
-							</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="form.html" class="header__nav-link link link">
-								<p>
-									Подбор программы
-								</p>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<!-- CONTENT -->
-			<section class="header__intro section">
-				<h1 class="header__title">
-					Функциональное питание для котов
-				</h1>
-				<h2 class="header__subtitle">
-					Занялся собой? Займись котом!
-				</h2>
-				<picture>
-					<img width="280" height="270" class="header__intro-img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Пример">
-				</picture>
-				<a href="form.html" class="header__button button link">
-					<p class="header__button-text">
-						подобрать программу
-					</p>
-				</a>
-			</section>
+				<ul class="header__nav">
+					<li class="header__nav-item">
+						<a class="header__nav-link" href="index.html">
+							Главная
+						</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="header__nav-link" href="catalog.html">
+							Каталог продукции
+						</a>
+					</li>
+					<li class="header__nav-item header__nav-item--choose-program">
+						<a class="header__nav-link" href="form.html"">
+							Подбор программы
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		
 		<main>
 
+			<!-- INTRO SECTION -->
+			<section class="intro">
+				<h1 class="intro__title">
+					Функциональное питание для котов
+				</h1>
+				<p class="intro__subtitle">
+					Занялся собой? Займись котом!
+				</p>
+				<picture>
+					<img class="header__intro-img" width="280" height="270" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Пример">
+				</picture>
+				<a class="intro__button button" href="form.html">
+					подобрать программу
+				</a>
+			</section>
+
 			<!-- CATEGORIES SECTION -->
 
-			<section class="categories section">
-				<div class="categories__features">
+			<section class="categories">
+				<h2 class="visually-hidden">Разновидности программ питания Cat Energy для котов</h2>
+				<ul class="categories__features">
 					<!-- FIRST ITEM -->
-					<div class="categories__item categories__item--slim">
+					<li class="categories__item categories__item--slim">
 						<div class="categories__item-heading">
 							<div class="categories__item-image--slim categories__item-image">
-								<picture>
-									<img src="img/icon-cat-slim.svg" width="35" height="50" alt="Иконка Cat Slim" class="categories__item-image-inner">
-								</picture>
 							</div>
-							<h4 class="categories__item-title">
+							<h3 class="visually-hidden">Питание для похудения кота</h3>
+							<h3 class="categories__item-title">
 								похудение
-							</h4>
+							</h3>
 						</div>
-						<div class="categories__item-text categories__item-text--slim text">
-							<p>
-								Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему коту сбросить лишний вес.
-							</p>
-						</div>
-						<div class="categories__item-line"></div>
-						<a href="catalog.html#slim-catalog" class="categories__item-link link">
+						<p class="categories__item-text categories__item-text--slim text">
+							Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему коту сбросить лишний вес.
+						</p>
+						<a class="categories__item-link href="catalog.html#slim-catalog"">
 							Каталог slim
 						</a>
-					</div>
+					</li>
 					<!-- SECOND ITEM -->
-					<div class="categories__item categories__item--pro">
+					<li class="categories__item categories__item--pro">
 						<div class="categories__item-heading">
 							<div class="categories__item-image--pro categories__item-image">
-								<picture>
-									<img src="img/icon-cat-pro.svg" width="70" height="30" alt="Иконка Cat Pro" class="categories__item-image-inner">
-								</picture>
 							</div>
-							<h4 class="categories__item-title">
+							<h3 class="visually-hidden">Питание для набора массы кота</h3>
+							<h3 class="categories__item-title">
 								набор массы
-							</h4>
+							</h3>
 						</div>
-						<div class="categories__item-text categories__item-text--pro text">
-							<p>
-								Завоевать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастрить необходимые мышцы!
-							</p>
-						</div>
-						<a href="catalog.html#pro-catalog" class="categories__item-link link">
+						<p class="categories__item-text categories__item-text--pro text">
+							Завоевать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастрить необходимые мышцы!
+						</p>
+						<a class="categories__item-link" href="catalog.html#pro-catalog">
 							Каталог pro
 						</a>
-					</div>
-				</div>
+					</li>
+				</ul>
 			</section>
 
 			<!-- ADVANTAGES SECTION -->
 
-			<section class="advantages section">
-				<h3 class="advantages__title section-title">
+			<section class="advantages">
+				<h2 class="visually-hidden">Преимущества питания Cat Energy для котов</h2>
+				<h2 class="advantages__title title--section">
 					Как это работает
-				</h3>
-				<ul class="advantages__features list">
+				</h2>
+				<ul class="advantages__features">
 					<li class="advantages__item">
-						<div class="advantages__item-image--leaf advantages__item-image">
-						</div>
-						<p class="advantages__item-text text">
+						<p class="advantages__item-text advantages__item-text--leaf text">
 							Функциональное питание содержит только полезные питательные вещества.
 						</p>
 					</li>
 					<li class="advantages__item">
-						<div class="advantages__item-image--powder advantages__item-image">
-						</div>
-						<p class="advantages__item-text text">
+						<p class="advantages__item-text advantages__item-text--powder text">
 							Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
 						</p>
 					</li>
 					<li class="advantages__item">
-						<div class="advantages__item-image--dining advantages__item-image">
-						</div>
-						<p class="advantages__item-text text">
+						<p class="advantages__item-text advantages__item-text--dining text">
 							Функциональное питание содержит только полезные питательные вещества.
 						</p>
 					</li>
 					<li class="advantages__item">
-						<div class="advantages__item-image--clock advantages__item-image">
-						</div>
-						<p class="advantages__item-text text">
+						<p class="advantages__item-text advantages__item-text--clock text">
 							Функциональное питание содержит только полезные питательные вещества.
 						</p>
 					</li>
@@ -166,10 +138,11 @@
 
 			<!-- EXAMPLE SECTION -->
 
-			<section class="example section">
-				<h3 class="example__title section-title">
+			<section class="example">
+				<h2 class="visually-hidden">Пример изменений кота при помощи нашего питания</h2>
+				<h2 class="example__title title--section">
 					Живой пример
-				</h3>
+				</h2>
 				<p class="example__text text">
 					Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит 16 часов в день.
 				</p>
@@ -187,7 +160,10 @@
 					затраты на питание: 15 000 руб.
 				</p>
 				<picture>
-					<img width="300" height="221" class="example__cat" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Жирный кот - ДО">
+					<img class="example__cat example__cat--before" width="300" height="221" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Жирный кот - ДО">
+				</picture>
+				<picture>
+					<img class="example__cat example__cat--after visually-hidden" width="300" height="221" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Худой кот - ПОСЛЕ">
 				</picture>
 				<div class="example__changes">
 					<button class="example__button--before example__button">
@@ -210,6 +186,7 @@
 		<footer class="footer">
 			<div class="footer__map-container map">
 				<div class="map__info">
+					<h2 class="visually-hidden">Магазин товаров для котов Cat Energy на карте</h2>
 					<h4 class="map__offer">
 						приглашаем к сотрудничеству дилеров!
 					</h4>
@@ -220,28 +197,30 @@
 				<iframe class="map__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858715971596!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat+Energy!5e0!3m2!1sru!2sby!4v1555849451984!5m2!1sru!2sby" height="400" allowfullscreen></iframe>
 			</div>
 			<div class="footer__content">
-				<picture>
-					<img class="footer__logo" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="130" height="25">
-				</picture>
+				<a href="index.html">
+					<picture>
+						<img class="footer__logo" src="img/logo-footer.svg" alt="Логотип Cat Energy" width="130" height="25">
+					</picture>
+				</a>
 				<div class="footer__social-container">
-					<ul class="footer__social list">
-						<li class="footer__social-item--vk footer__social-item">
-							<a href="https://vk.com" target="_blank">
-								<svg fill="#444444" height="16" width="16">
+					<ul class="footer__social">
+						<li>
+							<a class="footer__social-item--vk footer__social-item" href="https://vk.com" target="_blank">
+								<svg class="footer__social-icon--vk footer__social-icon" height="16" width="16">
 									<use xlink:href="#icon-vk"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="footer__social-item--insta footer__social-item">
-							<a href="https://instagram.com" target="_blank" class="link">
-								<svg fill="#444444" height="16" width="16" class="footer__social-icon--insta footer__social-icon">
+						<li>
+							<a class="footer__social-item--insta footer__social-item" href="https://instagram.com" target="_blank">
+								<svg class="footer__social-icon--insta footer__social-icon" height="16" width="16">
 									<use xlink:href="#icon-insta"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="footer__social-item--fb footer__social-item">
-							<a href="https://facebook.com" target="_blank" class="link">
-								<svg fill="#444444" height="16" width="16" class="footer__social-icon--fb footer__social-icon">
+						<li>
+							<a class="footer__social-item--fb footer__social-item" href="https://facebook.com" target="_blank">
+								<svg class="footer__social-icon--fb footer__social-icon" height="16" width="16">
 									<use xlink:href="#icon-fb"></use>
 								</svg>
 							</a>
@@ -249,13 +228,11 @@
 					</ul>
 				</div>
 				<div class="footer__htmlacademy">
-					<a href="https://htmlacademy.ru" target="_blank" class="footer__htmlacademy-link link">
-						<p class="footer__htmlacademy-text text">
-							HTML Academy
-						</p>
+					<a class="footer__htmlacademy-link text" href="https://htmlacademy.ru" target="_blank">
+						HTML Academy
 					</a>
-					<a href="https://htmlacademy.ru" target="_blank" class="link">
-						<svg fill="#444444" width="30" height="35" class="footer__htmlacademy-icon">
+					<a href="https://htmlacademy.ru" target="_blank">
+						<svg class="footer__htmlacademy-icon" width="30" height="35">
 							<use xlink:href="#htmlacademy"></use>
 						</svg>
 					</a>

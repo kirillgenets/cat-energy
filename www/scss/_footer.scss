@@ -17,6 +17,7 @@ FOOTER
 
 .footer__social-container {
 	margin-bottom: 22px;
+	margin-top: 0;
 	width: 100%;
     border-top: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
@@ -24,18 +25,28 @@ FOOTER
 }
 
 .footer__social {
+	list-style: none;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 
 .footer__social-item {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
 	margin-right: 40px;
 
 	&--fb {
 		margin-right: 0;
 	}
+}
+
+.footer__social-icon {
+	fill: #444444;
 }
 
 .footer__htmlacademy {
@@ -44,12 +55,18 @@ FOOTER
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.footer__htmlacademy-icon {
+	fill: #444444;
 }
 
 .footer__map-container {
 	background-color: #fff;
 
-	&--catalog {
+	&--grey-bg {
 		background-color: $bg-grey;
 	}
 }

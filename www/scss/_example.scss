@@ -7,8 +7,14 @@ EXAMPLE
 	padding: 30px 20px 40px 20px;
 }
 
+.example__title {
+	margin: 0;
+	padding: 0;
+}
+
 .example__text {
 	margin: 30px 0;
+	padding: 0;
 }
 
 .example__indicators {
@@ -26,6 +32,7 @@ EXAMPLE
 
 .example__indicator-info {
 	position: relative;
+	margin: 0;
 	padding: 15px 10px;
 	font-size: 24px;
 	text-transform: uppercase;
@@ -51,6 +58,8 @@ EXAMPLE
 	font-size: 14px;
 	font-weight: normal;
 	text-align: center;
+	margin-top: 0;
+	padding: 0;
 	margin-bottom: 45px;
 }
 

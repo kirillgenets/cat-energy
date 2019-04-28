@@ -9,10 +9,25 @@ CATALOG SECTION
 
 .catalog {
 	padding: 0;
+	margin: 0;
 }
 
 .catalog__title {
 	padding: 30px 20px 35px 20px;
+	margin: 0;
+}
+
+.catalog__goods-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.catalog__item {
+	display: flex;
+	flex-direction: column;
+	border-top: 1px solid #cdcdcd;
+	padding: 25px 20px;
 }
 
 .catalog__item--find-more {
@@ -28,7 +43,11 @@ CATALOG SECTION
 }
 
 .catalog__item-title {
+	text-transform: uppercase;
+	font-size: 16px;
 	max-width: 75px;
+	margin-top: 0;
+	padding: 0;
 	margin-bottom: 20px;
 	&--find-more {
 		max-width: 320px;
@@ -55,11 +74,29 @@ CATALOG SECTION
 	margin-bottom: 20px;
 }
 
+.catalog__item-indicators {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .catalog__item-indicator {
+	margin: 0;
+	padding: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	width: calc(50vw - 20px);
+}
+
+.catalog__item-indicator-text {
+	padding: 0;
+	margin: 0;
+}
+
+.catalog__item-indicator-value-text {
+	padding: 0;
+	margin: 0;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
