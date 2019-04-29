@@ -5,7 +5,7 @@ FOOTER
 
 .footer__content {
 	background-color: $bg-grey;
-	padding: 40px 20px 20px 20px;
+	padding: 38px 20px 20px 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -16,12 +16,13 @@ FOOTER
 }
 
 .footer__social-container {
-	margin-bottom: 22px;
+	margin-bottom: 15px;
 	margin-top: 0;
 	width: 100%;
     border-top: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
-    padding: 25px 0;
+    padding-top: 25px;
+    padding-bottom: 21px;
 }
 
 .footer__social {
@@ -61,6 +62,7 @@ FOOTER
 
 .footer__htmlacademy-icon {
 	fill: #444444;
+	margin-right: -9px;
 }
 
 .footer__htmlacademy-link {

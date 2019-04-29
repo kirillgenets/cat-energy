@@ -4,7 +4,7 @@ EXTRA CATALOG
 
 .extra-catalog__title {
 	padding: 0 20px;
-	margin: 30px 0;
+	margin: 27px 0 30px 0;
     font-size: 24px;
 }
 
@@ -15,11 +15,12 @@ EXTRA CATALOG
 }
 
 .extra-catalog__item {
-	margin: 0;
+	margin: 0 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	padding: 15px 20px 20px 20px;
+	padding-top: 13px;
+	padding-bottom: 17px;
 	border-top: 1px solid #cdcdcd;
 
 	&--vitamins {
@@ -30,8 +31,15 @@ EXTRA CATALOG
 .extra-catalog__item-title {
 	text-transform: uppercase;
 	font-size: 16px;
-	margin-bottom: 15px;
+	line-height: 1;
+	font-weight: normal;
+	margin-bottom: 9px;
 	margin-top: 0;
+	padding: 0;
+}
+
+.extra__catalog__item-info {
+	margin: 0;
 	padding: 0;
 }
 
@@ -39,7 +47,8 @@ EXTRA CATALOG
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-bottom: 15px;
+	margin: 0;
+	padding: 0 0 10px 0;
 }
 
 .extra-catalog__item-order {
@@ -49,17 +58,16 @@ EXTRA CATALOG
 }
 
 .extra-catalog__gift {
-	margin-top: 40px;
-	margin-bottom: 35px;
-	padding-top: 65px;
-	padding-bottom: 40px;
+	margin: 40px 20px 35px 20px;
+	padding-top: 50px;
+	padding-bottom: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: $green;
 	background-image: url(../img/gift-photo-mobile@1x.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 }
 
 .extra-catalog__gift-text {
@@ -67,8 +75,8 @@ EXTRA CATALOG
 	color: #fff;
 	text-align: center;
 	font-family: Arial, sans-serif;
-	max-width: 160px;
-	padding-top: 125px;
+	max-width: 170px;
+	padding-top: 120px;
 	position: relative;
 
 	&::before {

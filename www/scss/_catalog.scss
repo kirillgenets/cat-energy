@@ -13,7 +13,7 @@ CATALOG SECTION
 }
 
 .catalog__title {
-	padding: 30px 20px 35px 20px;
+	padding: 26px 20px 35px 20px;
 	margin: 0;
 }
 
@@ -27,19 +27,24 @@ CATALOG SECTION
 	display: flex;
 	flex-direction: column;
 	border-top: 1px solid #cdcdcd;
-	padding: 25px 20px;
-}
+	padding: 23px 20px;
 
-.catalog__item--find-more {
-	border-bottom: 1px solid #cdcdcd;
-	align-items: center;
+	&--find-more {
+		padding: 0 20px 25px 20px;
+		border-bottom: 1px solid #cdcdcd;
+		align-items: center;
+	}
 }
 
 .catalog__item-info {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
+}
+
+.catalog__item-image {
+	margin-top: -20px;
+	margin-left: -5px;
 }
 
 .catalog__item-title {
@@ -48,11 +53,11 @@ CATALOG SECTION
 	max-width: 75px;
 	margin-top: 0;
 	padding: 0;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 
 	&--find-more {
 		max-width: 320px;
-		margin-top: 25px;
+		margin-top: 28px;
 		margin-bottom: 10px;
 		padding-top: 55px;
 		position: relative;
@@ -70,9 +75,19 @@ CATALOG SECTION
 	}
 }
 
+.catalog__item-text {
+	&--find-more {
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+	}
+}
+
 .catalog__item-order {
 	width: 100%;
-	padding: 12px 0;
+	padding-top: 11px;
+	padding-bottom: 10px;
+	font-size: 16px;
 
 	&--find-more {
 		background-color: #f2f2f2;
@@ -84,16 +99,26 @@ CATALOG SECTION
 .catalog__item-content {
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
 	align-items: flex-start;
 	margin-bottom: 20px;
 }
 
 .catalog__item-indicator-container {
+	font-size: 12px;
 	margin: 0;
 	padding: 0;	
 }
 
+.catalog__item-indicator-value-container {
+	font-size: 12px;
+	padding: 0;
+	margin: 0 -10px 0 0;
+}
+
 .catalog__item-indicators {
+	align-self: flex-end;
+	width: calc(100vw - 144px - 60px);
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -105,15 +130,16 @@ CATALOG SECTION
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: calc(50vw - 20px);
 }
 
 .catalog__item-indicator-text {
+	font-size: 12px;
 	padding: 0;
 	margin: 0;
 }
 
 .catalog__item-indicator-value-text {
+	font-size: 12px;
 	padding: 0;
 	margin: 0;
 }

@@ -25,6 +25,7 @@ CONTACTS
 }
 
 .map__adress {
+	max-width: 50%;
 	line-height: 1.43;
 	margin: 0;
 	padding: 0;
@@ -32,7 +33,7 @@ CONTACTS
 
 
 .map__map {
-	height: 350px;
+	height: 360px;
 	width: 100%;
 	border: none;
 }

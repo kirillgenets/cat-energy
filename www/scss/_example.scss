@@ -4,16 +4,17 @@ EXAMPLE
 
 .example {
 	background-color: $bg-grey;
-	padding: 30px 20px 38px 20px;
+	padding-top: 30px;
+	padding-bottom: 35px;
 }
 
 .example__title {
-	margin: 0;
+	margin: 0 20px;
 	padding: 0;
 }
 
 .example__text {
-	margin: 33px 0 27px 0;
+	margin: 33px 20px 27px 20px;
 	padding: 0;
 }
 
@@ -21,11 +22,11 @@ EXAMPLE
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-bottom: 15px;
+	margin: 0 20px 11px 20px;
 }
 
 .example__indicator {
-	width: 120px;
+	width: 126px;
     text-align: center;
     border-radius: 3px;
     padding: 0;
@@ -34,7 +35,7 @@ EXAMPLE
 .example__indicator-info {
 	position: relative;
 	margin: 0;
-	padding: 10px 10px;
+	padding: 12px 10px;
 	font-size: 24px;
 	text-transform: uppercase;
 	color: $dark-grey;
@@ -61,14 +62,11 @@ EXAMPLE
 	text-align: center;
 	margin-top: 0;
 	padding: 0;
-	margin-bottom: 45px;
+	margin-bottom: 37px;
 }
 
 .example__cat {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin: 0 auto 30px auto;
+	margin-bottom: 26px;
 	padding: 0;
 }
 
@@ -88,18 +86,18 @@ EXAMPLE
 	text-transform: uppercase;
 
 	&--before {
-		margin-right: 19px;
+		margin-right: 10px;
 	}
 }
 
 .example__slider {
-	margin-right: 18px;
+	margin-right: 13px;
 }
 
 .example__slider-container {
 	background-color: #fff;
-	height: 14px;
-	width: 85px;
+	height: 13px;
+	width: 83px;
 	border-radius: 6px;
 	border: 1px solid #cdcdcd;
 	position: relative;
@@ -112,5 +110,5 @@ EXAMPLE
 	border-radius: 3px;
 	position: absolute;
 	left: 6px;
-	top: 25%;
+	top: 4px;
 }
