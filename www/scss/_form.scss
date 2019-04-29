@@ -3,7 +3,7 @@ FORM
 ***********/
 
 .form {
-	padding-bottom: 35px;
+	padding-bottom: 33px;
 }
 
 .form__block {
@@ -16,7 +16,7 @@ FORM
 	}
 
 	&--type {
-		padding-top: 29px;
+		padding-top: 15px;
 		padding-bottom: 25px; 
 		border-top: 1px solid $bg-grey;
 		border-bottom: 1px solid $bg-grey;
@@ -30,12 +30,24 @@ FORM
 	align-items: center;
 	margin-bottom: 15px;
 
+	&--age {
+		margin-bottom: 23px;
+	}
+
+	&--radio {
+		margin-bottom: 13px;
+	}
+
 	&--radio, &--checkbox {
 		justify-content: flex-start;
 	}
 
 	&--radio-last {
 		margin-bottom: 0;
+	}
+
+	&--email {
+		margin-bottom: 14px;
 	}
 }
 
@@ -45,7 +57,7 @@ FORM
 	font-weight: normal;
 	text-transform: uppercase;
 	color: #222222;
-	margin-right: 15px;
+	margin-right: 14px;
 	max-width: 50%;
 
 	&--radio, &--checkbox {
@@ -75,10 +87,19 @@ FORM
 	    border-radius: 50%;
 	}
 
-	&--checkbox::before {
-		top: 6px;
-		left: 0;
-		background-repeat: no-repeat;
+	&--checkbox {
+
+		padding-top: 10px;
+
+		&::before {
+			top: 5px;
+			left: 0;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&--email, &--phone {
+		margin-right: 12px;
 	}
 }
 
@@ -101,7 +122,7 @@ FORM
 
 .form__field {
 	box-sizing: border-box;
-	padding: 16px 15px;
+	padding: 13px 15px 11px 15px;
 	border: 1px solid $bg-grey;
 	color: $light-grey;
 	text-transform: uppercase;
@@ -111,6 +132,10 @@ FORM
 	&--comment {
 		width: calc(100% - 35px);
 		height: 150px;
+	}
+
+	&--email {
+		padding-left: 13px;
 	}
 }
 
@@ -130,31 +155,48 @@ FORM
 	fill: #111111;
 
 	&--email {
-		top: 19px;
-		right: 16px;
+		top: 16px;
+		right: 12px;
 	}
 
 	&--phone {
-		top: 15px;
-		right: 13px;
+		top: 13px;
+		right: 10px;
 	}
 }
 
 .form__block-title {
 	font-size: 24px;
-	margin-bottom: 30px;
+	font-weight: normal;
+	line-height: 1;
+	margin-bottom: 33px;
+
+	&--owner-info {
+		margin-top: 31px;
+	}
 
 	&--extra {
 		display: block;
 	}
+
+	&--comment {
+		margin-top: 15px;
+	}
+
+	&--extra-goods {
+		margin-top: 29px;
+		margin-bottom: 25px;
+	}
 }
 
 .form__submit {
-	padding: 13px;
+	padding-top: 11px;
+	padding-bottom: 10px;
+	font-size: 16px;
 	width: calc(100% - 40px);
 	margin-left: 20px;
-	margin-top: 35px;
-	margin-bottom: 25px;
+	margin-top: 25px;
+	margin-bottom: 20px;
 }
 
 .form__hint {

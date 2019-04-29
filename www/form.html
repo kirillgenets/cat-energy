@@ -69,8 +69,8 @@
 							<label class="form__label" for="cat-weight">Вес (кг):*</label>
 							<input class="form__field" type="text" id="cat-weight" placeholder="7" name="cat-info">
 						</div>
-						<div class="form__row">
-							<label class="form__label" for="cat-age">Возраст (лет):*</label>
+						<div class="form__row form__row--age">
+							<label class="form__label" for="cat-age">Возраст (лет):</label>
 							<input class="form__field" type="text" id="cat-age" placeholder="7" name="cat-info">
 						</div>
 					</fieldset>
@@ -101,11 +101,11 @@
 						<h3 class="visually-hidden">
 							Информация о владельце кота
 						</h3>
-						<h3 class="form__block-title title--selected">
-							Контактные данные <span class="form__block-title--extra">(владельца кота)</span>
+						<h3 class="form__block-title form__block-title--owner-info">
+							<span class="title--selected">Контактные данные</span> <span class="form__block-title--extra">(владельца кота)</span>
 						</h3>
-						<div class="form__row">
-							<label for="email" class="form__label">E-mail:*</label>
+						<div class="form__row form__row--email">
+							<label for="email" class="form__label form__label--email">E-mail:*</label>
 							<div class="form__field-container">
 								<input class="form__field form__field--email" type="email" id="email" placeholder="kuklachev@gmail.com" name="owner-info">
 								<svg class="form__field-icon form__field-icon--email" width="17" height="13">
@@ -114,7 +114,7 @@
 							</div>
 						</div>
 						<div class="form__row">
-							<label for="phone" class="form__label">Телефон (кг):*</label>
+							<label for="phone" class="form__label form__label--phone">Телефон:*</label>
 							<div class="form__field-container">
 								<input class="form__field form__field--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" name="owner-info">
 								<svg class="form__field-icon form__field-icon--phone" width="20" height="20">
@@ -127,7 +127,7 @@
 						<h3 class="visually-hidden">
 							Дополнительная информация о коте
 						</h3>
-						<h3 class="form__block-title title--selected">
+						<h3 class="form__block-title form__block-title--comment title--selected">
 							Комментарий
 						</h3>
 						<textarea class="form__field form__field--comment" id="comment" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
@@ -136,7 +136,7 @@
 						<h3 class="visually-hidden">
 							Дополнительные товары
 						</h3>
-						<h3 class="form__block-title title--selected">
+						<h3 class="form__block-title form__block-title--extra-goods title--selected">
 							Дополнительно
 						</h3>
 						<div class="form__row form__row--checkbox">
