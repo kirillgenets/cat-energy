@@ -65,9 +65,19 @@ EXAMPLE
 	margin-bottom: 37px;
 }
 
-.example__cat {
-	margin-bottom: 26px;
+.example__cat-list {
+	list-style: none;
+	margin: 0;
 	padding: 0;
+}
+
+.example__cat {
+	margin: 0 0 26px 0;
+	padding: 0;
+
+	&--after {
+		display: none;
+	}
 }
 
 .example__changes {
