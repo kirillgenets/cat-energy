@@ -4,6 +4,8 @@
     "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.3",
     "del": "^4.1.0",
+    "editorconfig": "^0.15.3",
+    "editorconfig-cli": "^0.3.0",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-minify": "^3.1.0",
@@ -15,14 +17,19 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "node-sass": "^4.11.0",
-    "posthtml-include": "^1.2.0"
+    "postcss-reporter": "^6.0.1",
+    "postcss-scss": "^2.0.0",
+    "posthtml-include": "^1.2.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-standard": "^18.3.0"
   },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"www/scss/**/*.scss\" --syntax scss",
+    "editorconfig": "editorconfig",
+    "stylelint": "stylelint \"www/scss/**/*.scss\"",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp start"

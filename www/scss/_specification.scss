@@ -4,10 +4,10 @@ SPECIFICATION
 
 @font-face{
 	font-family: 'Oswald';
-	src: url('../fonts/oswaldregular.woff') format('woff'),
-		url('../fonts/oswaldregular.woff2') format('woff2'),
-		url('../fonts/oswaldmedium.woff') format('woff'),
-		url('../fonts/oswaldmedium.woff2') format('woff2');
+	src: url('../fonts/oswaldregular.woff2') format('woff2'),
+		url('../fonts/oswaldmedium.woff2') format('woff2'),
+		url('../fonts/oswaldregular.woff') format('woff'),		
+		url('../fonts/oswaldmedium.woff') format('woff');
 	font-display: swap;
 }
 
@@ -19,6 +19,10 @@ a {
 body {
 	color: $dark-grey;
 	font-family: 'Oswald', Arial, sans-serif;
+}
+
+img {
+	max-width: 100%;
 }
 
 .visually-hidden:not(:focus):not(:active),
