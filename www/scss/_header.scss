@@ -23,43 +23,6 @@ HEADER
 	background-size: 100%;
 }
 
-.header__toggle-nav {
-	position: absolute;
-	top: 23px;
-	right: 23px;
-	background-image: url(../img/icon-close.svg);
-	height: 18px;
-	width: 18px;
-	background-color: rgba(0,0,0,0);
-	border: none;
-}
-
-.header__nav {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-}
-
-.header__nav-item {
-	width: 100%;
-	text-align: center;
-	padding: 25px 0;
-	border-top: 1px solid #cdcdcd;
-
-	&--choose-program {
-		border-bottom: 1px solid #cdcdcd;
-	}
-}
-
-.header__nav-link {
-	color: $dark-grey;
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: 500;
-}
-
 /*RESPONSIVE*/
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -76,17 +39,9 @@ HEADER
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		padding: 24px 0 0 30px;
+		padding: 24px 30px 0 30px;
 	}
-
-	.header__higher-panel {
-		padding: 0;
-	}
-
-	.header__toggle-nav {
-		display: none;
-	}
-
+	
 	.header__logo {
 		height: 58px;
 		width: 173px;
@@ -94,36 +49,8 @@ HEADER
 		background-image: url(../img/logo-tablet.svg);
 	}
 
-	.header__heading {
-		width: 100%;
-		box-sizing: border-box;
-	}
-
-	.header__nav {
-		flex-direction: row;
-		box-sizing: border-box;
-	}
-
-	.header__nav-item {
-		display: flex;
-		justify-content: center;
+	.header__higher-panel {
 		padding: 0;
-		border-top: none;
-		margin-right: 36px;
-		max-width: 160px;
-
-		&--main {
-			width: 65px;
-		}
-
-		&--choose-program {
-			border-bottom: none;
-			margin-right: 0;
-		}
-	}
-
-	.header__nav-link {
-		font-size: 18px;
 	}
 
 }
