@@ -13,7 +13,6 @@ HEADER
 	justify-content: flex-start;
 	align-items: center;
 	padding: 11px 20px 16px 20px;
-	margin: 0;
 }
 
 .header__logo {
@@ -68,4 +67,63 @@ HEADER
 	.header__intro {
 		background-image: linear-gradient(to top,#fff 175px,transparent 175px),url(../img/index-background-mobile@2x.jpg);
 	}
+} 
+
+@media screen and (min-width: 768px) {
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding: 24px 0 0 30px;
+	}
+
+	.header__higher-panel {
+		padding: 0;
+	}
+
+	.header__toggle-nav {
+		display: none;
+	}
+
+	.header__logo {
+		height: 58px;
+		width: 173px;
+		margin-right: 96px;
+		background-image: url(../img/logo-tablet.svg);
+	}
+
+	.header__heading {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.header__nav {
+		flex-direction: row;
+		box-sizing: border-box;
+	}
+
+	.header__nav-item {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		border-top: none;
+		margin-right: 36px;
+		max-width: 160px;
+
+		&--main {
+			width: 65px;
+		}
+
+		&--choose-program {
+			border-bottom: none;
+			margin-right: 0;
+		}
+	}
+
+	.header__nav-link {
+		font-size: 18px;
+	}
+
 }
