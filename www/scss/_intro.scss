@@ -45,7 +45,54 @@ INTRO
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 
-	.header__intro {
+	.intro {
 		background-image: linear-gradient(to top,#fff 175px,transparent 175px),url(../img/index-background-mobile@2x.jpg);
 	}
+
 } 
+
+@media screen and (min-width: $tablet) {
+	
+	.intro {
+		background: #fff;
+		padding-top: 60px;
+		padding-left: 118px;
+		padding-bottom: 530px;
+		align-items: flex-start;
+		position: relative;
+	}
+
+	.intro__title {
+		color: $dark-grey;
+		font-size: 60px;
+		text-align: left;
+		max-width: 470px;
+		margin-bottom: 33px;
+	}
+
+	.intro__subtitle {
+		color: $dark-grey;
+		font-size: 20px;
+		text-align: left;
+		margin-bottom: 48px;
+	}
+
+	.intro__img {
+		position: absolute;
+		z-index: 0;
+		bottom: 0;
+		left: 29px;
+		width: 709px;
+		height: 609px;
+	}
+
+	.intro__button {
+		z-index: 1;
+		margin: 0;
+		width: 245px;
+		padding-top: 17px;
+		padding-bottom: 15px;
+		font-size: 20px;
+	}
+
+}
