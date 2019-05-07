@@ -25,13 +25,6 @@ HEADER
 
 /*RESPONSIVE*/
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-
-	.header__intro {
-		background-image: linear-gradient(to top,#fff 175px,transparent 175px),url(../img/index-background-mobile@2x.jpg);
-	}
-} 
-
 @media screen and (min-width: 768px) {
 
 	.header {
