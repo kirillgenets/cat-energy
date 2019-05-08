@@ -45,6 +45,7 @@ NAVIGATION
 	}
 
 	.nav__list {
+		margin-top: 3px;
 		flex-direction: row;
 		justify-content: space-between;
 	}
@@ -54,8 +55,8 @@ NAVIGATION
 		justify-content: center;
 		padding: 0;
 		border-top: none;
-		margin-right: 36px;
-		max-width: 160px;
+		margin-right: 31px;
+		max-width: 165px;
 
 		&--main {
 			width: 65px;

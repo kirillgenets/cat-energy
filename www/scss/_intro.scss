@@ -49,14 +49,14 @@ INTRO
 		background-image: linear-gradient(to top,#fff 175px,transparent 175px),url(../img/index-background-mobile@2x.jpg);
 	}
 
-} 
+}
 
 @media screen and (min-width: $tablet) {
 	
 	.intro {
 		background: #fff;
-		padding-top: 60px;
-		padding-left: 118px;
+		padding-top: 27px;
+		padding-left: 104px;
 		padding-bottom: 530px;
 		align-items: flex-start;
 		position: relative;
@@ -67,21 +67,21 @@ INTRO
 		font-size: 60px;
 		text-align: left;
 		max-width: 470px;
-		margin-bottom: 33px;
+		margin-bottom: 38px;
 	}
 
 	.intro__subtitle {
 		color: $dark-grey;
 		font-size: 20px;
 		text-align: left;
-		margin-bottom: 48px;
+		margin-bottom: 45px;
 	}
 
 	.intro__img {
 		position: absolute;
 		z-index: 0;
 		bottom: 0;
-		left: 29px;
+		left: 12px;
 		width: 709px;
 		height: 609px;
 	}
@@ -90,8 +90,8 @@ INTRO
 		z-index: 1;
 		margin: 0;
 		width: 245px;
-		padding-top: 17px;
-		padding-bottom: 15px;
+		padding-top: 16px;
+		padding-bottom: 14px;
 		font-size: 20px;
 	}
 
