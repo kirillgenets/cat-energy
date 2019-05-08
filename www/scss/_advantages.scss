@@ -119,3 +119,87 @@ ADVANTAGES
 	}
 
 }
+
+@media screen and (min-width: $tablet) {
+
+	.advantages {
+		padding: 0 30px;
+		margin: 0;
+		display: block;
+	}
+
+	.advantages__title {
+		margin-top: 51px;
+		margin-bottom: 63px;
+	}
+
+	.advantages__features {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.advantages__item {
+		position: relative;
+
+		&::after {
+			content: '';
+			color: $bg-grey;
+			line-height: 228px;
+			font-size: 281px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: -1;
+		}
+
+		&--useful {
+			margin-right: 40px;
+
+			&::after {
+				content: '1';
+			}
+
+		}
+
+		&--easy {		
+
+			&::after {
+				content: '2';
+			}
+
+		}
+
+		&--functional {
+
+			&::after {
+				content: '3';
+			}
+
+		}
+
+		&--effective {
+
+			&::after {
+				content: '4';
+			}
+
+		}
+
+	}
+
+	.advantages__item-text {
+		max-width: 230px;
+		padding: 117px 0 48px 0;
+		
+		&::before {
+			height: 80px;
+			width: 80px;
+			top: 0;
+			left: 0;
+		}
+
+	}
+
+}
