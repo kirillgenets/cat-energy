@@ -2,17 +2,16 @@
 CONTACTS
 ********/
 
-.footer__map-container {
-	padding: 31px 0 0 0;
+.map {
+	padding: 0;
 }
 
 .map__info {
-	padding: 0 20px;
+	padding: 31px 20px 26px 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 26px;
 }
 
 .map__offer {
@@ -36,4 +35,33 @@ CONTACTS
 	height: 360px;
 	width: 100%;
 	border: none;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: $tablet) {
+
+	.map__offer {
+		font-size: 20px;
+		max-width: 155px;
+	}
+
+	.map__info {
+		padding: 69px 72px 59px 71px;
+	}
+
+	.map__adress {
+		max-width: 155px;
+		text-align: right;
+	}
+
+	.map__city {
+		display: block;
+		margin-top: 30px;
+	}
+
+	.map__map {
+		height: 400px;
+	}
+	
 }

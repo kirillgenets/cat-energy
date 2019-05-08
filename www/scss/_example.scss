@@ -136,21 +136,21 @@ EXAMPLE
 
 	.example {
 		background-color: #fff;
-		padding: 51px 0 65px 0;
+		padding: 51px 0 0 0;
 		border-top: 1px solid $bg-grey;
 	}
 
 	.example__title {
 		margin-top: 0;
-		margin-left: 0;
+		margin-left: 30px;
 		margin-right: 0;
 		margin-bottom: 60px;
 	}
 
 	.example__text {
 		margin-top: 0;
-		margin-left: 0;
-		margin-right: 0;
+		margin-left: 30px;
+		margin-right: 30px;
 		margin-bottom: 56px;
 	}
 
@@ -159,6 +159,8 @@ EXAMPLE
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		margin-left: 30px;
+		margin-right: 30px;
 		margin-bottom: 80px;
 	}
 
@@ -198,17 +200,28 @@ EXAMPLE
 
 	.example__changes-container {
 		position: relative;
+		padding-bottom: 67px;
 		background-image: linear-gradient(to bottom, #fff, #fff 169px, #eaeaea 169px, #eaeaea);
+	
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 50%;
+			z-index: 0;
+			background-image: linear-gradient(to bottom, #fff, #fff 169px, $bg-grey 169px, $bg-grey);
+		}
 	}
 
 	.example__cat-list {
 		position: relative;
-		background-image: linear-gradient(to right, #fff, #fff 169px, $bg-grey 169px,  $bg-grey);
 	}
 
 	.example__cat {
 		z-index: 1;
-		margin: 0;
+		margin: 0 0 13px 0;
 
 		&--before {
 			position: absolute;
@@ -229,8 +242,53 @@ EXAMPLE
 	}
 
 	.example__changes {
-		z-index: 5;
 		margin: 0;
+	}
+
+	.example__slider {
+		margin-right: 21px;
+	}
+
+	.example__slider-container {
+		width: 428px;
+		height: 6px;
+		background-color: #dcdcdc;
+		border: none;
+	}
+
+	.example__slider-thumb {
+		width: 34px;
+		height: 34px;
+		border-radius: 50%;
+		background-color: #fff;
+		box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+		top: calc(50% - 17px);
+		left: calc(50% - 17px);
+		cursor: pointer;
+
+		&::after {
+			content: '';
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			position: absolute;
+			top: calc(50% - 4px);
+			left: calc(50% - 4px);
+			background-color: $green;
+		}
+
+	}
+
+	.example__button {
+		z-index: 1;
+		font-size: 20px;
+		padding: 0 0 6px 0;
+		border-bottom: 1px dotted rgba(0,0,0,.23);
+		cursor: pointer;
+
+		&--before {
+			margin-right: 24px;
+		}
 	}
 
 }

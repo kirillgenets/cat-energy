@@ -37,6 +37,8 @@ NAVIGATION
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 500;
+	margin: 0;
+	padding: 0;
 }
 
 @media screen and (min-width: $tablet) {
@@ -70,6 +72,12 @@ NAVIGATION
 
 	.nav__link {
 		font-size: 18px;
+		padding-bottom: 9px;
+		border-bottom: 2px solid rgba(0,0,0,0);
+
+		&--current {		
+			border-color: $green;
+		}
 	}
 	
 }
