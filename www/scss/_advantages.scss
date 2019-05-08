@@ -13,6 +13,7 @@ ADVANTAGES
 
 .advantages__title {
 	margin-bottom: 38px;
+	margin-top: 0;
 	align-self: flex-start;
 }
 
@@ -85,6 +86,7 @@ ADVANTAGES
 	
 	
 	.advantages__item-text {
+		
 		&::before {
 			background-size: 80%;
 		}
@@ -123,7 +125,7 @@ ADVANTAGES
 @media screen and (min-width: $tablet) {
 
 	.advantages {
-		padding: 0 30px;
+		padding: 0 30px 55px 30px;
 		margin: 0;
 		display: block;
 	}
@@ -142,6 +144,7 @@ ADVANTAGES
 
 	.advantages__item {
 		position: relative;
+		margin-bottom: 0;
 
 		&::after {
 			content: '';
@@ -163,7 +166,9 @@ ADVANTAGES
 
 		}
 
-		&--easy {		
+		&--easy {	
+
+			margin-bottom: 89px;	
 
 			&::after {
 				content: '2';
