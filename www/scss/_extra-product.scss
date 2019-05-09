@@ -1,0 +1,54 @@
+/***********
+EXTRA PRODUCT
+***********/
+
+.extra-product {
+	margin: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding-top: 13px;
+	padding-bottom: 17px;
+	border-top: 1px solid #cdcdcd;
+
+	&--vitamins {
+		border-bottom: 1px solid #cdcdcd;
+	}
+}
+
+.extra-product__title {
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: normal;
+	margin-bottom: 9px;
+	margin-top: 0;
+	padding: 0;
+}
+
+.eextra-product__info {
+	margin: 0;
+	padding: 0;
+}
+
+.extra-product__price-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+.extra-product__order {
+	margin: 0;
+	padding: 12px 0;
+	width: 100%;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: $tablet) {
+	
+	
+
+}
