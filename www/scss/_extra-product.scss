@@ -26,9 +26,10 @@ EXTRA PRODUCT
 	padding: 0;
 }
 
-.eextra-product__info {
+.extra-product__info {
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
 .extra-product__price-container {
@@ -49,6 +50,44 @@ EXTRA PRODUCT
 
 @media screen and (min-width: $tablet) {
 	
-	
+	.extra-product {
+		margin: 0;
+		padding: 28px 37px 28px 38px;
+
+		&--sugar-substitute {
+			border: none;
+		}
+
+		&--vitamins {
+			border-bottom: none;
+		}
+
+	}
+
+	.extra-product__title {
+		font-size: 18px;
+		margin-bottom: 0;
+	}
+
+	.extra-product__info {
+		max-width: 280px;
+	}
+
+	.extra-product__price-container {
+		justify-content: flex-end;
+		padding: 0;
+	}
+
+	.extra-product__count-container {
+		margin-right: 52px;
+	}
+
+	.extra-product__content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 26px;
+	}
 
 }

@@ -70,4 +70,30 @@ EXTRA CATALOG
 		padding: 0 37px;
 	}
 
+	.extra-catalog__goods-list {
+		border: 1px solid #cdcdcd;
+		margin: 0 30px;
+	}
+
+	.extra-catalog__gift {
+		margin: 69px 30px 76px 30px;
+		padding-top: 75px;
+		padding-bottom: 69px;
+		background-image: url(../img/gift-photo-tablet@1x.jpg);
+		background-size: cover;
+	}
+
+	.extra-catalog__gift-text {
+		padding-top: 0;
+		margin: 0;
+		padding-left: 333px;
+		text-align: left;
+		line-height: 1.25;
+
+		&::before {
+			left: 0;
+		}
+
+	}
+
 }
