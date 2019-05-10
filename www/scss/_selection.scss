@@ -12,12 +12,13 @@ SELECTION
 	padding: 0 0 0 20px;
 }
 
-.selection__subtitle {
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 1.29;
-	text-transform: uppercase;
-	margin: 0 50px 39px 20px;
-}
+/*RESPONSIVE*/
 
-@import 'form';
+@media screen and (min-width: $tablet) {
+
+	.selection__title {
+		margin-top: 64px;
+		margin-bottom: 53px;
+	}
+	
+}
