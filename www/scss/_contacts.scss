@@ -65,3 +65,26 @@ CONTACTS
 	}
 	
 }
+
+@media screen and (min-width: $desktop) {
+
+	.map {
+		position: relative;
+	}
+	
+	.map__info {
+		padding: 66px 90px 59px 76px;
+		width: 570px;
+		height: 201px;
+		box-sizing: border-box;
+		position: absolute;
+		left: 110px;
+		top: calc(50% - 100px);
+		background-color: #fff;
+	}
+
+	.map__adress {
+		text-align: left;
+	}
+
+}
