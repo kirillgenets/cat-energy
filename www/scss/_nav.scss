@@ -105,7 +105,11 @@ NAVIGATION
 	}
 
 	.nav__item {
-		width: 300px;
+
+		&--long {
+			min-width: 170px;
+		}
+		
 	}
 
 	.nav__link {
