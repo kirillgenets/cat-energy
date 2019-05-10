@@ -209,3 +209,33 @@ ADVANTAGES
 	}
 
 }
+
+@media screen and (min-width: 900px) {
+	
+	.advantages__item {
+
+		&--useful {
+			margin-right: 0;
+		}
+
+	}
+
+}
+
+@media screen and (min-width: $desktop) {
+
+	.advantages {
+		padding: 0 40px 27px 110px;
+	}
+	
+	.advantages__title {
+		margin-top: 75px;
+		margin-bottom: 63px;
+	}
+
+	.advantages__item {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+}

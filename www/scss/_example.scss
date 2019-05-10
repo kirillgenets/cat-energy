@@ -292,3 +292,26 @@ EXAMPLE
 	}
 
 }
+
+@media screen and (min-width: $desktop) {
+
+	.example {
+		border: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.example__text {
+		max-width: 430px;
+	}
+
+	.example__changes-container {
+
+		&::before {
+			
+		}
+
+	}
+	
+}
