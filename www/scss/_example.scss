@@ -302,14 +302,64 @@ EXAMPLE
 		justify-content: space-between;
 	}
 
+	.example__content {
+		z-index: 5;
+	}
+
+	.example__title {
+		margin-top: 63px;
+		margin-left: 110px;
+		margin-bottom: 0;
+	}
+
 	.example__text {
 		max-width: 430px;
+		margin-left: 110px;
+		margin-top: 142px;
+	}
+
+	.example__info {
+		margin-left: 110px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.example__expences {
+		max-width: 100%;
+	}
+
+	.example__expences-property {
+		margin-right: 64px;
+	}
+
+	.example__indicators {
+		padding: 0;
+		margin: 0 0 50px 0;
+	}
+
+	.example__indicator {
+
+		&--days {
+			margin-right: 0;
+		}
+
 	}
 
 	.example__changes-container {
+		background-image: linear-gradient(to bottom, #fff, #fff 190px, #eaeaea 190px, #eaeaea);
 
 		&::before {
-			
+			width: 100vw;
+			left: calc(-100vw + 344px);
+			background-image: linear-gradient(to bottom, #fff, #fff 190px, $bg-grey 190px,  $bg-grey);
+		}
+
+	}
+
+	.example__cat {
+
+		&--before {
+			background-image: linear-gradient(to bottom, #fff, #fff 190px, $bg-grey 190px,  $bg-grey);
 		}
 
 	}
