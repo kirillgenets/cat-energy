@@ -21,11 +21,19 @@ HEADER
 	background-image: url(../img/logo-mobile.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	&:active {
+		opacity: 0.5;
+	}
 }
 
 /*RESPONSIVE*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
 
 	.header {
 		display: flex;
@@ -39,19 +47,24 @@ HEADER
 		height: 58px;
 		width: 173px;
 		background-image: url(../img/logo-tablet.svg);
-
-		&:hover {
-			opacity: 0.7;
-		}
-
-		&:active {
-			opacity: 0.5;
-		}
-
 	}
 
 	.header__higher-panel {
 		padding: 0;
+	}
+
+}
+
+@media screen and (min-width: $desktop) {
+
+	.header {
+		padding: 54px 41px 0 110px;
+	}
+
+	.header__logo {
+		width: 202px;
+		height: 59px;
+		background-image: url(../img/logo-desktop.svg);
 	}
 
 }

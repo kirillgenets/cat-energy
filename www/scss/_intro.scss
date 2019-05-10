@@ -96,3 +96,32 @@ INTRO
 	}
 
 }
+
+@media screen and (min-width: $desktop) {
+
+	.intro {
+		padding-top: 0;
+		padding-bottom: 223px;
+		padding-left: 193px;
+	}
+	
+	.intro__title {
+		margin-top: 113px;
+		margin-bottom: 33px;
+		z-index: 4;
+	}
+
+	.intro__subtitle {
+		margin-bottom: 53px;
+		z-index: 4;
+	}
+
+	.intro__img {
+		z-index: 3;
+		left: 585px;
+		top: 30px;
+		width: 552px;
+		height: 499px;
+	}
+
+}

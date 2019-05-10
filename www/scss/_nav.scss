@@ -82,3 +82,43 @@ NAVIGATION
 	}
 	
 }
+
+@media screen and (min-width: $desktop) {
+
+	.nav {
+
+		&--main {
+
+			&::before {
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 0;
+				z-index: 1;
+				width: 651px;
+				height: 696px;
+				background-image: url(../img/index-background-desktop@1x.jpg);
+			}
+			
+		}
+
+	}
+
+	.nav__item {
+		width: 300px;
+	}
+
+	.nav__link {
+		z-index: 2;
+		font-size: 20px;
+
+		&--main {
+			color: #fff;
+		}
+	}
+
+	.nav__link--current.nav__link--main {
+		border-color: #fff;
+	}
+	
+}
