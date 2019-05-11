@@ -56,67 +56,71 @@
 					<p class="form__title">
 						заполните анкету и мы подберем программу питания для вашего кота
 					</p>
-					<fieldset class="form__block form__block--cat-info">
-						<legend class="visually-hidden">
-							Информация о коте
-						</legend>
-						<div class="form__row">
-							<label class="form__label" for="cat-name">Имя:*</label>
-							<input class="form__field" type="text" id="cat-name" placeholder="Барсик" name="cat-name">
-						</div>
-						<div class="form__row">
-							<label class="form__label" for="cat-weight">Вес (кг):*</label>
-							<input class="form__field" type="text" id="cat-weight" placeholder="7" name="cat-weight">
-						</div>
-						<div class="form__row form__row--age">
-							<label class="form__label" for="cat-age">Возраст (лет):</label>
-							<input class="form__field" type="text" id="cat-age" placeholder="7" name="cat-age">
-						</div>
-					</fieldset>
-					<fieldset class="form__block form__block--type">
-						<legend class="visually-hidden">
-							Тип питания
-						</legend>
-						<div class="form__row form__row--radio">
-							<input class="form__radio-input" type="radio" id="slim" checked name="type">
-							<label class="form__label form__label--radio" for="slim">
-								похудение
-							</label>
-						</div>
-						<div class="form__row form__row--radio">
-							<input class="form__radio-input" type="radio" id="pro" name="type">
-							<label class="form__label form__label--radio" for="pro">
-								набор массы
-							</label>
-						</div>
-						<div class="form__row form__row--radio form__row--radio-last">
-							<input class="form__radio-input" id="dont-know" type="radio" name="type">
-							<label class="form__label form__label--radio" for="dont-know">
-								не знаю (нужен ваш совет)
-							</label>
-						</div>
-					</fieldset>
+					<div class="form__cat">
+						<fieldset class="form__block form__block--cat-info">
+							<legend class="visually-hidden">
+								Информация о коте
+							</legend>
+							<div class="form__row form__row--cat-info">
+								<label class="form__label" for="cat-name">Имя:*</label>
+								<input class="form__field" type="text" id="cat-name" placeholder="Барсик" name="cat-name">
+							</div>
+							<div class="form__row form__row--cat-info">
+								<label class="form__label" for="cat-weight">Вес (кг):*</label>
+								<input class="form__field" type="text" id="cat-weight" placeholder="7" name="cat-weight">
+							</div>
+							<div class="form__row form__row--cat-info form__row--age">
+								<label class="form__label" for="cat-age">Возраст (лет):</label>
+								<input class="form__field" type="text" id="cat-age" placeholder="7" name="cat-age">
+							</div>
+						</fieldset>
+						<fieldset class="form__block form__block--type">
+							<legend class="visually-hidden">
+								Тип питания
+							</legend>
+							<div class="form__row form__row--radio">
+								<input class="form__radio-input" type="radio" id="slim" checked name="type">
+								<label class="form__label form__label--radio" for="slim">
+									похудение
+								</label>
+							</div>
+							<div class="form__row form__row--radio">
+								<input class="form__radio-input" type="radio" id="pro" name="type">
+								<label class="form__label form__label--radio" for="pro">
+									набор массы
+								</label>
+							</div>
+							<div class="form__row form__row--radio form__row--radio-last">
+								<input class="form__radio-input" id="dont-know" type="radio" name="type">
+								<label class="form__label form__label--radio" for="dont-know">
+									не знаю (нужен ваш совет)
+								</label>
+							</div>
+						</fieldset>
+					</div>
 					<fieldset class="form__block form__block--owner-info">
 						<h3 class="form__block-title form__block-title--owner-info typography typography--selected-title">
 							Контактные данные
 							<span class="form__block-subtitle">(владельца кота)</span>
 						</h3>
-						<div class="form__row form__row--email">
-							<label for="email" class="form__label form__label--email">E-mail:*</label>
-							<div class="form__field-container">
-								<input class="form__field form__field--email" type="email" id="email" placeholder="kuklachev@gmail.com" name="owner-email">
-								<svg class="form__field-icon form__field-icon--email" width="17" height="13">
-									<use xlink:href="#icon-mail"></use>
-								</svg>
+						<div class="form__owner">
+							<div class="form__row form__row--email">
+								<label for="email" class="form__label form__label--email">E-mail:*</label>
+								<div class="form__field-container">
+									<input class="form__field form__field--email" type="email" id="email" placeholder="kuklachev@gmail.com" name="owner-email">
+									<svg class="form__field-icon form__field-icon--email" width="17" height="13">
+										<use xlink:href="#icon-mail"></use>
+									</svg>
+								</div>
 							</div>
-						</div>
-						<div class="form__row form__row--phone">
-							<label for="phone" class="form__label form__label--phone">Телефон:*</label>
-							<div class="form__field-container">
-								<input class="form__field form__field--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" name="owner-phone">
-								<svg class="form__field-icon form__field-icon--phone" width="20" height="20">
-									<use xlink:href="#icon-phone"></use>
-								</svg>
+							<div class="form__row form__row--phone">
+								<label for="phone" class="form__label form__label--phone">Телефон:*</label>
+								<div class="form__field-container">
+									<input class="form__field form__field--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" name="owner-phone">
+									<svg class="form__field-icon form__field-icon--phone" width="20" height="20">
+										<use xlink:href="#icon-phone"></use>
+									</svg>
+								</div>
 							</div>
 						</div>
 					</fieldset>
