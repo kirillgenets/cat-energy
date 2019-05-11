@@ -345,6 +345,10 @@ EXAMPLE
 
 	}
 
+	.example__indicator-name {
+		background-color: $bg-grey;
+	}
+
 	.example__changes-container {
 		background-image: linear-gradient(to bottom, #fff, #fff 190px, #eaeaea 190px, #eaeaea);
 

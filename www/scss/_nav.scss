@@ -126,3 +126,20 @@ NAVIGATION
 	}
 	
 }
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx), (min-width: $desktop) {
+
+	.nav {
+
+		&--main {
+
+			&::before {
+				background-size: cover;
+				background-image: url(../img/index-background-desktop@2x.jpg);
+			}
+			
+		}
+
+	}
+
+}
