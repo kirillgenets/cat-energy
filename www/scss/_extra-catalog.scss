@@ -97,3 +97,66 @@ EXTRA CATALOG
 	}
 
 }
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx), (min-width: $desktop) {
+
+	.extra-catalog__gift {
+		background-image: url(../img/gift-photo-desktop@2x.jpg);
+	}
+}
+
+@media screen and (min-width: $desktop) {
+
+	.extra-catalog {
+		padding-bottom: 86px;
+	}
+
+	.extra-catalog__title {
+		margin-left: 80px;
+		margin-bottom: 75px;
+
+		&::after {
+			left: -80px;
+		}
+
+	}
+
+	.extra-catalog__goods-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 110px;
+	}
+
+	.extra-catalog__goods-list {
+		margin: 0;
+		width: 825px;
+		border-left: none;
+		border-right: none;
+		padding: 0;
+	}
+
+	.extra-catalog__gift {
+		padding-top: 65px;
+		padding-bottom: 43px;
+		margin: 0;
+		width: 245px;
+		height: 289px;
+		box-sizing: border-box;
+		background-image: url(../img/gift-photo-desktop@1x.jpg);
+	}
+
+	.extra-catalog__gift-text {
+		padding-top: 125px;
+		padding-left: 0px;
+		text-align: center;
+
+		&::before {
+			left: calc(50% - 27.5px);
+		}
+
+	}
+
+	
+}

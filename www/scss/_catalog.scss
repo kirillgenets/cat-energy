@@ -46,3 +46,15 @@ CATALOG SECTION
 	}
 
 }
+
+@media screen and (min-width: $desktop) {
+
+	.catalog {
+		padding: 0 110px;
+	}
+	
+	.catalog__title {
+		margin-left: 0;
+	}
+
+}

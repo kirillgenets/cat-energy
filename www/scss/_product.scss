@@ -245,3 +245,29 @@ PRODUCT
 	}
 
 }
+
+@media screen and (min-width: $desktop) {
+
+	.product {
+		width: 245px;
+	}
+	
+	.product__image {
+		width: 245px;
+	}
+
+	.product__order {
+		width: 169px;
+		margin: 33px 38px 40px 38px;
+
+		&--find-more {
+			margin-top: 85px;
+		}
+
+	}
+
+	.product__indicators {
+		width: 170px;
+	}
+
+}
