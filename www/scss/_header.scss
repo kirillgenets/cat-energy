@@ -58,7 +58,9 @@ HEADER
 @media screen and (min-width: $desktop) {
 
 	.header {
-		padding: 54px 41px 0 110px;
+		padding: 54px 0 0 0;
+		width: 1220px;
+		margin: 0 auto;
 	}
 
 	.header__logo {
