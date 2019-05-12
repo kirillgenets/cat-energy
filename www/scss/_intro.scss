@@ -23,7 +23,7 @@ INTRO
 	line-height: 1;
 	padding: 0;
 	margin-top: 29px;
-	margin-bottom: 20px;
+	margin-bottom: 22px;
 }
 
 .intro__subtitle {
@@ -81,7 +81,7 @@ INTRO
 		position: absolute;
 		z-index: 0;
 		bottom: 0;
-		left: 12px;
+		left: calc(50% - 354.5px);
 		width: 709px;
 		height: 609px;
 	}

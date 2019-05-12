@@ -10,6 +10,7 @@ EXAMPLE
 
 .example__title {
 	padding: 0;
+	margin-left: 20px;
 }
 
 .example__text {
@@ -143,6 +144,7 @@ EXAMPLE
 		margin-top: 0;
 		margin-right: 0;
 		margin-bottom: 60px;
+		margin-left: 30px;
 	}
 
 	.example__text {
@@ -307,6 +309,7 @@ EXAMPLE
 	.example__title {
 		margin-top: 63px;
 		margin-bottom: 0;
+		margin-left: 110px;
 	}
 
 	.example__text {
@@ -347,7 +350,7 @@ EXAMPLE
 	}
 
 	.example__changes-container {
-		padding-right: 30px;
+		padding-right: 100px;
 		background-image: linear-gradient(to bottom, #fff, #fff 190px, #eaeaea 190px, #eaeaea);
 
 		&::before {
