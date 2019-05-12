@@ -30,7 +30,7 @@
   "scripts": {
     "editorconfig": "editorconfig",
     "stylelint": "stylelint \"www/scss/**/*.scss\"",
-    "test": "npm run editorconfig && npm run stylelint",
+    "test": "npm run editorconfig www && npm run stylelint",
     "build": "gulp build",
     "start": "gulp start"
   },

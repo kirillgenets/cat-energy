@@ -473,18 +473,6 @@ FORM
 	}
 
 	.form__block-content {
-		margin-left: 0;
-	}
-
-	.form__block-title {
-
-		&--owner-info {
-			margin-top: 73px;
-		}
-
-	}
-
-	.form__block-content {
 		flex-wrap: nowrap;
 		margin-left: 110px;
 		margin-right: 208px;
@@ -504,6 +492,10 @@ FORM
 
 		&::after {
 			width: 100vw;
+		}
+
+		&--owner-info {
+			margin-top: 73px;
 		}
 
 	}
