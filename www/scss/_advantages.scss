@@ -225,7 +225,12 @@ ADVANTAGES
 @media screen and (min-width: $desktop) {
 
 	.advantages {
-		padding: 0 40px 27px 110px;
+		padding: 0 0 27px 0;
+	}
+
+	.advantages__features {
+		width: 1220px;
+		margin: 0 auto;
 	}
 	
 	.advantages__title {
