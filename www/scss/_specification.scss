@@ -9,11 +9,12 @@ SPECIFICATION
 		url('../fonts/oswaldregular.woff') format('woff'),		
 		url('../fonts/oswaldmedium.woff') format('woff');
 	font-display: swap;
+	font-weight: normal;
 }
 
 a {
 	text-decoration: none;
-	color: #111111;
+	color: $dark-grey;
 }
 
 body {

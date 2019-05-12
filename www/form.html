@@ -24,17 +24,17 @@
 					<span class="visually-hidden">Открыть меню</span>
 				</button>
 				<ul class="nav__list">
-					<li class="nav__item nav__item--main">
+					<li class="nav__item">
 						<a class="nav__link" href="index.html">
 							Главная
 						</a>
 					</li>
-					<li class="nav__item nav__item--long">
+					<li class="nav__item">
 						<a class="nav__link" href="catalog.html">
 							Каталог продукции
 						</a>
 					</li>
-					<li class="nav__item nav__item--choose-program nav__item--long">
+					<li class="nav__item>
 						<a class="nav__link nav__link--current" href="#">
 							Подбор программы
 						</a>
@@ -63,11 +63,11 @@
 							</legend>
 							<div class="form__row form__row--cat-info">
 								<label class="form__label" for="cat-name">Имя:*</label>
-								<input class="form__field" type="text" id="cat-name" placeholder="Барсик" name="cat-name">
+								<input class="form__field" type="text" id="cat-name" placeholder="Барсик" name="cat-name" required>
 							</div>
 							<div class="form__row form__row--cat-info">
 								<label class="form__label" for="cat-weight">Вес (кг):*</label>
-								<input class="form__field" type="text" id="cat-weight" placeholder="7" name="cat-weight">
+								<input class="form__field" type="text" id="cat-weight" placeholder="7" name="cat-weight" required>
 							</div>
 							<div class="form__row form__row--cat-info form__row--age">
 								<label class="form__label" for="cat-age">Возраст (лет):</label>
@@ -107,7 +107,7 @@
 							<div class="form__row form__row--email">
 								<label for="email" class="form__label form__label--email">E-mail:*</label>
 								<div class="form__field-container">
-									<input class="form__field form__field--email" type="email" id="email" placeholder="kuklachev@gmail.com" name="owner-email">
+									<input class="form__field form__field--email" type="email" id="email" placeholder="kuklachev@gmail.com" name="owner-email" required>
 									<svg class="form__field-icon form__field-icon--email" width="17" height="13">
 										<use xlink:href="#icon-mail"></use>
 									</svg>
@@ -116,7 +116,7 @@
 							<div class="form__row form__row--phone">
 								<label for="phone" class="form__label form__label--phone">Телефон:*</label>
 								<div class="form__field-container">
-									<input class="form__field form__field--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" name="owner-phone">
+									<input class="form__field form__field--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" name="owner-phone" required>
 									<svg class="form__field-icon form__field-icon--phone" width="20" height="20">
 										<use xlink:href="#icon-phone"></use>
 									</svg>
@@ -164,7 +164,7 @@
 						</div>
 					</fieldset>
 					<div class="form__send">
-						<button class="form__submit button" type="submit">
+						<button class="form__submit button button--green" type="submit">
 							отправить заявку
 						</button>
 						<p class="form__hint typography typography--text">

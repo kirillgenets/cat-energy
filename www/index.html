@@ -4,6 +4,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Cat Energy / Главная</title>
+		<link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+		<link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 	<body>
@@ -20,22 +22,22 @@
 			<div class="header__higher-panel">
 				<a class="header__logo" href="#"></a>		
 			</div>
-			<nav class="nav nav--main">
-				<button class="nav__toggler">
+			<nav class="nav">
+				<button class="nav__toggler nav__toggler--no-js">
 					<span class="visually-hidden">Открыть меню</span>
 				</button>
 				<ul class="nav__list">
-					<li class="nav__item nav__item--main">
+					<li class="nav__item">
 						<a class="nav__link nav__link--current nav__link--main" href="#">
 							Главная
 						</a>
 					</li>
-					<li class="nav__item nav__item--long">
+					<li class="nav__item">
 						<a class="nav__link nav__link--main" href="catalog.html">
 							Каталог продукции
 						</a>
 					</li>
-					<li class="nav__item nav__item--choose-program nav__item--long">
+					<li class="nav__item">
 						<a class="nav__link nav__link--main" href="form.html">
 							Подбор программы
 						</a>
@@ -61,7 +63,7 @@
 					<source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
 					<img class="intro__img" width="280" height="270" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Пример питания Cat Energy">
 				</picture>
-				<a class="intro__button button" href="form.html">
+				<a class="intro__button button button--green" href="form.html">
 					подобрать программу
 				</a>
 			</section>

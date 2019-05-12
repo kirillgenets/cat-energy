@@ -11,17 +11,10 @@ BUTTON BLOCK
 	margin: 0 auto;
 	font: inherit;
 	text-transform: uppercase;
-	font-weight: normal;
 	text-align: center;
 	font-size: 14px;
 	width: 280px;
 	border: none;
-
-	&:hover,
-	&:focus {
-		background-color: #5eaa2f;
-	}
-
 	&:active {
 		color: rgba(255, 255, 255, 0.3);
 	}
@@ -30,10 +23,21 @@ BUTTON BLOCK
 		background-color: #f2f2f2;
 		color: $light-grey;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: #f2f2f2;
 			color: $light-grey;
 		}
+
+	}
+
+	&--green {
+		
+		&:hover,
+		&:focus {
+			background-color: #5eaa2f;
+		}
+
 	}
 }
 

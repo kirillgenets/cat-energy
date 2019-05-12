@@ -103,6 +103,18 @@ INTRO
 		padding-top: 0;
 		padding-bottom: 190px;
 		padding-left: 193px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: -112px;
+			z-index: 1;
+			width: 50vw;
+			height: 696px;
+			background-image: url(../img/index-background-desktop@1x.jpg);
+		}
+		
 	}
 	
 	.intro__title {

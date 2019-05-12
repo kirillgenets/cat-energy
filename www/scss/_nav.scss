@@ -19,6 +19,10 @@ NAVIGATION
 	width: 18px;
 	background-color: rgba(0,0,0,0);
 	border: none;
+
+	&--no-js {
+		display: none;
+	}
 }
 
 .nav__item {
@@ -26,6 +30,7 @@ NAVIGATION
 	text-align: center;
 	padding: 25px 0;
 	border-top: 1px solid #cdcdcd;
+	white-space: nowrap;
 
 	&--choose-program {
 		border-bottom: 1px solid #cdcdcd;
@@ -36,12 +41,13 @@ NAVIGATION
 	color: $dark-grey;
 	font-size: 20px;
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 600;
 	margin: 0;
 	padding: 0;
 }
 
 @media screen and (min-width: $tablet) {
+
 	.nav__toggler {
 		display: none;
 	}
@@ -56,61 +62,41 @@ NAVIGATION
 		display: flex;
 		justify-content: center;
 		padding: 0;
-		border-top: none;
+		border: none;
 		margin-right: 31px;
 		max-width: 165px;
-
-		&--main {
-			width: 65px;
-		}
-
-		&--choose-program {
-			border-bottom: none;
-			margin-right: 0;
-		}
 	}
 
 	.nav__link {
 		font-size: 18px;
 		padding-bottom: 9px;
+		font-weight: normal;
 		border-bottom: 2px solid rgba(0,0,0,0);
 
 		&--current {		
 			border-color: $green;
 			cursor: default;
+
+			&:hover, 
+			&:active {
+				opacity: 1;
+			}
+
 		}
+
+		&:hover {
+			opacity: 0.5;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
+
 	}
 	
 }
 
 @media screen and (min-width: $desktop) {
-
-	.nav {
-
-		&--main {
-
-			&::before {
-				content: '';
-				position: absolute;
-				right: 0;
-				top: 0;
-				z-index: 1;
-				width: 50vw;
-				height: 696px;
-				background-image: url(../img/index-background-desktop@1x.jpg);
-			}
-			
-		}
-
-	}
-
-	.nav__item {
-
-		&--long {
-			min-width: 170px;
-		}
-		
-	}
 
 	.nav__link {
 		z-index: 2;
