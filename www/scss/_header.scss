@@ -21,14 +21,6 @@ HEADER
 	background-image: url(../img/logo-mobile.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-
-	&:hover {
-		opacity: 0.7;
-	}
-
-	&:active {
-		opacity: 0.5;
-	}
 }
 
 /*RESPONSIVE*/
@@ -47,6 +39,15 @@ HEADER
 		height: 58px;
 		width: 173px;
 		background-image: url(../img/logo-tablet.svg);
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		&:active {
+			opacity: 0.5;
+		}
+		
 	}
 
 	.header__higher-panel {

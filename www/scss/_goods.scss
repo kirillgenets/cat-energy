@@ -1,26 +1,32 @@
 /********
-PRODUCT
+GOODS
 ********/
 
-.product {
+.goods {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.goods__product {
 	display: flex;
 	flex-direction: column;
 	border-top: 1px solid #cdcdcd;
 	padding: 23px 20px;
 }
 
-.product__info {
+.goods__product-info {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
 }
 
-.product__image {
+.goods__product-image {
 	margin-top: -20px;
 	margin-left: -5px;
 }
 
-.product__title {
+.goods__product-title {
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: normal;
@@ -49,7 +55,7 @@ PRODUCT
 	}
 }
 
-.product__text {
+.goods__product-text {
 
 	&--find-more {
 		margin: 0;
@@ -59,7 +65,7 @@ PRODUCT
 
 }
 
-.product__order {
+.goods__product-order {
 	width: 100%;
 	padding-top: 11px;
 	padding-bottom: 10px;
@@ -70,7 +76,7 @@ PRODUCT
 	}
 }
 
-.product__content {
+.goods__product-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -78,19 +84,19 @@ PRODUCT
 	margin-bottom: 20px;
 }
 
-.product__indicator-container {
+.goods__product-indicator-container {
 	font-size: 12px;
 	margin: 0;
 	padding: 0;	
 }
 
-.product__indicator-value-container {
+.goods__product-indicator-value-container {
 	font-size: 12px;
 	padding: 0;
 	margin: 0 -10px 0 0;
 }
 
-.product__indicators {
+.goods__product-indicators {
 	align-self: flex-end;
 	width: calc(100vw - 144px - 60px);
 	margin: 0;
@@ -98,7 +104,7 @@ PRODUCT
 	list-style: none;
 }
 
-.product__indicator {
+.goods__product-indicator {
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -106,7 +112,7 @@ PRODUCT
 	justify-content: space-between;
 }
 
-.product__inside {
+.goods__product-inside {
 
 	&--find-more {
 		padding: 0 20px 25px 20px;
@@ -121,8 +127,15 @@ PRODUCT
 /*RESPONSIVE*/
 
 @media screen and (min-width: $tablet) {
-	
-	.product {
+
+	.goods {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.goods__product {
 		border: none;
 		padding: 0;
 		margin-bottom: 58px;
@@ -137,12 +150,12 @@ PRODUCT
 
 	}
 
-	.product__info {
+	.goods__product-info {
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.product__title {
+	.goods__product-title {
 		font-size: 20px;
 		max-width: 130px;
 		text-align: center;
@@ -166,12 +179,12 @@ PRODUCT
 
 	}
 
-	.product__content {
+	.goods__product-content {
 		align-items: center;
 		margin: 0;
 	}
 
-	.product__image-container {
+	.goods__product-image-container {
 		min-height: 208px;
 		display: flex;
 		flex-direction: column;
@@ -179,28 +192,28 @@ PRODUCT
 		margin-bottom: 39px;
 	}
 
-	.product__indicators {
+	.goods__product-indicators {
 		width: 249px;
 	}
 
-	.product__indicator {
+	.goods__product-indicator {
 		border-bottom: 1px solid #cdcdcd;
 		padding-bottom: 6px;
 	}
 
-	.product__indicator-container {
+	.goods__product-indicator-container {
 		font-size: 16px;
 		margin: 0;
 		padding: 0;
 	}
 
-	.product__indicator-value-container {
+	.goods__product-indicator-value-container {
 		font-size: 16px;
 		margin: 0;
 		padding: 0;
 	}
 
-	.product__image {
+	.goods__product-image {
 		width: 324px;
 
 		&--small {
@@ -214,7 +227,7 @@ PRODUCT
 
 	}
 
-	.product__order {
+	.goods__product-order {
 		width: 249px;
 		margin: 33px 37px 40px 38px;
 
@@ -225,7 +238,7 @@ PRODUCT
 
 	}
 
-	.product__inside {
+	.goods__product-inside {
 
 		&--find-more {
 			border: 1px solid #cdcdcd;
@@ -233,7 +246,7 @@ PRODUCT
 
 	}
 
-	.product__text {
+	.goods__product-text {
 
 		&--find-more {
 			font-size: 16px;
@@ -248,15 +261,20 @@ PRODUCT
 
 @media screen and (min-width: $desktop) {
 
-	.product {
+	.goods {
+		width: 1220px;
+		margin: 0 auto;
+	}
+
+	.goods__product {
 		width: 245px;
 	}
 	
-	.product__image {
+	.goods__product-image {
 		width: 245px;
 	}
 
-	.product__order {
+	.goods__product-order {
 		width: 169px;
 		margin: 33px 38px 40px 38px;
 
@@ -266,7 +284,7 @@ PRODUCT
 
 	}
 
-	.product__indicators {
+	.goods__product-indicators {
 		width: 170px;
 	}
 

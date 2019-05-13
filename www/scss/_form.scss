@@ -87,20 +87,6 @@ FORM
 		    box-sizing: border-box;
 	    }
 	}
-
-	&--radio:hover, &--checkbox:hover {
-
-		&::before {
-			border-color: #bababa;
-		}
-
-	}
-
-	&--radio:active, &--checkbox:active {
-
-		opacity: 0.3;
-
-	}
 	
 	&--radio {
 
@@ -416,6 +402,20 @@ FORM
 		&--checkbox {
 			margin-right: 0;
 			margin-left: 0;
+		}
+
+		&--radio:hover, &--checkbox:hover {
+
+			&::before {
+				border-color: #bababa;
+			}
+
+		}
+
+		&--radio:active, &--checkbox:active {
+
+			opacity: 0.3;
+
 		}
 
 	}

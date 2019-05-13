@@ -12,15 +12,6 @@ FOOTER
 
 .footer__logo {
 	margin-bottom: 30px;
-
-	&:hover {
-		opacity: 0.8;
-	}
-
-	&:active {
-		opacity: 0.6;
-	}
-
 }
 
 .footer__social-container {
@@ -56,15 +47,6 @@ FOOTER
 
 .footer__social-icon {
 	fill: $light-grey;
-
-	&:hover, &:active {
-		fill: $green;
-	}
-
-	&:active {
-		opacity: 0.3;
-	}
-
 }
 
 .footer__htmlacademy {
@@ -80,24 +62,10 @@ FOOTER
 .footer__htmlacademy-icon {
 	fill: $light-grey;
 	margin-right: -9px;
-
-	&:hover, &:active {
-		fill: $green;
-	}
-
-	&:active {
-		opacity: 0.3;
-	}
-
 }
 
 .footer__htmlacademy-link {
 	font-size: 16px;
-
-	&:active {
-		opacity: 0.3;
-	}
-
 }
 
 .footer__map-container {
@@ -121,6 +89,15 @@ FOOTER
 
 	.footer__logo {
 		margin: 0;
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
+		
 	}
 
 	.footer__social-container {
@@ -159,6 +136,15 @@ FOOTER
 			width: 14px;
 			height: 28px;
 		}
+
+		&:hover, &:active {
+			fill: $green;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
+
 	}
 
 	.footer__htmlacademy {
@@ -168,10 +154,24 @@ FOOTER
 
 	.footer__htmlacademy-link {
 		margin-right: 13px;
+
+		&:active {
+			opacity: 0.3;
+		}
+
 	}
 
 	.footer__htmlacademy-icon {
 		fill: #666;
+
+		&:hover, &:active {
+			fill: $green;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
+
 	}
 
 }

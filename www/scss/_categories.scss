@@ -118,15 +118,6 @@ CATEGORIES
 	}
 }
 
-.categories__item-link:hover {
-
-	&::after {
-		right: -70px;
-		background-image: url(../img/icon-right-arrow-verylong.svg);
-		width: 54px;
-	}
-}
-
 /*RESPONSIVE*/
 
 @media screen and (min-width: $tablet) {
@@ -222,6 +213,17 @@ CATEGORIES
 			right: -40px;
 			top: 27%;
 		}
+
+		&:hover {
+			
+			&:after {
+				right: -70px;
+				background-image: url(../img/icon-right-arrow-verylong.svg);
+				width: 54px;
+			}
+
+		}
+
 	}
 
 }

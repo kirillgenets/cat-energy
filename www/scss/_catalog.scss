@@ -17,11 +17,6 @@ CATALOG SECTION
 	margin: 0;
 }
 
-.catalog__goods-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
 
 /*RESPONSIVE*/
 
@@ -38,13 +33,6 @@ CATALOG SECTION
 		margin-bottom: 74px;
 	}
 
-	.catalog__goods-list {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
-
 }
 
 @media screen and (min-width: $desktop) {
@@ -55,11 +43,6 @@ CATALOG SECTION
 	
 	.catalog__title {
 		margin-left: 0;
-	}
-
-	.catalog__goods-list {
-		width: 1220px;
-		margin: 0 auto;
 	}
 
 }
