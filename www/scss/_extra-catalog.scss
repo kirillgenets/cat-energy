@@ -7,12 +7,6 @@ EXTRA CATALOG
 	margin: 27px 0 30px 0;
 }
 
-.extra-catalog__goods-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
 .extra-catalog__gift {
 	margin: 40px 20px 35px 20px;
 	padding-top: 50px;
@@ -68,11 +62,6 @@ EXTRA CATALOG
 	.extra-catalog__title {
 		margin-left: 30px;
 		padding: 0 37px;
-	}
-
-	.extra-catalog__goods-list {
-		border: 1px solid #cdcdcd;
-		margin: 0 30px;
 	}
 
 	.extra-catalog__gift {
@@ -131,14 +120,6 @@ EXTRA CATALOG
 		margin: 0 auto;
 	}
 
-	.extra-catalog__goods-list {
-		margin: 0;
-		width: 825px;
-		border-left: none;
-		border-right: none;
-		padding: 0;
-	}
-
 	.extra-catalog__gift {
 		padding-top: 65px;
 		padding-bottom: 43px;
@@ -160,5 +141,4 @@ EXTRA CATALOG
 
 	}
 
-	
 }
