@@ -41,7 +41,8 @@ NAVIGATION
 	color: $dark-grey;
 	font-size: 20px;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-family: 'Oswald Medium', Arial, sans-serif;
+	font-weight: 500;
 	margin: 0;
 	padding: 0;
 }
@@ -71,7 +72,16 @@ NAVIGATION
 		font-size: 18px;
 		padding-bottom: 9px;
 		font-weight: normal;
+		font-family: 'Oswald Regular', Arial, sans-serif;
 		border-bottom: 2px solid rgba(0,0,0,0);
+
+		&:hover {
+			opacity: 0.5;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
 
 		&--current {		
 			border-color: $green;
@@ -82,14 +92,6 @@ NAVIGATION
 				opacity: 1;
 			}
 
-		}
-
-		&:hover {
-			opacity: 0.5;
-		}
-
-		&:active {
-			opacity: 0.3;
 		}
 
 	}

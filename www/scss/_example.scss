@@ -262,9 +262,10 @@ EXAMPLE
 		border-radius: 50%;
 		background-color: #fff;
 		box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
-		top: calc(50% - 17px);
-		left: calc(50% - 17px);
+		top: calc(50% - 18px);
+		left: calc(50% - 18px);
 		cursor: pointer;
+		border: 2px solid rgba(0,0,0,0);
 
 		&::after {
 			content: '';
@@ -275,6 +276,11 @@ EXAMPLE
 			top: calc(50% - 4px);
 			left: calc(50% - 4px);
 			background-color: $green;
+		}
+
+		&:active {
+			box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+  			border: 2px solid $green;
 		}
 
 	}
@@ -289,6 +295,15 @@ EXAMPLE
 		&--before {
 			margin-right: 24px;
 		}
+		
+		&:hover {
+			border-bottom: 1px solid rgba(0,0,0,.23);
+		}
+
+		&:active {
+			border-bottom: 1px solid rgba(0,0,0,0);
+		}
+
 	}
 
 }

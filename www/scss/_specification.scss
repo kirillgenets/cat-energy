@@ -3,10 +3,16 @@ SPECIFICATION
 **********/
 
 @font-face{
-	font-family: 'Oswald';
+	font-family: 'Oswald Regular';
 	src: url('../fonts/oswaldregular.woff2') format('woff2'),
-		url('../fonts/oswaldmedium.woff2') format('woff2'),
-		url('../fonts/oswaldregular.woff') format('woff'),		
+		url('../fonts/oswaldregular.woff') format('woff');
+	font-display: swap;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Oswald Medium';
+	src: url('../fonts/oswaldmedium.woff2') format('woff2'),
 		url('../fonts/oswaldmedium.woff') format('woff');
 	font-display: swap;
 	font-weight: normal;
@@ -15,11 +21,26 @@ SPECIFICATION
 a {
 	text-decoration: none;
 	color: $dark-grey;
+
+	&:active,
+	&:focus {
+		outline: none;	
+	}
+
+}
+
+button {
+
+	&:active,
+	&:focus {
+		outline: none;
+	}
+
 }
 
 body {
 	color: $dark-grey;
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'Oswald Regular', Arial, sans-serif;
 }
 
 img {

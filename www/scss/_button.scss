@@ -15,6 +15,7 @@ BUTTON BLOCK
 	font-size: 14px;
 	width: 280px;
 	border: none;
+
 	&:active {
 		color: rgba(255, 255, 255, 0.3);
 	}
@@ -25,8 +26,13 @@ BUTTON BLOCK
 
 		&:hover,
 		&:focus {
-			background-color: #f2f2f2;
+			background-color: #ebebeb;
 			color: $light-grey;
+		}
+
+		&:active {
+			background-color: #ebebeb;
+			color: rgba(68, 68, 68, 0.3);
 		}
 
 	}
