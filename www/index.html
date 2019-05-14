@@ -37,7 +37,7 @@
 							Каталог продукции
 						</a>
 					</li>
-					<li class="nav__item">
+					<li class="nav__item nav__item--choose-program">
 						<a class="nav__link nav__link--main" href="form.html">
 							Подбор программы
 						</a>
@@ -57,10 +57,8 @@
 					Занялся собой? Займись котом!
 				</p>
 				<picture>
-					<source media="(min-width: 1200px), (min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/index-can-desktop@2x.png">
-					<source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png">
-					<source media="(min-width: 768px), (min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/index-can-tablet@2x.jpg">
-					<source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+					<source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+					<source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
 					<img class="intro__img" width="280" height="270" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Пример питания Cat Energy">
 				</picture>
 				<a class="intro__button button button--green" href="form.html">
@@ -80,7 +78,7 @@
 								похудение
 							</h3>
 						</div>
-						<p class="categories__item-text categories__item-text--slim typography typography--text">
+						<p class="categories__item-text categories__item-text--slim typography--text">
 							Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
 						</p>
 						<a class="categories__item-link" href="catalog.html#slim-catalog">
@@ -94,7 +92,7 @@
 								набор массы
 							</h3>
 						</div>
-						<p class="categories__item-text categories__item-text--pro typography typography--text">
+						<p class="categories__item-text categories__item-text--pro typography--text">
 							Завоевать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастрить необходимые мышцы!
 						</p>
 						<a class="categories__item-link" href="catalog.html#pro-catalog">
@@ -108,31 +106,31 @@
 
 			<section class="advantages">
 				<div class="advantages__wrapper">
-					<h2 class="advantages__title typography typography--section-title">
+					<h2 class="advantages__title typography--section-title">
 						Как это работает
 					</h2>
 					<ul class="advantages__features">
 						<li class="advantages__item advantages__item--useful">
 							<h3 class="visually-hidden">Полезно</h3>
-							<p class="advantages__item-text advantages__item-text--leaf typography typography--text">
+							<p class="advantages__item-text advantages__item-text--leaf typography--text">
 								Функциональное питание содержит только полезные питательные вещества.
 							</p>
 						</li>
 						<li class="advantages__item advantages__item--easy">
 							<h3 class="visually-hidden">Удобно</h3>
-							<p class="advantages__item-text advantages__item-text--powder typography typography--text">
+							<p class="advantages__item-text advantages__item-text--powder typography--text">
 								Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
 							</p>
 						</li>
 						<li class="advantages__item advantages__item--functional">
 							<h3 class="visually-hidden">Функционально</h3>
-							<p class="advantages__item-text advantages__item-text--dining typography typography--text">
+							<p class="advantages__item-text advantages__item-text--dining typography--text">
 								Замените один-два приема обычной еды на наше функциональное питание.
 							</p>
 						</li>
 						<li class="advantages__item advantages__item--effective">
 							<h3 class="visually-hidden">Результативно</h3>
-							<p class="advantages__item-text advantages__item-text--clock typography typography--text">
+							<p class="advantages__item-text advantages__item-text--clock typography--text">
 								Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
 							</p>
 						</li>
@@ -144,10 +142,10 @@
 
 			<section class="example">
 				<div class="example__content">
-					<h2 class="example__title typography typography--section-title">
+					<h2 class="example__title typography--section-title">
 						Живой пример
 					</h2>
-					<p class="example__text typography typography--text">
+					<p class="example__text typography--text">
 						Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит 16 часов в день.
 					</p>
 					<div class="example__info">
@@ -170,15 +168,13 @@
 					<ul class="example__cat-list">
 						<li class="example__cat example__cat--before">
 							<picture>
-								<source media="(min-width: 768px), (min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/before-tablet@2x.png">
-								<source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+								<source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
 								<img class="example__cat-image example__cat-image--before" width="320" height="241" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="До начала программы">
 							</picture>
 						</li>
 						<li class="example__cat example__cat--after">
 							<picture>
-								<source media="(min-width: 768px), (min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="img/after-tablet@2x.png">
-								<source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+								<source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
 								<img class="example__cat-image example__cat-image--after" width="300" height="221" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="После окончания программы">
 							</picture>
 						</li>
@@ -209,7 +205,7 @@
 					<h3 class="map__offer">
 						приглашаем к сотрудничеству дилеров!
 					</h3>
-					<p class="map__adress typography typography--text">
+					<p class="map__adress typography--text">
 						ул. Большая Конюшенная, д. 19/8 
 						<span class="map__city">Санкт-Петербург</span>
 					</p>
@@ -248,7 +244,7 @@
 					</ul>
 				</div>
 				<div class="footer__htmlacademy">
-					<a class="footer__htmlacademy-link typography typography--text" href="https://htmlacademy.ru" target="_blank">
+					<a class="footer__htmlacademy-link typography--text" href="https://htmlacademy.ru" target="_blank">
 						HTML Academy
 					</a>
 					<a href="https://htmlacademy.ru" target="_blank">
