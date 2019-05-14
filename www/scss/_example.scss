@@ -20,7 +20,6 @@ EXAMPLE
 
 .example__indicators {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	margin: 0 20px 11px 20px;
 }
@@ -70,7 +69,6 @@ EXAMPLE
 	margin: 0;
 	padding: 0;
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 }
 
@@ -89,7 +87,6 @@ EXAMPLE
 
 .example__changes {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	padding: 0;
@@ -122,6 +119,7 @@ EXAMPLE
 
 .example__slider-thumb {
 	background-color: $green;
+	border: none;
 	width: calc(50% - 6px);
 	height: 50%;
 	border-radius: 3px;
@@ -156,7 +154,6 @@ EXAMPLE
 
 	.example__info {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 		margin-left: 30px;
@@ -317,7 +314,6 @@ EXAMPLE
 	.example {
 		border: none;
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 	}
 

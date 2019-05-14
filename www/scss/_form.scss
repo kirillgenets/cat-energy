@@ -33,7 +33,6 @@ FORM
 
 .form__row {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 15px;
@@ -270,7 +269,6 @@ FORM
 	.form__block-content {
 		width: calc(100% - 170px);
 		display: flex;
-		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
@@ -426,7 +424,6 @@ FORM
 
 	.form__send {
 		display: flex;
-		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
 		margin-left: 70px;
@@ -445,14 +442,12 @@ FORM
 
 	.form__cat {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 		padding-right: 110px;
 	}
 
 	.form__owner {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 		padding: 0 110px 71px 110px;
 	}

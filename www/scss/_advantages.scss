@@ -25,7 +25,6 @@ ADVANTAGES
 
 .advantages__item {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	margin-top: 0;
 	margin-bottom: 27px;
@@ -137,7 +136,6 @@ ADVANTAGES
 
 	.advantages__features {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
