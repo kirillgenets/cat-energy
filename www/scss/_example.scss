@@ -315,6 +315,7 @@ EXAMPLE
 		border: none;
 		display: flex;
 		justify-content: space-between;
+		align-items: flex-end;
 	}
 
 	.example__content {
@@ -335,6 +336,7 @@ EXAMPLE
 
 	.example__info {
 		margin-left: 110px;
+		margin-bottom: 73px;
 		flex-direction: column;
 		align-items: flex-start;
 	}
@@ -366,6 +368,7 @@ EXAMPLE
 
 	.example__changes-container {
 		padding-right: 100px;
+		padding-bottom: 73px;
 		background-image: linear-gradient(to bottom, #fff, #fff 190px, #eaeaea 190px, #eaeaea);
 
 		&::before {

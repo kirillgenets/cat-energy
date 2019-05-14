@@ -124,9 +124,9 @@ ADVANTAGES
 @media screen and (min-width: $tablet) {
 
 	.advantages {
+		display: block;
 		padding: 0 30px 55px 30px;
 		margin: 0;
-		display: block;
 	}
 
 	.advantages__title {
