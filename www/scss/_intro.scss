@@ -10,10 +10,13 @@ INTRO
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center bottom, center top;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	color: #fff;
+}
+
+.intro__wrapper {
+	width: 280px;
+	margin: 0 auto;
+	padding-top: 29px;
 }
 
 .intro__title {
@@ -22,7 +25,7 @@ INTRO
 	font-weight: normal;
 	line-height: 1;
 	padding: 0;
-	margin-top: 29px;
+	margin-top: 0;
 	margin-bottom: 22px;
 }
 
@@ -38,7 +41,6 @@ INTRO
 .intro__button {
 	padding-top: 14px;
 	padding-bottom: 11px;
-	margin: 0 20px;
 }
 
 /*RESPONSIVE*/
@@ -56,10 +58,15 @@ INTRO
 	.intro {
 		background: #fff;
 		padding-top: 27px;
-		padding-left: 104px;
-		padding-bottom: 530px;
 		align-items: flex-start;
 		position: relative;
+	}
+
+	.intro__wrapper {
+		width: 709px;
+		margin-left: 120px;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.intro__title {
@@ -68,6 +75,7 @@ INTRO
 		text-align: left;
 		max-width: 470px;
 		margin-bottom: 38px;
+		order: 0;
 	}
 
 	.intro__subtitle {
@@ -75,15 +83,19 @@ INTRO
 		font-size: 20px;
 		text-align: left;
 		margin-bottom: 45px;
+		order: 1;
 	}
 
-	.intro__img {
-		position: absolute;
-		z-index: 0;
-		bottom: 0;
-		left: calc(50% - 354.5px);
+	.intro__img {	
 		width: 709px;
 		height: 609px;
+		z-index: -1;
+	}
+
+	.intro__img-container {
+		order: 3;
+		margin-top: -80px;
+		margin-left: -90px;
 	}
 
 	.intro__button {
@@ -93,6 +105,7 @@ INTRO
 		padding-top: 16px;
 		padding-bottom: 14px;
 		font-size: 20px;
+		order: 2;
 	}
 
 }
@@ -101,7 +114,7 @@ INTRO
 
 	.intro {
 		padding-top: 0;
-		padding-bottom: 190px;
+		padding-bottom: 90px;
 		padding-left: 193px;
 
 		&::before {
@@ -118,6 +131,13 @@ INTRO
 		}
 		
 	}
+
+	.intro__wrapper {
+		max-height: 500px;
+		flex-wrap: wrap;
+		margin-left: 0;
+		padding-top: 0;
+	}
 	
 	.intro__title {
 		margin-top: 113px;
@@ -128,10 +148,13 @@ INTRO
 		margin-bottom: 53px;
 	}
 
+	.intro__img-container {
+		margin-top: 34px;
+		margin-left: -100px;
+		z-index: 2;
+	}
+
 	.intro__img {
-		z-index: 3;
-		left: 560px;
-		top: 30px;
 		width: 552px;
 		height: 499px;
 	}
