@@ -121,11 +121,11 @@ GOODS
 .goods__product-inside {
 
 	&--find-more {
-		padding: 0 20px 25px 20px;
-		border-bottom: 1px solid #cdcdcd;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding: 0 20px 25px 20px;
+		border-bottom: 1px solid #cdcdcd;
 	}
 
 }
@@ -190,10 +190,10 @@ GOODS
 	}
 
 	.goods__product-image-container {
-		min-height: 208px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
+		min-height: 208px;
 		margin-bottom: 39px;
 	}
 

@@ -65,11 +65,11 @@ EXAMPLE
 }
 
 .example__cat-list {
+	display: flex;
+	justify-content: center;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	display: flex;
-	justify-content: center;
 }
 
 .example__cat {
@@ -262,7 +262,7 @@ EXAMPLE
 		top: calc(50% - 18px);
 		left: calc(50% - 18px);
 		cursor: pointer;
-		border: 2px solid rgba(0,0,0,0);
+		border: 1px solid #cdcdcd;
 
 		&::after {
 			content: '';
@@ -312,10 +312,10 @@ EXAMPLE
 @media screen and (min-width: $desktop) {
 
 	.example {
-		border: none;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+		border: none;
 	}
 
 	.example__content {

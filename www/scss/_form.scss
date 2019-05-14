@@ -68,18 +68,18 @@ FORM
 	max-width: 50%;
 
 	&--radio, &--checkbox {
+	    display: block;
 		max-width: 100%;
 		cursor: pointer;
 		position: relative;
-	    display: block;
 	    padding-top: 11px;	
 	    padding-left: 45px;
 
 	    &::before {
+		    display: block;
 		    cursor: pointer;
 			content: '';
 			position: absolute;
-		    display: block;
 		    width: 30px;
 		    height: 30px;
 		    border: 1px solid #cdcdcd;
@@ -267,8 +267,8 @@ FORM
 	}
 
 	.form__block-content {
-		width: calc(100% - 170px);
 		display: flex;
+		width: calc(100% - 170px);
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
