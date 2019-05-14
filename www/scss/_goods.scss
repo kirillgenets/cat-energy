@@ -200,6 +200,8 @@ GOODS
 
 	.goods__product-indicators {
 		width: 249px;
+		border-collapse: collapse;
+		border-spacing: 0;
 	}
 
 	.goods__product-indicator {
@@ -210,23 +212,8 @@ GOODS
 		font-size: 16px;
 		padding-bottom: 6px;
 		position: relative;
-		/*border-bottom: 1px solid #cdcdcd;*/
+		border-bottom: 1px solid #cdcdcd;
 		padding-left: 0;
-
-		&--right {
-
-			&::after {
-				content: '';
-				position: absolute;
-				right: 0;
-				bottom: 0;
-				padding: 0;
-				height: 1px;
-				width: 247px;
-				background-color: #cdcdcd;
-			}
-
-		}
 	}
 
 	.goods__product-image {
@@ -304,13 +291,6 @@ GOODS
 
 	.goods__product-indicators {
 		width: 170px;
-	}
-
-	.goods__product-indicator-text {
-		
-		&::after {
-			width: 168px;
-		}
 	}
 
 }
