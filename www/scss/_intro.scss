@@ -4,9 +4,8 @@ INTRO
 
 
 .intro {
-	padding: 0 20px;
 	background-color: $green;
-	background-image: linear-gradient(to top,#fff 175px,transparent 175px),url(../img/index-background-mobile@1x.jpg);
+	background-image: linear-gradient(to top, #fff 175px, transparent 175px), url(../img/index-background-mobile@1x.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center bottom, center top;
@@ -35,11 +34,11 @@ INTRO
 	text-align: center;
 	font-weight: normal;
 	margin-top: 0;
-	margin-bottom: 30px;
+	margin-bottom: 28px;
 }
 
 .intro__button {
-	padding-top: 14px;
+	padding-top: 13px;
 	padding-bottom: 11px;
 }
 

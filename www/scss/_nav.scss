@@ -8,11 +8,6 @@ NAVIGATION
 	margin: 0;
 	padding: 0;
 	list-style: none;
-
-	&--closed {
-		display: none;
-	}
-
 }
 
 .nav__toggler {
@@ -27,15 +22,6 @@ NAVIGATION
 
 	&--no-js {
 		display: none;
-	}
-
-	&--closed-menu {
-		display: block;
-		background-image: url(../img/icon-mobile-menu.svg);
-		height: 19px;
-		width: 24px;
-		background-repeat: no-repeat;
-		background-size: 100%;
 	}
 
 }
@@ -60,6 +46,34 @@ NAVIGATION
 	font-weight: 500;
 	margin: 0;
 	padding: 0;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 767px) {
+
+	.nav__list {
+		
+		&--closed {
+			display: none;
+		}
+		
+	}
+
+	.nav__toggler {
+
+		&--closed-menu {
+			display: block;
+			right: 21px;
+			background-image: url(../img/icon-mobile-menu.svg);
+			height: 19px;
+			width: 24px;
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+
+	}
+
 }
 
 @media screen and (min-width: $tablet) {
