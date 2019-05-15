@@ -10,16 +10,17 @@ CONTACTS
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 31px 20px 26px 20px;
+	padding: 30px 20px 26px 20px;
 }
 
 .map__offer {
+	max-width: 123px;
 	font-size: 16px;
 	font-weight: normal;
-	line-height: 1.25;
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
+	line-height: 1.25;
 }
 
 .map__adress {
