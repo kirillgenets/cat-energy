@@ -83,6 +83,7 @@ gulp.task('server', function () {
 	});
 
 	gulp.watch('www/scss/**/*.scss', gulp.series('css'));
+	gulp.watch('www/js/**/*.js', gulp.series('js'));
 	gulp.watch('www/img/icon-*.svg', gulp.series('sprite', 'html'));
 	gulp.watch('www/*.html', gulp.series('html', 'refresh'));
 
