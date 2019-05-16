@@ -56,7 +56,7 @@ INTRO
 	
 	.intro {
 		background: #fff;
-		padding-top: 27px;
+		padding-top: 31px;
 		align-items: flex-start;
 		position: relative;
 	}
@@ -64,8 +64,9 @@ INTRO
 	.intro__wrapper {
 		display: flex;
 		flex-direction: column;
-		width: 709px;
 		margin-left: 120px;
+		margin-right: 30px;
+		width: 640px;
 	}
 
 	.intro__title {
@@ -73,7 +74,7 @@ INTRO
 		font-size: 60px;
 		text-align: left;
 		max-width: 470px;
-		margin-bottom: 38px;
+		margin-bottom: 39px;
 		order: 0;
 	}
 
@@ -94,14 +95,15 @@ INTRO
 	.intro__img-container {
 		order: 3;
 		margin-top: -80px;
-		margin-left: -90px;
+		margin-left: 0px;
+		width: 609px;
 	}
 
 	.intro__button {
 		z-index: 1;
 		margin: 0;
 		width: 245px;
-		padding-top: 16px;
+		padding-top: 15px;
 		padding-bottom: 14px;
 		font-size: 20px;
 		order: 2;

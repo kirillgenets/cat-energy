@@ -29,9 +29,9 @@ HEADER
 
 	.header {
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
-		padding: 20px 39px 0 15px;
+		align-items: flex-start;
+		padding: 24px 30px 0 30px;
 	}
 	
 	.header__logo {

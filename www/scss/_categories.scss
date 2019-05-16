@@ -126,9 +126,10 @@ CATEGORIES
 	}
 
 	.categories__item {
-		padding: 75px 0 62px 52px;
+		padding: 74px 0 62px 52px;
+		margin-bottom: 30px;
 		max-width: 900px;
-		min-width: 695px;
+		min-width: 708px;
 		position: relative;
 
 		&::before {
@@ -159,6 +160,7 @@ CATEGORIES
 		}
 
 		&--pro {
+			margin-bottom: 0;
 
 			&::after {
 				content: '';
@@ -173,6 +175,7 @@ CATEGORIES
 			}
 
 		}
+
 	}
 
 	.categories__item-title {
@@ -190,18 +193,18 @@ CATEGORIES
 	}
 
 	.categories__item-heading {
-		margin-bottom: 24px;
+		margin-bottom: 21px;
 	}
 
 	.categories__item-text {
 		max-width: 380px;
 		margin-top: 0;
-		margin-bottom: 61px;
+		margin-bottom: 55px;
 		padding: 0;
 		border: none;
 
 		&--pro {
-			max-width: 338px;
+			max-width: 345px;
 		}
 	}
 
@@ -209,7 +212,7 @@ CATEGORIES
 		font-size: 20px;
 
 		&::after {
-			right: -40px;
+			right: -49px;
 			top: 27%;
 		}
 
