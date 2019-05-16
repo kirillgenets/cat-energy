@@ -47,7 +47,7 @@ INTRO
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 
 	.intro {
-		background-image: linear-gradient(to top,#fff 175px,transparent 175px),url(../img/index-background-mobile@2x.jpg);
+		background-image: linear-gradient(to top, #fff 175px, transparent 175px), url(../img/index-background-mobile@2x.jpg);
 	}
 
 }
@@ -156,6 +156,18 @@ INTRO
 	.intro__img {
 		width: 552px;
 		height: 499px;
+	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+		.intro {
+			
+			&::before {
+				background-image: url(../img/index-background-desktop@2x.jpg);
+			}
+
+		}
+
 	}
 
 }
