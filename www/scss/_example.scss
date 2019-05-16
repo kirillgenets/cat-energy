@@ -137,31 +137,33 @@ EXAMPLE
 
 	.example {
 		background-color: #fff;
-		padding: 51px 0 0 0;
+		padding: 41px 0 0 0;
 		border-top: 1px solid $bg-grey;
 	}
 
 	.example__title {
 		margin-top: 0;
 		margin-right: 0;
-		margin-bottom: 60px;
+		margin-bottom: 55px;
 		margin-left: 30px;
 	}
 
 	.example__text {
+		max-width: 680px;
 		margin-top: 0;
 		margin-left: 30px;
 		margin-right: 30px;
 		margin-bottom: 56px;
+		line-height: 1.5;
 	}
 
 	.example__info {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
 		margin-left: 30px;
 		margin-right: 30px;
-		margin-bottom: 80px;
+		margin-bottom: 68px;
 	}
 
 	.example__indicators {
@@ -191,11 +193,16 @@ EXAMPLE
 	}
 
 	.example__expences {
-		margin-top: -10px;
+		margin-top: 9px;
+		margin-bottom: 0;
 		font-size: 20px;
 		max-width: 175px;
 		text-align: right;
-		margin-bottom: 0;
+	}
+
+	.example__expences-property {
+		display: block;
+		margin-bottom: 8px;
 	}
 
 	.example__changes-container {
@@ -221,7 +228,7 @@ EXAMPLE
 
 	.example__cat {
 		z-index: 1;
-		margin: 0 0 13px 0;
+		margin: 0 0 18px 0;
 
 		&--before {
 			position: absolute;
@@ -292,7 +299,7 @@ EXAMPLE
 	.example__button {
 		z-index: 1;
 		font-size: 20px;
-		padding: 0 0 6px 0;
+		padding: 0 0 4px 0;
 		border-bottom: 1px dotted rgba(0,0,0,.23);
 		cursor: pointer;
 
