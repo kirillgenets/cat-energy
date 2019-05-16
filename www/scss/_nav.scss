@@ -33,6 +33,10 @@ NAVIGATION
 	border-top: 1px solid #cdcdcd;
 	white-space: nowrap;
 
+	&--index {
+		border: none;
+	}
+
 	&--choose-program {
 		border-bottom: 1px solid #cdcdcd;
 	}

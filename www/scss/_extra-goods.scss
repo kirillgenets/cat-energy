@@ -13,8 +13,8 @@ EXTRA GOODS
 	flex-direction: column;
 	align-items: stretch;
 	margin: 0 20px;
-	padding-top: 13px;
-	padding-bottom: 17px;
+	padding-top: 14px;
+	padding-bottom: 18px;
 	border-top: 1px solid #cdcdcd;
 
 	&--vitamins {
@@ -27,7 +27,7 @@ EXTRA GOODS
 	font-size: 16px;
 	line-height: 1;
 	font-weight: normal;
-	margin-bottom: 9px;
+	margin-bottom: 8px;
 	margin-top: 0;
 	padding: 0;
 }
@@ -46,8 +46,9 @@ EXTRA GOODS
 }
 
 .extra-goods__product-order {
+	font-size: 16px;
 	margin: 0;
-	padding: 12px 0;
+	padding: 11px 0 10px 0;
 	width: 100%;
 }
 

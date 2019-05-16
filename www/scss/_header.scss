@@ -12,6 +12,7 @@ HEADER
 	justify-content: flex-start;
 	align-items: center;
 	padding: 14px 20px 14px 20px;
+	border-bottom: 1px solid #cdcdcd;
 }
 
 .header__logo {
@@ -50,6 +51,7 @@ HEADER
 
 	.header__higher-panel {
 		padding: 0;
+		border-bottom: none;
 	}
 
 }

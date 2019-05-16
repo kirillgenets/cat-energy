@@ -12,17 +12,20 @@ GOODS
 	display: flex;
 	flex-direction: column;
 	border-top: 1px solid #cdcdcd;
-	padding: 23px 20px;
+	padding: 0 20px 23px 20px;
+	margin: 0 auto;
+
+	&--find-more {
+		border-bottom: 1px solid #cdcdcd;
+	}
+
 }
 
 .goods__product-info {
 	display: flex;
-	align-items: flex-start;
-}
-
-.goods__product-image {
-	margin-top: -20px;
-	margin-left: -5px;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2px;
 }
 
 .goods__product-title {
@@ -32,13 +35,14 @@ GOODS
 	max-width: 75px;
 	margin-top: 0;
 	padding: 0;
-	margin-bottom: 14px;
+	margin-bottom: 11px;
+	line-height: 1.25;
 
 	&--find-more {
 		max-width: 320px;
 		margin-top: 28px;
-		margin-bottom: 10px;
-		padding-top: 55px;
+		margin-bottom: 8px;
+		padding-top: 53px;
 		position: relative;
 
 		&::before {
@@ -67,11 +71,11 @@ GOODS
 .goods__product-order {
 	width: 100%;
 	padding-top: 11px;
-	padding-bottom: 10px;
+	padding-bottom: 11px;
 	font-size: 16px;
 
 	&--find-more {
-		margin-top: 20px;
+		margin-top: 22px;
 	}
 }
 
@@ -80,24 +84,11 @@ GOODS
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	margin-bottom: 20px;
-}
-
-.goods__product-indicator-container {
-	font-size: 12px;
-	margin: 0;
-	padding: 0;	
-}
-
-.goods__product-indicator-value-container {
-	font-size: 12px;
-	padding: 0;
-	margin: 0 -10px 0 0;
 }
 
 .goods__product-indicators {
 	align-self: flex-end;
-	width: calc(100vw - 144px - 60px);
+	width: 140px;
 	margin: 0;
 	padding: 0;
 }
@@ -109,8 +100,8 @@ GOODS
 }
 
 .goods__product-indicator-text {
-
 	font-size: 12px;
+	line-height: 12px;
 
 	&--right {
 		text-align: right;
@@ -124,8 +115,6 @@ GOODS
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 0 20px 25px 20px;
-		border-bottom: 1px solid #cdcdcd;
 	}
 
 }
