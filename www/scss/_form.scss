@@ -8,6 +8,9 @@ FORM
 
 .form__block {
 	padding-left: 20px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-top: 0;
 	margin: 0;
 	border: none;
 
@@ -16,11 +19,12 @@ FORM
 	}
 
 	&--type {
-		padding-top: 15px;
+		padding-top: 17px;
 		padding-bottom: 25px; 
 		border-top: 1px solid $bg-grey;
 		border-bottom: 1px solid $bg-grey;
 	}
+
 }
 
 .form__title {
@@ -35,7 +39,8 @@ FORM
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 15px;
+	margin-bottom: 14px;
+	margin-right: 20px;
 
 	&--age {
 		margin-bottom: 23px;
@@ -142,7 +147,7 @@ FORM
 	font-size: 16px;
 
 	&--comment {
-		width: calc(100% - 35px);
+		width: calc(100vw - 40px);
 		height: 150px;
 		resize: none;
 	}
@@ -183,12 +188,12 @@ FORM
 
 	&--email {
 		top: 16px;
-		right: 12px;
+		right: 15px;
 	}
 
 	&--phone {
 		top: 13px;
-		right: 10px;
+		right: 12px;
 	}
 }
 
@@ -199,15 +204,20 @@ FORM
 	margin-bottom: 33px;
 
 	&::after {
-		width: calc(100vw - 37px);
+		width: calc(100vw - 20px);
 	}
 
 	&--owner-info {
 		margin-top: 31px;
+
+		&::after {
+			top: 12px;
+		}
+
 	}
 
 	&--comment {
-		margin-top: 15px;
+		margin-top: 17px;
 	}
 
 	&--extra-goods {
@@ -280,7 +290,7 @@ FORM
 		margin-bottom: 70px;
 
 		&::after {
-			width: calc(100vw - 17px);
+			width: 100vw;
 		}
 
 		&--comment {
@@ -514,7 +524,7 @@ FORM
 	.form__block-title {
 
 		&::after {
-			width: 100vw;
+			width: calc(100vw - 17px);
 		}
 
 		&--owner-info {
