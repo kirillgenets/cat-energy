@@ -9,11 +9,11 @@ EXTRA CATALOG
 
 .extra-catalog__gift {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: 42px 20px 33px 20px;
 	padding-top: 50px;
 	padding-bottom: 26px;
-	flex-direction: column;
-	align-items: center;
 	background-color: $green;
 	background-image: url(../img/gift-photo-mobile@1x.jpg);
 	background-repeat: no-repeat;
@@ -39,6 +39,7 @@ EXTRA CATALOG
 		background-repeat: no-repeat;
 		background-image: url(../img/icon-gift.svg);
 	}
+
 }
 
 /*RESPONSIVE*/
@@ -65,21 +66,24 @@ EXTRA CATALOG
 	}
 
 	.extra-catalog__gift {
-		margin: 69px 30px 76px 30px;
-		padding-top: 75px;
-		padding-bottom: 69px;
+		align-items: flex-start;
+		margin: 71px 30px 77px 30px;
+		padding-top: 72px;
+		padding-bottom: 67px;
+		padding-left: 91px;
 		background-image: url(../img/gift-photo-tablet@1x.jpg);
 		background-size: cover;
 	}
 
 	.extra-catalog__gift-text {
-		padding-top: 0;
 		margin: 0;
+		padding-top: 0;
 		padding-left: 333px;
 		text-align: left;
 		line-height: 1.25;
 
 		&::before {
+			top: -8px;
 			left: 0;
 		}
 
