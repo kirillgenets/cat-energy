@@ -324,8 +324,8 @@ EXAMPLE
 	.example {
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-end;
 		border: none;
+		padding-top: 0;
 	}
 
 	.example__content {
@@ -333,15 +333,15 @@ EXAMPLE
 	}
 
 	.example__title {
-		margin-top: 63px;
-		margin-bottom: 0;
+		margin-top: 48px;
+		margin-bottom: 140px;
 		margin-left: 110px;
 	}
 
 	.example__text {
-		max-width: 430px;
+		max-width: 435px;
 		margin-left: 110px;
-		margin-top: 142px;
+		margin-bottom: 70px;
 	}
 
 	.example__info {
@@ -352,16 +352,19 @@ EXAMPLE
 	}
 
 	.example__expences {
-		max-width: 100%;
+		max-width: 350px;
+		width: 350px;
+		text-align: left;
 	}
 
 	.example__expences-property {
-		margin-right: 64px;
+		display: inline-block;
+		margin-right: 60px;
 	}
 
 	.example__indicators {
 		padding: 0;
-		margin: 0 0 50px 0;
+		margin: 0 0 34px 0;
 	}
 
 	.example__indicator {
@@ -377,7 +380,7 @@ EXAMPLE
 	}
 
 	.example__changes-container {
-		padding-right: 100px;
+		padding-right: 70px;
 		padding-bottom: 73px;
 		background-image: linear-gradient(to bottom, #fff, #fff 190px, #eaeaea 190px, #eaeaea);
 
@@ -395,6 +398,11 @@ EXAMPLE
 			background-image: linear-gradient(to bottom, #fff, #fff 190px, $bg-grey 190px,  $bg-grey);
 		}
 
+	}
+
+	.example__changes {
+		margin-top: 17px;
+		margin-left: 40px;
 	}
 	
 }

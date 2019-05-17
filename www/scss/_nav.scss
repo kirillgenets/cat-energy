@@ -150,6 +150,15 @@ NAVIGATION
 	.nav__link--current.nav__link--main {
 		border-color: #fff;
 	}
+
+	.nav__item {
+		margin-right: 39px;
+
+		&--choose-program {
+			margin-right: 0;
+		}
+
+	}
 	
 }
 
