@@ -14,7 +14,7 @@ EXTRA GOODS
 	align-items: stretch;
 	margin: 0 20px;
 	padding-top: 14px;
-	padding-bottom: 18px;
+	padding-bottom: 17px;
 	border-top: 1px solid #cdcdcd;
 
 	&--vitamins {
@@ -33,16 +33,17 @@ EXTRA GOODS
 }
 
 .extra-goods__product-info {
-	margin: 0;
+	margin: 0 0 10px 0;
 	padding: 0;
 	width: 100%;
 }
 
-.extra-goods__product-price-container {
-	display: flex;
-	justify-content: space-between;
-	margin: 0;
-	padding: 0 0 10px 0;
+.extra-goods__product-text {
+
+	&--right {
+		text-align: right;
+	}
+
 }
 
 .extra-goods__product-order {
@@ -63,7 +64,7 @@ EXTRA GOODS
 
 	.extra-goods__product {
 		margin: 0;
-		padding: 28px 37px 28px 38px;
+		padding: 23px 37px 28px 38px;
 
 		&--sugar-substitute {
 			border: none;
@@ -76,7 +77,7 @@ EXTRA GOODS
 	}
 
 	.extra-goods__product-title {
-		font-size: 18px;
+		font-size: 20px;
 		margin-bottom: 0;
 	}
 

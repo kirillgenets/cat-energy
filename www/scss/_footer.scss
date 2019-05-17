@@ -102,7 +102,7 @@ FOOTER
 		border: none;
 		width: 125px;
 		padding: 0;
-		margin: 0;
+		margin: 0 0 0 25px;
 	}
 
 	.footer__social {
@@ -110,11 +110,11 @@ FOOTER
 	}
 
 	.footer__social-item {
-		margin-right: 28px;
 
 		&--fb {
 			margin-right: 0;
 		}
+
 	}
 
 	.footer__social-icon {
