@@ -280,7 +280,7 @@ FORM
 
 	.form__block-content {
 		display: flex;
-		width: calc(100% - 170px);
+		width: calc(100% - 238px);
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
@@ -302,6 +302,7 @@ FORM
 
 		&--extra-goods {
 			margin-top: 0;
+			margin-bottom: 50px;
 		}
 
 	}
@@ -345,7 +346,7 @@ FORM
 			max-width: 220px;
 			margin-left: 0;
 			margin-right: 0;
-			margin-bottom: 54px;
+			margin-bottom: 36px;
 		}
 
 		&--vitamins {
@@ -448,13 +449,15 @@ FORM
 		justify-content: flex-start;
 		align-items: center;
 		margin-left: 70px;
+		margin-top: 27px;
 	}
 
 	.form__submit {
 		width: 283px;
-		padding-top: 17px;
-		padding-bottom: 15px;
+		padding-top: 15px;
+		padding-bottom: 14px;
 		margin: 0 61px 0 0;
+		font-size: 20px;
 	}
 
 }
