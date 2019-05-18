@@ -143,7 +143,8 @@ EXTRA CATALOG
 		text-align: center;
 
 		&::before {
-			left: calc(50% - 27.5px);
+			left: 40px;
+			top: 1px;
 		}
 
 	}
