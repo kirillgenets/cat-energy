@@ -233,7 +233,7 @@ EXAMPLE
 		&--before {
 			position: absolute;
 			z-index: 2;
-			clip: rect(auto, 345px, auto, auto);
+			clip: rect(auto, 344px, auto, auto);
 			background-image: linear-gradient(to bottom, #fff, #fff 169px, $bg-grey 169px,  $bg-grey);
 		}
 
@@ -346,7 +346,7 @@ EXAMPLE
 
 	.example__info {
 		margin-left: 110px;
-		margin-bottom: 73px;
+		margin-bottom: 0px;
 		flex-direction: column;
 		align-items: flex-start;
 	}
@@ -381,12 +381,12 @@ EXAMPLE
 
 	.example__changes-container {
 		padding-right: 70px;
-		padding-bottom: 73px;
+		padding-bottom: 66px;
 		background-image: linear-gradient(to bottom, #fff, #fff 190px, #eaeaea 190px, #eaeaea);
 
 		&::before {
 			width: 100vw;
-			left: calc(-100vw + 344px);
+			left: calc(-100vw + 365px);
 			background-image: linear-gradient(to bottom, #fff, #fff 190px, $bg-grey 190px,  $bg-grey);
 		}
 
@@ -395,6 +395,7 @@ EXAMPLE
 	.example__cat {
 
 		&--before {
+			clip: rect(auto, 365px, auto, auto);
 			background-image: linear-gradient(to bottom, #fff, #fff 190px, $bg-grey 190px,  $bg-grey);
 		}
 
