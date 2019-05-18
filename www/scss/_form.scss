@@ -155,6 +155,7 @@ FORM
 		width: calc(100vw - 40px);
 		height: 150px;
 		resize: none;
+		padding-right: 10px;
 	}
 
 	&--email {
@@ -213,7 +214,7 @@ FORM
 	}
 
 	&--owner-info {
-		margin-top: 31px;
+		margin-top: 30px;
 
 		&::after {
 			top: 12px;
@@ -222,7 +223,7 @@ FORM
 	}
 
 	&--comment {
-		margin-top: 17px;
+		margin-top: 15px;
 	}
 
 	&--extra-goods {
@@ -544,9 +545,9 @@ FORM
 		flex-wrap: nowrap;
 		justify-content: flex-start;
 		margin-left: 110px;
-		margin-right: 208px;
+		margin-right: 0;
 		margin-bottom: 44px;
-		width: 100%;
+		max-width: 1440px;
 	}
 
 	.form__submit {
