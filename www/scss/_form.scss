@@ -464,6 +464,10 @@ FORM
 
 @media screen and (min-width: $desktop) {
 
+	.form {
+		padding-bottom: 80px;
+	}
+
 	.form__cat {
 		display: flex;
 		justify-content: space-between;
@@ -473,7 +477,7 @@ FORM
 	.form__owner {
 		display: flex;
 		justify-content: space-between;
-		padding: 0 110px 71px 110px;
+		padding: 0 110px 67px 110px;
 	}
 
 	.form__title {
@@ -483,7 +487,7 @@ FORM
 	.form__block {
 
 		&--type {
-			width: 570px;
+			width: 540px;
 			margin: 0;
 		}
 
@@ -495,7 +499,7 @@ FORM
 
 		&--cat-info {
 			margin-right: 0;
-			width: 550px;
+			width: 570px;
 		}
 
 		&--radio {
@@ -517,18 +521,37 @@ FORM
 			margin: 0;
 		}
 
-	}
+		&--comment {
+			margin-right: 111px;
+			margin-bottom: 69px;
+		}
 
+		&--sugar-substitute {
+			margin-right: 104px;
+		}
+
+		&--water {
+			margin-right: 137px;
+		}
+
+		&--milk {
+			margin-right: 198px;
+		}
+
+	}
+	
 	.form__block-content {
 		flex-wrap: nowrap;
+		justify-content: flex-start;
 		margin-left: 110px;
 		margin-right: 208px;
-		margin-bottom: 70px;
-		width: calc(100% - 320px);
+		margin-bottom: 44px;
+		width: 100%;
 	}
 
 	.form__submit {
 		width: 570px;
+		margin-right: 81px;
 	}
 
 	.form__send {
@@ -538,11 +561,11 @@ FORM
 	.form__block-title {
 
 		&::after {
-			width: calc(100vw - 17px);
+			width: 100vw;
 		}
 
 		&--owner-info {
-			margin-top: 73px;
+			margin-top: 70px;
 		}
 
 	}
