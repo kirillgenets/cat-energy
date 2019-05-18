@@ -106,10 +106,12 @@ EXTRA CATALOG
 	}
 
 	.extra-catalog__title {
-		margin-left: 80px;
-		margin-bottom: 75px;
+		margin-left: 72px;
+		margin-bottom: 77px;
+		margin-top: 10px;
 
 		&::after {
+			top: 25px;
 			left: -80px;
 		}
 
@@ -127,6 +129,7 @@ EXTRA CATALOG
 	.extra-catalog__gift {
 		padding-top: 65px;
 		padding-bottom: 43px;
+		padding-left: 54px;
 		margin: 0;
 		width: 245px;
 		height: 289px;

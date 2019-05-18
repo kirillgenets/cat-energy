@@ -117,7 +117,7 @@ EXTRA GOODS
 
 	.extra-goods {
 		margin: 0;
-		width: 825px;
+		width: 895px;
 		border-left: none;
 		border-right: none;
 		padding: 0;
@@ -135,7 +135,7 @@ EXTRA GOODS
 	}
 	
 	.extra-goods__product-order {
-		width: 245px;
+		width: 337px;
 		height: 40px;
 		box-sizing: border-box;
 	}
@@ -143,6 +143,15 @@ EXTRA GOODS
 	.extra-goods__product-info {
 		max-width: 285px;
 		margin-right: 40px;
+	}
+
+	.extra-goods__product-text {
+		text-align: left;
+
+		&--right {
+			text-align: right;
+		}
+
 	}
 
 	.extra-goods__product-price-container {
