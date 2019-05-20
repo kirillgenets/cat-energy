@@ -8,18 +8,14 @@ EXAMPLE
 	padding-bottom: 35px;
 }
 
-.example__wrapper {
-	width: 280px;
-	margin: 0 auto;
-}
-
 .example__title {
 	padding: 0;
 	margin-top: 0;
+	margin-left: 20px;
 }
 
 .example__text {
-	margin: 31px 5px 27px 0;
+	margin: 31px 27px 27px 20px;
 	padding: 0;
 	line-height: 1.29;
 }
@@ -27,7 +23,7 @@ EXAMPLE
 .example__indicators {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 15px;
+	margin: 0 20px 15px 20px;
 }
 
 .example__indicator {
@@ -80,7 +76,7 @@ EXAMPLE
 }
 
 .example__cat {
-	margin: 0 0 27px 0;
+	margin: 0 0 25px 0;
 	padding: 0;
 
 	&--hidden {
@@ -148,6 +144,7 @@ EXAMPLE
 
 	.example__wrapper {
 		width: 708px;
+		margin: 0 auto;
 
 		&::before {
 			
@@ -158,12 +155,14 @@ EXAMPLE
 	.example__title {
 		margin-top: 0;
 		margin-right: 0;
-		margin-bottom: 55px;
+		margin-left: 0;
+		margin-bottom: 58px;
 	}
 
 	.example__text {
 		max-width: 680px;
 		margin-top: 0;
+		margin-left: 0;
 		margin-right: 30px;
 		margin-bottom: 56px;
 		line-height: 1.5;
@@ -174,6 +173,7 @@ EXAMPLE
 		justify-content: space-between;
 		align-items: flex-start;
 		margin-bottom: 68px;
+		margin-left: 0;
 	}
 
 	.example__indicators {
@@ -343,10 +343,14 @@ EXAMPLE
 @media screen and (min-width: $desktop) {
 
 	.example {
-		display: flex;
-		justify-content: space-between;
 		border: none;
 		padding-top: 0;
+	}
+
+	.example__wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 1440px;
 	}
 
 	.example__content {
@@ -409,6 +413,10 @@ EXAMPLE
 			width: 100vw;
 			left: calc(-100vw + 365px);
 			background-image: linear-gradient(to bottom, #fff, #fff 190px, $bg-grey 190px,  $bg-grey);
+		}
+
+		&::after {
+			background-image: linear-gradient(to bottom, #fff, #fff 190px, #eaeaea 190px,  #eaeaea);
 		}
 
 	}
