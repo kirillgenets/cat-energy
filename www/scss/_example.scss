@@ -8,14 +8,18 @@ EXAMPLE
 	padding-bottom: 35px;
 }
 
+.example__wrapper {
+	width: 280px;
+	margin: 0 auto;
+}
+
 .example__title {
 	padding: 0;
 	margin-top: 0;
-	margin-left: 20px;
 }
 
 .example__text {
-	margin: 31px 25px 27px 20px;
+	margin: 31px 5px 27px 0;
 	padding: 0;
 	line-height: 1.29;
 }
@@ -23,7 +27,7 @@ EXAMPLE
 .example__indicators {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 20px 15px 20px;
+	margin-bottom: 15px;
 }
 
 .example__indicator {
@@ -139,19 +143,27 @@ EXAMPLE
 		background-color: #fff;
 		padding: 41px 0 0 0;
 		border-top: 1px solid $bg-grey;
+		overflow: hidden;
+	}
+
+	.example__wrapper {
+		width: 708px;
+
+		&::before {
+			
+		}
+
 	}
 
 	.example__title {
 		margin-top: 0;
 		margin-right: 0;
 		margin-bottom: 55px;
-		margin-left: 30px;
 	}
 
 	.example__text {
 		max-width: 680px;
 		margin-top: 0;
-		margin-left: 30px;
 		margin-right: 30px;
 		margin-bottom: 56px;
 		line-height: 1.5;
@@ -161,8 +173,6 @@ EXAMPLE
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		margin-left: 30px;
-		margin-right: 30px;
 		margin-bottom: 68px;
 	}
 
@@ -208,17 +218,27 @@ EXAMPLE
 	.example__changes-container {
 		position: relative;
 		padding-bottom: 67px;
-		background-image: linear-gradient(to bottom, #fff, #fff 169px, #eaeaea 169px, #eaeaea);
 	
 		&::before {
 			content: '';
 			position: absolute;
 			top: 0;
-			left: 0;
+			right: 50%;
 			height: 100%;
-			width: 50%;
+			width: 100%;
 			z-index: 0;
 			background-image: linear-gradient(to bottom, #fff, #fff 169px, $bg-grey 169px, $bg-grey);
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			height: 100%;
+			width: 100%;
+			z-index: 0;
+			background-image: linear-gradient(to bottom, #fff, #fff 169px, #eaeaea 169px, #eaeaea);		
 		}
 	}
 
@@ -254,6 +274,7 @@ EXAMPLE
 
 	.example__slider {
 		margin-right: 21px;
+		z-index: 1;
 	}
 
 	.example__slider-container {

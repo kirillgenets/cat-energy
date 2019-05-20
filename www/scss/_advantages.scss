@@ -125,8 +125,14 @@ ADVANTAGES
 
 	.advantages {
 		display: block;
-		padding: 0 30px 55px 30px;
+		padding-top: 0;
+		padding-bottom: 55px;
 		margin: 0;
+	}
+
+	.advantages__wrapper {
+		margin: 0 auto;
+		width: 708px;
 	}
 
 	.advantages__title {
@@ -138,7 +144,10 @@ ADVANTAGES
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		margin-right: 95px;
+		padding-right: 95px;
+		width: 708px;
+		box-sizing: border-box;
+		margin: 0 auto;
 	}
 
 	.advantages__item {

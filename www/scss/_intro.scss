@@ -4,9 +4,8 @@ INTRO
 
 
 .intro {
-	background-color: $green;
+	background-color: #5eaa2f;
 	background-image: linear-gradient(to top, #fff 175px, transparent 175px), url(../img/index-background-mobile@1x.jpg);
-	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center bottom, center top;
 	color: #fff;
@@ -48,6 +47,7 @@ INTRO
 
 	.intro {
 		background-image: linear-gradient(to top, #fff 175px, transparent 175px), url(../img/index-background-mobile@2x.jpg);
+		background-size: auto,320px auto;
 	}
 
 }
