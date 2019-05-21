@@ -100,14 +100,14 @@ GOODS
 	text-align: right;
 }
 
-.goods__product-indicator-text {
+.goods__product-indicator-heading {
 	font-size: 12px;
 	line-height: 12px;
+}
 
-	&--right {
-		text-align: right;
-	}
-	
+.goods__product-indicator-value {
+	font-size: 12px;
+	text-align: right;
 }
 
 .goods__product-inside {
@@ -169,7 +169,7 @@ GOODS
 
 	.goods__product-title {
 		max-width: 130px;
-		margin-bottom: 17px;
+		margin-bottom: 18px;
 		font-size: 20px;
 		text-align: center;
 		line-height: 1;
@@ -217,9 +217,18 @@ GOODS
 		border-spacing: 0;
 	}
 
-	.goods__product-indicator-text {
-		padding-top: 11px;
-		padding-bottom: 9px;
+	.goods__product-indicator-heading {
+		padding-top: 5px;
+		padding-bottom: 3px;
+		padding-left: 0;
+		border-bottom: 1px solid #cdcdcd;
+		position: relative;
+		font-size: 16px;
+	}
+
+	.goods__product-indicator-value {
+		padding-top: 5px;
+		padding-bottom: 3px;
 		padding-left: 0;
 		border-bottom: 1px solid #cdcdcd;
 		position: relative;
