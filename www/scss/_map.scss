@@ -18,9 +18,9 @@ CONTACTS
 
 .map__offer {
 	max-width: 123px;
-	font-size: 16px;
 	margin: 0;
 	padding: 0;
+	font-size: 16px;
 	font-weight: normal;
 	text-transform: uppercase;
 	line-height: 1.25;
@@ -38,9 +38,20 @@ CONTACTS
 	width: 100%;
 	height: 360px;
 	border: none;
+	background-image: url(../img/bg-map-mobile@1x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /*RESPONSIVE*/
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+	.map__map {
+		background-image: url(../img/bg-map-mobile@2x.png);
+	}
+
+}
 
 @media screen and (min-width: $tablet) {
 
@@ -66,6 +77,15 @@ CONTACTS
 
 	.map__map {
 		height: 400px;
+		background-image: url(../img/bg-map-tablet@1x.png);
+	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+		.map__map {
+			background-image: url(../img/bg-map-tablet@2x.png);
+		}
+
 	}
 	
 }
@@ -89,6 +109,18 @@ CONTACTS
 
 	.map__adress {
 		text-align: left;
+	}
+
+	.map__map {
+		background-image: url(../img/bg-map-desktop@1x.png);
+	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+		.map__map {
+			background-image: url(../img/bg-map-desktop@2x.png);
+		}
+
 	}
 
 }

@@ -38,12 +38,8 @@ EXTRA GOODS
 	padding: 0;
 }
 
-.extra-goods__product-text {
-
-	&--right {
-		text-align: right;
-	}
-
+.extra-goods__product-price {
+	text-align: right;
 }
 
 .extra-goods__product-order {
@@ -90,18 +86,20 @@ EXTRA GOODS
 		padding: 0;
 	}
 
-	.extra-goods__product-text {
+	.extra-goods__product-amount {
 		width: 173px;
-		padding-right: 44px;
 		padding-top: 4px;
+		padding-right: 44px;
 		text-align: right;
 		line-height: 1.25;
+	}
 
-		&--right {
-			width: 45px;
-			padding-right: 0;
-		}
-
+	.extra-goods__product-price {		
+		width: 45px;
+		padding-top: 4px;
+		padding-right: 0;
+		text-align: right;
+		line-height: 1.25;
 	}
 
 	.extra-goods__product-content {
@@ -145,13 +143,12 @@ EXTRA GOODS
 		margin-right: 40px;
 	}
 
-	.extra-goods__product-text {
+	.extra-goods__product-amount {
 		text-align: left;
+	}
 
-		&--right {
-			text-align: right;
-		}
-
+	.extra-goods__product-price {		
+		text-align: right;
 	}
 
 	.extra-goods__product-price-container {
