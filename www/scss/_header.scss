@@ -16,8 +16,8 @@ HEADER
 }
 
 .header__logo {
+	width: 190px;
 	height: 38px;
-	width: 190px ;
 	background-image: url(../img/logo-mobile.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -59,9 +59,9 @@ HEADER
 @media screen and (min-width: $desktop) {
 
 	.header {
-		padding: 54px 0 0 0;
 		width: 1220px;
 		margin: 0 auto;
+		padding: 54px 0 0 0;
 	}
 
 	.header__logo {

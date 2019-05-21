@@ -11,32 +11,32 @@ CONTACTS
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 30px;
+	padding-right: 20px;
 	padding-bottom: 26px;
 	padding-left: 20px;
-	padding-right: 20px;
 }
 
 .map__offer {
 	max-width: 123px;
 	font-size: 16px;
-	font-weight: normal;
-	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
+	font-weight: normal;
+	text-transform: uppercase;
 	line-height: 1.25;
 }
 
 .map__adress {
 	max-width: 50%;
-	line-height: 1.43;
 	margin: 0;
 	padding: 0;
+	line-height: 1.43;
 }
 
 
 .map__map {
-	height: 360px;
 	width: 100%;
+	height: 360px;
 	border: none;
 }
 
@@ -45,8 +45,8 @@ CONTACTS
 @media screen and (min-width: $tablet) {
 
 	.map__offer {
-		font-size: 20px;
 		max-width: 155px;
+		font-size: 20px;
 	}
 
 	.map__info {
@@ -77,10 +77,10 @@ CONTACTS
 	}
 	
 	.map__info {
-		padding: 66px 90px 59px 76px;
 		width: 570px;
 		height: 201px;
 		box-sizing: border-box;
+		padding: 66px 90px 59px 76px;
 		position: absolute;
 		left: 110px;
 		top: 95px;

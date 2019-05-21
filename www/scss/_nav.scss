@@ -11,14 +11,14 @@ NAVIGATION
 }
 
 .nav__toggler {
+	height: 20px;
+	width: 20px;
+	border: none;
 	position: absolute;
 	top: 23px;
 	right: 23px;
 	background-image: url(../img/icon-close.svg);
-	height: 20px;
-	width: 20px;
-	background-color: rgba(0,0,0,0);
-	border: none;
+	background-color: rgba(0, 0, 0, 0);
 
 	&--no-js {
 		display: none;
@@ -28,9 +28,9 @@ NAVIGATION
 
 .nav__item {
 	width: 100%;
-	text-align: center;
 	padding: 25px 0;
 	border-top: 1px solid #cdcdcd;
+	text-align: center;
 	white-space: nowrap;
 
 	&--index {
@@ -40,16 +40,17 @@ NAVIGATION
 	&--choose-program {
 		border-bottom: 1px solid #cdcdcd;
 	}
+
 }
 
 .nav__link {
+	margin: 0;
+	padding: 0;
 	color: $dark-grey;
 	font-size: 20px;
 	text-transform: uppercase;
 	font-family: 'Oswald Medium', Arial, sans-serif;
 	font-weight: 500;
-	margin: 0;
-	padding: 0;
 }
 
 /*RESPONSIVE*/
@@ -68,10 +69,10 @@ NAVIGATION
 
 		&--closed-menu {
 			display: block;
+			width: 24px;
+			height: 19px;
 			right: 21px;
 			background-image: url(../img/icon-mobile-menu.svg);
-			height: 19px;
-			width: 24px;
 			background-repeat: no-repeat;
 			background-size: 100%;
 		}
@@ -87,18 +88,18 @@ NAVIGATION
 	}
 
 	.nav__list {
-		margin-top: 21px;
 		flex-direction: row;
 		justify-content: space-between;
+		margin-top: 21px;
 	}
 
 	.nav__item {
 		display: flex;
 		justify-content: center;
+		max-width: 165px;
+		margin-right: 36px;
 		padding: 0;
 		border: none;
-		margin-right: 36px;
-		max-width: 165px;
 
 		&--choose-program {
 			margin-right: 0;
@@ -107,11 +108,11 @@ NAVIGATION
 	}
 
 	.nav__link {
-		font-size: 18px;
 		padding-bottom: 9px;
+		border-bottom: 2px solid rgba(0, 0, 0, 0);
+		font-size: 18px;
 		font-weight: normal;
 		font-family: 'Oswald Regular', Arial, sans-serif;
-		border-bottom: 2px solid rgba(0,0,0,0);
 
 		&:hover {
 			opacity: 0.6;
@@ -145,6 +146,7 @@ NAVIGATION
 		&--main {
 			color: #fff;
 		}
+		
 	}
 
 	.nav__link--current.nav__link--main {

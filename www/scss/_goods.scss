@@ -11,9 +11,9 @@ GOODS
 .goods__product {
 	display: flex;
 	flex-direction: column;
-	border-top: 1px solid #cdcdcd;
-	padding: 0 20px 24px 20px;
 	margin: 0 auto;
+	padding: 0 20px 24px 20px;
+	border-top: 1px solid #cdcdcd;
 
 	&--find-more {
 		border-bottom: 1px solid #cdcdcd;
@@ -29,13 +29,13 @@ GOODS
 }
 
 .goods__product-title {
+	max-width: 75px;
+	margin-top: 0;
+	margin-bottom: 11px;
+	padding: 0;
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: normal;
-	max-width: 75px;
-	margin-top: 0;
-	padding: 0;
-	margin-bottom: 11px;
 	line-height: 1.25;
 
 	&--find-more {
@@ -47,11 +47,11 @@ GOODS
 
 		&::before {
 			content: '';
+			width: 30px;
+			height: 30px;
 			position: absolute;
 			top: 0;
 			left: calc(50% - 15px);
-			width: 30px;
-			height: 30px;
 			background-image: url(../img/icon-plus-mobile.svg);
 			fill: #cdcdcd;
 		}
@@ -77,6 +77,7 @@ GOODS
 	&--find-more {
 		margin-top: 22px;
 	}
+
 }
 
 .goods__product-content {
@@ -131,13 +132,13 @@ GOODS
 	}
 
 	.goods__product {
-		border: none;
-		padding: 0;
-		margin-bottom: 61px;
-		margin-right: 0;
-		margin-left: 0;
 		width: 324px;
 		box-sizing: border-box;
+		margin-right: 0;
+		margin-bottom: 61px;
+		margin-left: 0;
+		padding: 0;
+		border: none;
 		background-image: linear-gradient(to bottom, #fff, #fff 82px, #f2f2f2 82px, #f2f2f2);
 	
 		&--find-more {
@@ -167,10 +168,10 @@ GOODS
 	}
 
 	.goods__product-title {
-		font-size: 20px;
 		max-width: 130px;
-		text-align: center;
 		margin-bottom: 17px;
+		font-size: 20px;
+		text-align: center;
 		line-height: 1;
 
 		&--find-more {
@@ -180,10 +181,10 @@ GOODS
 			padding-top: 111px;
 
 			&::before {
-				top: 0;
-				left: calc(50% - 30px);
 				width: 60px;
 				height: 60px;
+				top: 0;
+				left: calc(50% - 30px);
 				background-image: url(../img/icon-plus.svg);
 				fill: #cdcdcd;
 			}
@@ -217,12 +218,12 @@ GOODS
 	}
 
 	.goods__product-indicator-text {
-		font-size: 16px;
+		padding-top: 11px;
 		padding-bottom: 9px;
 		padding-left: 0;
-		padding-top: 11px;
-		position: relative;
 		border-bottom: 1px solid #cdcdcd;
+		position: relative;
+		font-size: 16px;
 	}
 
 	.goods__product-order {
@@ -247,9 +248,9 @@ GOODS
 	.goods__product-text {
 
 		&--find-more {
+			max-width: 175px;
 			font-size: 16px;
 			text-align: center;
-			max-width: 175px;
 			line-height: normal;
 		}
 
@@ -265,9 +266,9 @@ GOODS
 	}
 
 	.goods__product {
-		width: 245px;
 		min-height: 512px;
 		max-height: 513px;
+		width: 245px;
 	}
 	
 	.goods__product-image {

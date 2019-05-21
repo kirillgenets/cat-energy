@@ -23,19 +23,19 @@ EXTRA GOODS
 }
 
 .extra-goods__product-title {
-	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 8px;
+	padding: 0;
 	font-size: 16px;
 	line-height: 1;
+	text-transform: uppercase;
 	font-weight: normal;
-	margin-bottom: 8px;
-	margin-top: 0;
-	padding: 0;
 }
 
 .extra-goods__product-info {
+	width: 100%;
 	margin: 0 0 10px 0;
 	padding: 0;
-	width: 100%;
 }
 
 .extra-goods__product-text {
@@ -47,10 +47,10 @@ EXTRA GOODS
 }
 
 .extra-goods__product-order {
-	font-size: 16px;
+	width: 100%;
 	margin: 0;
 	padding: 11px 0 10px 0;
-	width: 100%;
+	font-size: 16px;
 }
 
 /*RESPONSIVE*/
@@ -58,8 +58,8 @@ EXTRA GOODS
 @media screen and (min-width: $tablet) {
 
 	.extra-goods {
-		border: 1px solid #cdcdcd;
 		margin: 0 30px;
+		border: 1px solid #cdcdcd;
 	}
 
 	.extra-goods__product {
@@ -77,8 +77,8 @@ EXTRA GOODS
 	}
 
 	.extra-goods__product-title {
-		font-size: 20px;
 		margin-bottom: 0;
+		font-size: 20px;
 	}
 
 	.extra-goods__product-info {
@@ -91,10 +91,10 @@ EXTRA GOODS
 	}
 
 	.extra-goods__product-text {
-		text-align: right;
 		width: 173px;
 		padding-right: 44px;
 		padding-top: 4px;
+		text-align: right;
 		line-height: 1.25;
 
 		&--right {
@@ -116,22 +116,22 @@ EXTRA GOODS
 @media screen and (min-width: $desktop) {
 
 	.extra-goods {
-		margin: 0;
 		width: 895px;
-		border-left: none;
-		border-right: none;
+		margin: 0;
 		padding: 0;
+		border-right: none;
+		border-left: none;
 	}
 
 	.extra-goods__product {
-		padding: 17px 0 14px 0;
 		flex-direction: row;
 		justify-content: space-between;
+		padding: 17px 0 14px 0;
 	}
 
 	.extra-goods__product-content {
-		margin-bottom: 0;
 		width: 100%;
+		margin-bottom: 0;
 	}
 	
 	.extra-goods__product-order {
@@ -155,8 +155,8 @@ EXTRA GOODS
 	}
 
 	.extra-goods__product-price-container {
-		width: 100%;
 		justify-content: space-between;
+		width: 100%;
 	}
 		
 }

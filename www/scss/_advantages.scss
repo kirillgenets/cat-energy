@@ -3,15 +3,15 @@ ADVANTAGES
 **********/
 
 .advantages {
-	padding: 0 20px;
 	margin-top: 30px;
 	margin-bottom: 42px;
+	padding: 0 20px;
 }
 
 .advantages__title {
-	margin-bottom: 35px;
-	margin-top: 0;
 	align-self: flex-start;
+	margin-top: 0;
+	margin-bottom: 35px;
 }
 
 .advantages__features {
@@ -23,27 +23,27 @@ ADVANTAGES
 .advantages__item {
 	display: flex;
 	align-items: center;
+	min-height: 60px;
 	margin-top: 0;
 	margin-bottom: 20px;
-	min-height: 60px;
 }
 
 .advantages__item-text {
-	position: relative;
 	margin: 0;
 	padding: 0 0 0 80px;
+	position: relative;	
 
 	&::before {
 		content: '';
-		position: absolute;
-		left: 0px;
-		top: calc(50% - 30px);
-		background-color: $green;
-		background-position: center;
-		background-repeat: no-repeat;
 		height: 60px;
 		width: 60px;
 		margin-right: 20px;
+		position: absolute;
+		left: 0;
+		top: calc(50% - 30px);
+		background-color: $green;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
 	&--leaf {
@@ -122,14 +122,14 @@ ADVANTAGES
 
 	.advantages {
 		display: block;
+		margin: 0;
 		padding-top: 0;
 		padding-bottom: 55px;
-		margin: 0;
 	}
 
 	.advantages__wrapper {
-		margin: 0 auto;
 		width: 708px;
+		margin: 0 auto;
 	}
 
 	.advantages__title {
@@ -141,25 +141,25 @@ ADVANTAGES
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		padding-right: 95px;
 		width: 708px;
 		box-sizing: border-box;
 		margin: 0 auto;
+		padding-right: 95px;
 	}
 
 	.advantages__item {
 		display: block;
-		position: relative;
 		margin-bottom: 0;
+		position: relative;
 
 		&::after {
 			content: '';
-			color: $bg-grey;
-			line-height: 228px;
-			font-size: 281px;
 			position: absolute;
 			top: 0;
 			z-index: -1;
+			color: $bg-grey;
+			font-size: 281px;
+			line-height: 228px;
 		}
 
 		&--useful {
@@ -208,10 +208,10 @@ ADVANTAGES
 		padding: 113px 0 48px 0;
 		
 		&::before {
-			height: 80px;
 			width: 80px;
-			top: 0;
+			height: 80px;
 			left: 0;
+			top: 0;
 			background-size: 60%;
 		}
 
@@ -243,8 +243,8 @@ ADVANTAGES
 	}
 
 	.advantages__features {
-		padding-right: 15px;
 		width: 1220px;
+		padding-right: 15px;
 	}
 	
 	.advantages__title {

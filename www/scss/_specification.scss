@@ -1,13 +1,12 @@
 /**********
 SPECIFICATION
 **********/
-
+/*TYPOGRAPHY!!!*/
 @font-face{
 	font-family: 'Oswald Regular';
 	src: url('../fonts/oswaldregular.woff2') format('woff2'),
 		url('../fonts/oswaldregular.woff') format('woff');
 	font-display: swap;
-	font-weight: normal;
 }
 
 @font-face {
@@ -15,7 +14,6 @@ SPECIFICATION
 	src: url('../fonts/oswaldmedium.woff2') format('woff2'),
 		url('../fonts/oswaldmedium.woff') format('woff');
 	font-display: swap;
-	font-weight: normal;
 }
 
 a {
@@ -35,12 +33,12 @@ img {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-	position: absolute;
 	width: 1px;
 	height: 1px;
 	margin: -1px;
-	border: 0;
 	padding: 0;
+	border: 0;
+	position: absolute;
 	white-space: nowrap;
 	clip: rect(0 0 0 0);
 	overflow: hidden;

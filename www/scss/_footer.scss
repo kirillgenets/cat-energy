@@ -3,25 +3,24 @@ FOOTER
 ********/
 
 .footer__content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: $bg-grey;
 	padding: 37px 20px 20px 20px;
+	background-color: $bg-grey;
 }
 
-.footer__logo {
-	margin-bottom: 28px;
+.footer__logo-container {
+	width: 130px;
+	height: 25px;
+	margin: 0 auto 28px auto;
 }
 
 .footer__social-container {
-	margin-bottom: 12px;
-	margin-top: 0;
 	width: 100%;
-    border-top: 1px solid #cdcdcd;
-    border-bottom: 1px solid #cdcdcd;
+	margin-top: 0;
+	margin-bottom: 12px;
     padding-top: 22px;
     padding-bottom: 16px;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
 }
 
 .footer__social {
@@ -35,13 +34,14 @@ FOOTER
 
 .footer__social-item {
 	margin-top: 0;
+	margin-right: 38px;
 	margin-bottom: 0;
 	padding: 0;
-	margin-right: 38px;
 
 	&--fb {
 		margin-right: 0;
 	}
+
 }
 
 .footer__social-icon {
@@ -58,8 +58,8 @@ FOOTER
 }
 
 .footer__htmlacademy-icon {
-	fill: $light-grey;
 	margin-right: -9px;
+	fill: $light-grey;
 }
 
 .footer__htmlacademy-link {
@@ -72,6 +72,7 @@ FOOTER
 	&--grey-bg {
 		background-color: $bg-grey;
 	}
+
 }
 
 /*RESPONSIVE*/
@@ -79,14 +80,17 @@ FOOTER
 @media screen and (min-width: $tablet) {
 
 	.footer__content {
-		padding: 44px 30px 58px 31px;
-		flex-direction: row;
+		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 44px 30px 58px 31px;
+	}
+
+	.footer__logo-container {
+		margin: 0;
 	}
 
 	.footer__logo {
-		margin: 0;
 
 		&:hover {
 			opacity: 0.8;
@@ -99,10 +103,10 @@ FOOTER
 	}
 
 	.footer__social-container {
-		border: none;
 		width: 125px;
-		padding: 0;
 		margin: 0 0 0 25px;
+		padding: 0;
+		border: none;
 	}
 
 	.footer__social {

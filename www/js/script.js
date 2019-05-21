@@ -6,9 +6,9 @@ navToggler.classList.add('nav__toggler--closed-menu');
 
 navList.classList.add('nav__list--closed');
 
-navToggler.onclick = () => {
+navToggler.addEventListener('click', () => {
 
 	navList.classList.toggle('nav__list--closed');
 	navToggler.classList.toggle('nav__toggler--closed-menu')
 
-};
+});

@@ -3,15 +3,15 @@ EXAMPLE
 **********/
 
 .example {
-	background-color: $bg-grey;
 	padding-top: 28px;
 	padding-bottom: 35px;
+	background-color: $bg-grey;
 }
 
 .example__title {
-	padding: 0;
 	margin-top: 0;
 	margin-left: 20px;
+	padding: 0;
 }
 
 .example__text {
@@ -28,20 +28,20 @@ EXAMPLE
 
 .example__indicator {
 	width: 126px;
-    text-align: center;
-    border-radius: 3px;
     padding: 0;
+    border-radius: 3px;
+    text-align: center;
 }
 
 .example__indicator-info {
-	position: relative;
 	margin: 0;
 	padding: 12px 10px;
-	font-size: 24px;
-	text-transform: uppercase;
-	color: $dark-grey;
 	border: 1px solid #cdcdcd;
 	border-radius: 3px;
+	position: relative;
+	color: $dark-grey;
+	font-size: 24px;
+	text-transform: uppercase;
 }
 
 .example__indicator-name {
@@ -49,22 +49,22 @@ EXAMPLE
     vertical-align: top;
     margin: 0 17px;
     padding: 0 17px;
-    font-size: 12px;
-    color: $light-grey;
     background-color: $bg-grey;
-    font-family: Arial, sans-serif;
+    color: $light-grey;
     transform: translateY(-8px);
+    font-size: 12px;
+    font-family: Arial, sans-serif;
     line-height: 1;
 }
 
 .example__expences {
-	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 37px;
+	padding: 0;
 	font-size: 14px;
 	font-weight: normal;
 	text-align: center;
-	margin-top: 0;
-	padding: 0;
-	margin-bottom: 37px;
+	text-transform: uppercase;
 }
 
 .example__cat-list {
@@ -76,7 +76,7 @@ EXAMPLE
 }
 
 .example__cat {
-	margin: 0 0 25px 0;
+	margin: 0 0 28px 0;
 	padding: 0;
 
 	&--hidden {
@@ -92,13 +92,13 @@ EXAMPLE
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .example__button {
-	background: none;
 	border: none;
+	background: none;
 	font-size: 16px;
 	text-transform: uppercase;
 
@@ -112,23 +112,23 @@ EXAMPLE
 }
 
 .example__slider-container {
-	background-color: #fff;
 	height: 13px;
 	width: 83px;
-	border-radius: 6px;
 	border: 1px solid #cdcdcd;
+	border-radius: 6px;
 	position: relative;
+	background-color: #fff;
 }
 
 .example__slider-thumb {
-	background-color: $green;
-	border: none;
 	width: calc(50% - 6px);
 	height: 50%;
+	border: none;
 	border-radius: 3px;
 	position: absolute;
 	left: 6px;
 	top: 3px;
+	background-color: $green;
 }
 
 /*RESPONSIVE*/
@@ -136,35 +136,30 @@ EXAMPLE
 @media screen and (min-width: $tablet) {
 
 	.example {
-		background-color: #fff;
 		padding: 41px 0 0 0;
 		border-top: 1px solid $bg-grey;
+		background-color: #fff;
 		overflow: hidden;
 	}
 
 	.example__wrapper {
 		width: 708px;
 		margin: 0 auto;
-
-		&::before {
-			
-		}
-
 	}
 
 	.example__title {
 		margin-top: 0;
 		margin-right: 0;
-		margin-left: 0;
 		margin-bottom: 58px;
+		margin-left: 0;
 	}
 
 	.example__text {
 		max-width: 680px;
 		margin-top: 0;
-		margin-left: 0;
 		margin-right: 30px;
 		margin-bottom: 56px;
+		margin-left: 0;
 		line-height: 1.5;
 	}
 
@@ -193,20 +188,20 @@ EXAMPLE
 	}
 
 	.example__indicator-name {
-	    margin-left: 7px;
 	    margin-right: 7px;
-	    padding-left: 10px;
+	    margin-left: 7px;
 	    padding-right: 10px;
+	    padding-left: 10px;
+	    background-color: #fff;
 	    font-size: 14px;
 	    line-height: 14px;
-	    background-color: #fff;
 	}
 
 	.example__expences {
+		max-width: 175px;
 		margin-top: 9px;
 		margin-bottom: 0;
 		font-size: 20px;
-		max-width: 175px;
 		text-align: right;
 	}
 
@@ -216,27 +211,27 @@ EXAMPLE
 	}
 
 	.example__changes-container {
-		position: relative;
 		padding-bottom: 67px;
+		position: relative;
 	
 		&::before {
 			content: '';
+			height: 100%;
+			width: 100%;
 			position: absolute;
 			top: 0;
 			right: 50%;
-			height: 100%;
-			width: 100%;
 			z-index: 0;
 			background-image: linear-gradient(to bottom, #fff, #fff 169px, $bg-grey 169px, $bg-grey);
 		}
 
 		&::after {
 			content: '';
+			height: 100%;
+			width: 100%;
 			position: absolute;
 			top: 0;
 			left: 50%;
-			height: 100%;
-			width: 100%;
 			z-index: 0;
 			background-image: linear-gradient(to bottom, #fff, #fff 169px, #eaeaea 169px, #eaeaea);		
 		}
@@ -247,14 +242,14 @@ EXAMPLE
 	}
 
 	.example__cat {
-		z-index: 1;
 		margin: 0 0 18px 0;
+		z-index: 1;
 
 		&--before {
 			position: absolute;
 			z-index: 2;
-			clip: rect(auto, 344px, auto, auto);
 			background-image: linear-gradient(to bottom, #fff, #fff 169px, $bg-grey 169px,  $bg-grey);
+			clip: rect(auto, 344px, auto, auto);
 		}
 
 		&--after {
@@ -280,20 +275,20 @@ EXAMPLE
 	.example__slider-container {
 		width: 428px;
 		height: 6px;
-		background-color: #dcdcdc;
 		border: none;
+		background-color: #dcdcdc;
 	}
 
 	.example__slider-thumb {
 		width: 34px;
 		height: 34px;
+		border: 1px solid #cdcdcd;
 		border-radius: 50%;
-		background-color: #fff;
-		box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
 		top: calc(50% - 18px);
 		left: calc(50% - 18px);
+		background-color: #fff;
+		box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
 		cursor: pointer;
-		border: 1px solid #cdcdcd;
 
 		&::after {
 			content: '';
@@ -307,8 +302,8 @@ EXAMPLE
 		}
 
 		&:active {
-			box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
   			border: 2px solid $green;
+			box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
 		}
 
 		&:hover {
@@ -318,10 +313,10 @@ EXAMPLE
 	}
 
 	.example__button {
-		z-index: 1;
-		font-size: 20px;
 		padding: 0 0 4px 0;
 		border-bottom: 1px dotted rgba(0,0,0,.23);
+		z-index: 1;
+		font-size: 20px;
 		cursor: pointer;
 
 		&--before {
@@ -343,8 +338,8 @@ EXAMPLE
 @media screen and (min-width: $desktop) {
 
 	.example {
-		border: none;
 		padding-top: 0;
+		border: none;
 	}
 
 	.example__wrapper {
@@ -354,7 +349,7 @@ EXAMPLE
 	}
 
 	.example__content {
-		z-index: 5;
+		z-index: 1;
 	}
 
 	.example__title {
@@ -365,15 +360,15 @@ EXAMPLE
 
 	.example__text {
 		max-width: 435px;
-		margin-left: 110px;
 		margin-bottom: 70px;
+		margin-left: 110px;
 	}
 
 	.example__info {
-		margin-left: 110px;
-		margin-bottom: 0px;
 		flex-direction: column;
 		align-items: flex-start;
+		margin-bottom: 0px;
+		margin-left: 110px;
 	}
 
 	.example__expences {
@@ -388,8 +383,8 @@ EXAMPLE
 	}
 
 	.example__indicators {
-		padding: 0;
 		margin: 0 0 34px 0;
+		padding: 0;
 	}
 
 	.example__indicator {
@@ -424,8 +419,8 @@ EXAMPLE
 	.example__cat {
 
 		&--before {
-			clip: rect(auto, 365px, auto, auto);
 			background-image: linear-gradient(to bottom, #fff, #fff 190px, $bg-grey 190px,  $bg-grey);
+			clip: rect(auto, 365px, auto, auto);
 		}
 
 	}

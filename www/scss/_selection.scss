@@ -17,10 +17,10 @@ SELECTION
 @media screen and (min-width: $tablet) {
 
 	.selection__title {
-		padding: 0;
-		margin-left: 30px;
 		margin-top: 55px;
 		margin-bottom: 51px;
+		margin-left: 30px;
+		padding: 0;
 	}
 	
 }
@@ -28,9 +28,9 @@ SELECTION
 @media screen and (min-width: $desktop) {
 
 	.selection__title {
-		margin-left: 110px;
 		margin-top: 74px;
 		margin-bottom: 49px;
+		margin-left: 110px;
 	}
 	
 }
