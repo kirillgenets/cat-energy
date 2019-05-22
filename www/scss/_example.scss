@@ -4,7 +4,7 @@ EXAMPLE
 
 .example {
 	padding-top: 28px;
-	padding-bottom: 35px;
+	padding-bottom: 30px;
 	background-color: $bg-grey;
 }
 
@@ -15,7 +15,7 @@ EXAMPLE
 }
 
 .example__text {
-	margin: 31px 27px 27px 20px;
+	margin: 31px 27px 28px 20px;
 	padding: 0;
 	line-height: 1.29;
 }
@@ -76,7 +76,7 @@ EXAMPLE
 }
 
 .example__cat {
-	margin: 0 0 28px 0;
+	margin: 0 0 26px 0;
 	padding: 0;
 
 	&--hidden {
@@ -91,24 +91,36 @@ EXAMPLE
 .example__changes {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	margin: 0;
 	padding: 0;
 }
 
 .example__button {
+	padding: 0 0 4px 0;
 	border: none;
+	border-bottom: 1px dotted rgba(0,0,0,0);
 	background: none;
 	font-size: 16px;
 	text-transform: uppercase;
 
 	&--before {
-		margin-right: 10px;
+		margin-right: 15px;
+	}
+
+	&:hover {
+		border-bottom: 1px solid rgba(0,0,0,.23);
+		cursor: pointer;
+	}
+
+	&:active {
+		border-bottom: 1px solid rgba(0,0,0,0);
 	}
 }
 
 .example__slider {
-	margin-right: 13px;
+	margin-top: 2px;
+	margin-right: 18px;
 }
 
 .example__slider-container {
@@ -150,7 +162,7 @@ EXAMPLE
 	.example__title {
 		margin-top: 0;
 		margin-right: 0;
-		margin-bottom: 58px;
+		margin-bottom: 56px;
 		margin-left: 0;
 	}
 
@@ -158,7 +170,7 @@ EXAMPLE
 		max-width: 680px;
 		margin-top: 0;
 		margin-right: 30px;
-		margin-bottom: 56px;
+		margin-bottom: 54px;
 		margin-left: 0;
 		line-height: 1.5;
 	}
@@ -238,6 +250,7 @@ EXAMPLE
 	}
 
 	.example__cat-list {
+		margin-left: 10px;
 		position: relative;
 	}
 
@@ -249,7 +262,7 @@ EXAMPLE
 			position: absolute;
 			z-index: 2;
 			background-image: linear-gradient(to bottom, #fff, #fff 169px, $bg-grey 169px,  $bg-grey);
-			clip: rect(auto, 344px, auto, auto);
+			clip: rect(auto, 340px, auto, auto);
 		}
 
 		&--after {
@@ -264,10 +277,12 @@ EXAMPLE
 	}
 
 	.example__changes {
+		align-items: center;
 		margin: 0;
 	}
 
 	.example__slider {
+		margin-top: 0;
 		margin-right: 21px;
 		z-index: 1;
 	}
@@ -313,22 +328,13 @@ EXAMPLE
 	}
 
 	.example__button {
-		padding: 0 0 4px 0;
-		border-bottom: 1px dotted rgba(0,0,0,.23);
+		border-color: rgba(0,0,0,.23);
 		z-index: 1;
 		font-size: 20px;
 		cursor: pointer;
 
 		&--before {
 			margin-right: 24px;
-		}
-		
-		&:hover {
-			border-bottom: 1px solid rgba(0,0,0,.23);
-		}
-
-		&:active {
-			border-bottom: 1px solid rgba(0,0,0,0);
 		}
 
 	}
@@ -414,6 +420,10 @@ EXAMPLE
 			background-image: linear-gradient(to bottom, #fff, #fff 190px, #eaeaea 190px,  #eaeaea);
 		}
 
+	}
+
+	.example__cat-list {
+		margin: 0;
 	}
 
 	.example__cat {

@@ -121,6 +121,18 @@ FORM
 
 	}
 
+	&--radio:hover, &--checkbox:hover {
+
+		&::before {
+			border-color: #bababa;
+		}
+
+	}
+
+	&--radio:active, &--checkbox:active {
+		opacity: 0.3;
+	}
+
 	&--email, &--phone {
 		margin-right: 12px;
 	}
@@ -173,6 +185,10 @@ FORM
 	&:invalid {
 		box-shadow: inset 0 0 0 1px #ff8282;
 		border-color: #ff8282;
+	}
+
+	&:hover {
+		border-color: #cdcdcd;
 	}
 
 }
@@ -385,10 +401,6 @@ FORM
 			padding-left: 18px;
 		}
 
-		&:hover {
-			border-color: #cdcdcd;
-		}
-
 	}
 
 	.form__field-icon {
@@ -430,18 +442,6 @@ FORM
 		&--checkbox {
 			margin-right: 0;
 			margin-left: 0;
-		}
-
-		&--radio:hover, &--checkbox:hover {
-
-			&::before {
-				border-color: #bababa;
-			}
-
-		}
-
-		&--radio:active, &--checkbox:active {
-			opacity: 0.3;
 		}
 
 	}

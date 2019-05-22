@@ -13,10 +13,22 @@ FOOTER
 	margin: 0 auto 28px auto;
 }
 
+.footer__logo {
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+
+}
+
 .footer__social-container {
 	width: 100%;
 	margin-top: 0;
-	margin-bottom: 12px;
+	margin-bottom: 15px;
     padding-top: 22px;
     padding-bottom: 16px;
     border-top: 1px solid #cdcdcd;
@@ -46,6 +58,15 @@ FOOTER
 
 .footer__social-icon {
 	fill: $light-grey;
+
+	&:hover, &:active {
+		fill: $green;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+
 }
 
 .footer__htmlacademy {
@@ -58,12 +79,25 @@ FOOTER
 }
 
 .footer__htmlacademy-icon {
-	margin-right: -9px;
 	fill: $light-grey;
+
+	&:hover, &:active {
+		fill: $green;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+
 }
 
 .footer__htmlacademy-link {
 	font-size: 16px;
+
+	&:active {
+		opacity: 0.3;
+	}
+
 }
 
 .footer__map-container {
@@ -88,18 +122,6 @@ FOOTER
 
 	.footer__logo-container {
 		margin: 0;
-	}
-
-	.footer__logo {
-
-		&:hover {
-			opacity: 0.8;
-		}
-
-		&:active {
-			opacity: 0.6;
-		}
-		
 	}
 
 	.footer__social-container {
@@ -139,14 +161,6 @@ FOOTER
 			height: 28px;
 		}
 
-		&:hover, &:active {
-			fill: $green;
-		}
-
-		&:active {
-			opacity: 0.3;
-		}
-
 	}
 
 	.footer__htmlacademy {
@@ -156,24 +170,10 @@ FOOTER
 
 	.footer__htmlacademy-link {
 		margin-right: 13px;
-
-		&:active {
-			opacity: 0.3;
-		}
-
 	}
 
 	.footer__htmlacademy-icon {
 		fill: #666;
-
-		&:hover, &:active {
-			fill: $green;
-		}
-
-		&:active {
-			opacity: 0.3;
-		}
-
 	}
 
 }

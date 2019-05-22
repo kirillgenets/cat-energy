@@ -137,6 +137,15 @@ NAVIGATION
 			opacity: 0.3;
 		}
 
+		&--current {	
+
+			&:hover, 
+			&:active {
+				opacity: 1;
+			}
+
+		}
+
 	}
 	
 }

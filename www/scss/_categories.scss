@@ -17,7 +17,7 @@ CATEGORIES
 
 .categories__item {
 	box-sizing: border-box;
-	padding: 25px 18px 20px 20px;
+	padding: 23px 18px 20px 20px;
 	background-color: $bg-grey; 
 	margin: 0;
 
@@ -113,6 +113,21 @@ CATEGORIES
 		background-repeat: no-repeat;
 	  	transition: 0.2s;
 	}
+
+	&:hover {
+			
+		&:after {
+			width: 54px;
+			right: -73px;
+			background-image: url(../img/icon-right-arrow-verylong.svg);
+		}
+
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+
 }
 
 /*RESPONSIVE*/
@@ -217,15 +232,9 @@ CATEGORIES
 		&:hover {
 			
 			&:after {
-				width: 54px;
 				right: -83px;
-				background-image: url(../img/icon-right-arrow-verylong.svg);
 			}
 
-		}
-
-		&:active {
-			opacity: 0.3;
 		}
 
 	}

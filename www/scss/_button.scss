@@ -15,9 +15,34 @@ BUTTON BLOCK
 	text-align: center;
 	text-transform: uppercase;
 
+	&:active {
+		color: rgba(255, 255, 255, 0.3);
+	}
+
 	&--grey {
 		background-color: #f2f2f2;
 		color: $light-grey;
+
+		&:hover,
+		&:focus {
+			background-color: #ebebeb;
+			color: $light-grey;
+		}
+
+		&:active {
+			background-color: #ebebeb;
+			color: rgba(68, 68, 68, 0.3);
+		}
+
+	}
+
+	&--green {
+	
+		&:hover,
+		&:focus {
+			background-color: #5eaa2f;
+		}
+
 	}
 	
 }
@@ -28,35 +53,6 @@ BUTTON BLOCK
 	
 	.button {
 		font-size: 16px;
-
-		&:active {
-			color: rgba(255, 255, 255, 0.3);
-		}
-
-		&--grey {
-
-			&:hover,
-			&:focus {
-				background-color: #ebebeb;
-				color: $light-grey;
-			}
-
-			&:active {
-				background-color: #ebebeb;
-				color: rgba(68, 68, 68, 0.3);
-			}
-
-		}
-
-		&--green {
-		
-			&:hover,
-			&:focus {
-				background-color: #5eaa2f;
-			}
-
-		}
-
 	}
 
 }
