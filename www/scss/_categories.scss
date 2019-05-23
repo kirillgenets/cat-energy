@@ -95,6 +95,11 @@ CATEGORIES
 	padding: 0 0 23px 0;
 	border-bottom: 1px solid #d9d9d9;
 	position: relative;
+	color: $light-grey;
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 14px;
+	line-height: 1.29;
+	font-weight: normal;
 }
 
 .categories__item-link {
@@ -215,6 +220,8 @@ CATEGORIES
 		margin-bottom: 55px;
 		padding: 0;
 		border: none;
+		font-size: 16px;
+		line-height: 1.5;
 
 		&--pro {
 			max-width: 345px;

@@ -59,13 +59,13 @@ GOODS
 }
 
 .goods__product-text {
-
-	&--find-more {
-		margin: 0;
-		padding: 0;
-		font-size: 12px;
-	}
-
+	margin: 0;
+	padding: 0;
+	color: $light-grey;
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 12px;
+	line-height: 1.29;
+	font-weight: normal;
 }
 
 .goods__product-order {
@@ -101,12 +101,20 @@ GOODS
 }
 
 .goods__product-indicator-heading {
+	color: $light-grey;
+	font-family: Arial, Tahoma, sans-serif;
 	font-size: 12px;
 	line-height: 12px;
+	font-weight: normal;
+	text-align: left;
 }
 
 .goods__product-indicator-value {
+	color: $light-grey;
+	font-family: Arial, Tahoma, sans-serif;
 	font-size: 12px;
+	line-height: 1.29;
+	font-weight: normal;
 	text-align: right;
 }
 
@@ -224,6 +232,7 @@ GOODS
 		border-bottom: 1px solid #cdcdcd;
 		position: relative;
 		font-size: 16px;
+		line-height: 1.5;
 	}
 
 	.goods__product-indicator-value {
@@ -233,6 +242,7 @@ GOODS
 		border-bottom: 1px solid #cdcdcd;
 		position: relative;
 		font-size: 16px;
+		line-height: 1.5;
 	}
 
 	.goods__product-order {
@@ -255,14 +265,10 @@ GOODS
 	}
 
 	.goods__product-text {
-
-		&--find-more {
-			max-width: 175px;
-			font-size: 16px;
-			text-align: center;
-			line-height: normal;
-		}
-
+		max-width: 175px;
+		font-size: 16px;
+		text-align: center;
+		line-height: normal;
 	}
 
 }

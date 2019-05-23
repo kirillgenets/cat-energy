@@ -12,12 +12,18 @@ EXAMPLE
 	margin-top: 0;
 	margin-left: 20px;
 	padding: 0;
+	font-size: 36px;
+	font-weight: normal;
 }
 
 .example__text {
 	margin: 31px 27px 28px 20px;
 	padding: 0;
+	color: $light-grey;
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 14px;
 	line-height: 1.29;
+	font-weight: normal;
 }
 
 .example__indicators {
@@ -164,6 +170,7 @@ EXAMPLE
 		margin-right: 0;
 		margin-bottom: 56px;
 		margin-left: 0;
+		font-size: 60px;
 	}
 
 	.example__text {
@@ -172,6 +179,7 @@ EXAMPLE
 		margin-right: 30px;
 		margin-bottom: 54px;
 		margin-left: 0;
+		font-size: 16px;
 		line-height: 1.5;
 	}
 

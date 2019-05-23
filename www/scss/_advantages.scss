@@ -12,6 +12,8 @@ ADVANTAGES
 	align-self: flex-start;
 	margin-top: 0;
 	margin-bottom: 35px;
+	font-size: 36px;
+	font-weight: normal;
 }
 
 .advantages__features {
@@ -32,6 +34,11 @@ ADVANTAGES
 	margin: 0;
 	padding: 0 0 0 80px;
 	position: relative;	
+	color: $light-grey;
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 14px;
+	line-height: 1.29;
+	font-weight: normal;
 
 	&::before {
 		content: '';
@@ -135,6 +142,7 @@ ADVANTAGES
 	.advantages__title {
 		margin-top: 41px;
 		margin-bottom: 65px;
+		font-size: 60px;
 	}
 
 	.advantages__features {
@@ -206,6 +214,8 @@ ADVANTAGES
 	.advantages__item-text {
 		max-width: 230px;
 		padding: 113px 0 48px 0;
+		font-size: 16px;
+		line-height: 1.5;
 		
 		&::before {
 			width: 80px;

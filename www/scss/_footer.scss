@@ -92,7 +92,11 @@ FOOTER
 }
 
 .footer__htmlacademy-link {
+	color: $light-grey;
+	font-family: Arial, Tahoma, sans-serif;
 	font-size: 16px;
+	line-height: 1.29;
+	font-weight: normal;
 
 	&:active {
 		opacity: 0.3;
@@ -170,6 +174,7 @@ FOOTER
 
 	.footer__htmlacademy-link {
 		margin-right: 13px;
+		line-height: 1.5;
 	}
 
 	.footer__htmlacademy-icon {

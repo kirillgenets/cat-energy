@@ -3,8 +3,25 @@ EXTRA CATALOG
 **********/
 
 .extra-catalog__title {
+	display: inline-block;
+	vertical-align: baseline;
 	margin: 26px 0 31px 0;
 	padding: 0 20px;
+	position: relative;
+	background-color: #fff;
+	font-size: 24px;
+	font-weight: normal;
+
+	&::after {
+		content: "";
+	    width: calc(100vw - 20px);
+	    height: 3px;
+	    position: absolute;
+	    top: 50%;
+	    z-index: -1;
+	    background-color: $green;
+	}
+
 }
 
 .extra-catalog__gift {
@@ -27,6 +44,8 @@ EXTRA CATALOG
 	color: #fff;
 	font-family: Arial, sans-serif;
 	font-size: 16px;
+	line-height: 1.29;
+	font-weight: normal;
 	text-align: center;
 
 	&::before {
@@ -58,9 +77,12 @@ EXTRA CATALOG
 		margin-bottom: 75px;
 		margin-left: 30px;
 		padding: 0 37px;
+		font-size: 36px;
 
 		&::after {
-			top: 22px;
+		    width: 100vw;
+		    top: 22px;
+		    left: -30px;
 		}
 
 	}

@@ -193,19 +193,6 @@ FORM
 
 }
 
-.form__field:focus + .form__field-icon {
-	fill: $green;
-}
-
-.form__field:invalid + .form__field-icon {
-	fill: #ff8282;
-}
-
-.form__field-container {
-	width: 100%;
-	position: relative;
-}
-
 .form__field-icon {
 	position: absolute;
 	fill: $dark-grey;
@@ -222,14 +209,38 @@ FORM
 
 }
 
+.form__field:focus + .form__field-icon {
+	fill: $green;
+}
+
+.form__field:invalid + .form__field-icon {
+	fill: #ff8282;
+}
+
+.form__field-container {
+	width: 100%;
+	position: relative;
+}
+
 .form__block-title {
+	display: inline-block;
+	vertical-align: baseline;
+	margin-bottom: 33px;
+	padding-right: 20px;
+	position: relative;
+	background-color: #fff;
 	font-size: 24px;
 	font-weight: normal;
 	line-height: 1;
-	margin-bottom: 33px;
 
 	&::after {
-		width: 100vw;
+		content: "";
+	    width: 100vw;
+	    height: 3px;
+	    position: absolute;
+	    top: 50%;
+	    z-index: -1;
+	    background-color: $green;
 	}
 
 	&--owner-info {
@@ -272,6 +283,11 @@ FORM
 .form__hint {
 	margin: 0;
 	padding: 0;
+	color: $light-grey;
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 14px;
+	line-height: 1.29;
+	font-weight: normal;
 	text-align: center;
 }
 
@@ -313,11 +329,14 @@ FORM
 
 	.form__block-title {
 		margin-bottom: 75px;
+		margin-left: 30px;
+		padding-right: 37px;
+		padding-left: 37px;
 		font-size: 36px;
 
 		&::after {
-			width: 100vw;
 			top: 20px;
+			left: -30px;
 		}
 
 		&--comment {
@@ -471,6 +490,11 @@ FORM
 		font-size: 20px;
 	}
 
+	.form__hint {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
 }
 
 @media screen and (min-width: $desktop) {
@@ -566,17 +590,19 @@ FORM
 	}
 
 	.form__send {
+		width: 1220px;
 		margin-left: 110px;
 	}
 
 	.form__block-title {
-
-		&::after {
-			width: 100vw;
-		}
+		margin-left: 72px;
 
 		&--owner-info {
 			margin-top: 70px;
+		}
+
+		&::after {			
+			left: -72px;
 		}
 
 	}

@@ -30,7 +30,11 @@ CONTACTS
 	max-width: 50%;
 	margin: 0;
 	padding: 0;
+	color: $light-grey;
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 14px;
 	line-height: 1.43;
+	font-weight: normal;
 }
 
 
@@ -66,6 +70,7 @@ CONTACTS
 
 	.map__adress {
 		max-width: 155px;
+		font-size: 16px;
 		text-align: right;
 		line-height: 1.25;
 	}
