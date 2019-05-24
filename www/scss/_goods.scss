@@ -51,9 +51,10 @@ GOODS
 			height: 30px;
 			position: absolute;
 			top: 0;
-			left: calc(50% - 15px);
+			left: 50%;
 			background-image: url(../img/icon-plus-mobile.svg);
 			fill: #cdcdcd;
+			transform: translateX(-50%);
 		}
 	}
 }
@@ -192,9 +193,10 @@ GOODS
 				width: 60px;
 				height: 60px;
 				top: 0;
-				left: calc(50% - 30px);
+				left: 50%;
 				background-image: url(../img/icon-plus.svg);
 				fill: #cdcdcd;
+				transform: translateX(-50%);
 			}
 
 		}

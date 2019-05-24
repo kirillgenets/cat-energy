@@ -14,7 +14,7 @@ EXTRA CATALOG
 
 	&::after {
 		content: "";
-	    width: calc(100vw - 20px);
+	    width: 100vw;
 	    height: 3px;
 	    position: absolute;
 	    top: 50%;
@@ -53,10 +53,11 @@ EXTRA CATALOG
 		height: 60px;
 		width: 55px;
 		position: absolute;
-		left: calc(50% - 27.5px);
+		left: 50%;
 		top: 0;
 		background-image: url(../img/icon-gift.svg);
 		background-repeat: no-repeat;
+		transform: translateX(-50%);
 	}
 
 }

@@ -47,10 +47,11 @@ ADVANTAGES
 		margin-right: 20px;
 		position: absolute;
 		left: 0;
-		top: calc(50% - 30px);
+		top: 50%;
 		background-color: $green;
 		background-repeat: no-repeat;
 		background-position: center;
+		transform: translateY(-50%);
 	}
 
 	&--leaf {

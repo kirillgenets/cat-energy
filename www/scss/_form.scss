@@ -323,8 +323,8 @@ FORM
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
-		width: calc(100% - 238px);
 		margin-left: 70px;
+		padding-right: 238px;
 	}
 
 	.form__block-title {
@@ -582,6 +582,7 @@ FORM
 		margin-right: 0;
 		margin-bottom: 44px;
 		margin-left: 110px;
+		padding-right: 0;
 	}
 
 	.form__submit {
