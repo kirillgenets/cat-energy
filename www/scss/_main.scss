@@ -1,0 +1,12 @@
+/*********
+MAIN
+*********/
+
+.main {
+	overflow: hidden;
+
+	&--index {
+		overflow: visible;
+	}
+
+}
