@@ -329,14 +329,14 @@ FORM
 
 	.form__block-title {
 		margin-bottom: 75px;
-		margin-left: 30px;
+		margin-left: 0px;
 		padding-right: 37px;
 		padding-left: 37px;
 		font-size: 36px;
 
 		&::after {
 			top: 20px;
-			left: -30px;
+			left: 0;
 		}
 
 		&--comment {
@@ -346,6 +346,17 @@ FORM
 		&--extra-goods {
 			margin-top: 0;
 			margin-bottom: 50px;
+		}
+
+		&::before {
+			content: "";
+		    width: 100vw;
+		    height: 3px;
+		    position: absolute;
+		    top: 20px;
+		    right: 0;
+		    z-index: -1;
+		    background-color: $green;
 		}
 
 	}
@@ -511,7 +522,7 @@ FORM
 	.form__owner {
 		display: flex;
 		justify-content: space-between;
-		padding: 0 110px 67px 110px;
+		padding: 0 0 67px 0;
 	}
 
 	.form__block {
@@ -575,7 +586,7 @@ FORM
 		max-width: 1440px;
 		margin-right: 0;
 		margin-bottom: 44px;
-		margin-left: 110px;
+		margin-left: 0;
 		padding-right: 0;
 	}
 
@@ -586,11 +597,11 @@ FORM
 
 	.form__send {
 		width: 1220px;
-		margin-left: 110px;
+		margin-left: 0;
 	}
 
 	.form__block-title {
-		margin-left: 72px;
+		margin-left: 0;
 
 		&--owner-info {
 			margin-top: 70px;
