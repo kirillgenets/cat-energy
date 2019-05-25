@@ -302,7 +302,7 @@ FORM
 	.form__title {
 		max-width: 325px;
 		margin-bottom: 65px;
-		margin-left: 70px;
+		margin-left: 0;
 		font-size: 20px;
 		line-height: 1.5;
 	}
@@ -357,7 +357,7 @@ FORM
 	.form__row {
 		margin-right: 67px;
 		margin-bottom: 21px;
-		margin-left: 70px;
+		margin-left: 0;
 
 		&--radio {
 			margin-right: 0;
@@ -506,17 +506,12 @@ FORM
 	.form__cat {
 		display: flex;
 		justify-content: space-between;
-		padding-right: 110px;
 	}
 
 	.form__owner {
 		display: flex;
 		justify-content: space-between;
 		padding: 0 110px 67px 110px;
-	}
-
-	.form__title {
-		margin-left: 110px;
 	}
 
 	.form__block {
@@ -530,7 +525,6 @@ FORM
 
 	.form__row {
 		margin-right: 100px;
-		margin-left: 110px;
 
 		&--cat-info {
 			width: 570px;
