@@ -142,7 +142,7 @@ ADVANTAGES
 
 	.advantages__title {
 		margin-top: 41px;
-		margin-bottom: 65px;
+		margin-bottom: 107px;
 		font-size: 60px;
 	}
 
@@ -164,7 +164,7 @@ ADVANTAGES
 		&::after {
 			content: '';
 			position: absolute;
-			top: 0;
+			top: -40px;
 			z-index: -1;
 			color: $bg-grey;
 			font-size: 281px;
@@ -214,7 +214,7 @@ ADVANTAGES
 
 	.advantages__item-text {
 		max-width: 230px;
-		padding: 113px 0 48px 0;
+		padding: 72px 0 48px 0;
 		font-size: 16px;
 		line-height: 1.5;
 		

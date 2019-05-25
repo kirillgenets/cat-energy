@@ -8,6 +8,10 @@ NAVIGATION
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
+	&--closed {
+		display: none;
+	}
 }
 
 .nav__toggler {
@@ -22,6 +26,20 @@ NAVIGATION
 
 	&--no-js {
 		display: none;
+	}
+
+	&--closed-menu {
+		display: block;
+		width: 24px;
+		height: 19px;
+		right: 21px;
+		background-image: url(../img/icon-mobile-menu.svg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	&:hover {
+		cursor: pointer;
 	}
 
 }
@@ -71,32 +89,6 @@ NAVIGATION
 
 /*RESPONSIVE*/
 
-@media screen and (max-width: $tablet) {
-
-	.nav__list {
-		
-		&--closed {
-			display: none;
-		}
-		
-	}
-
-	.nav__toggler {
-
-		&--closed-menu {
-			display: block;
-			width: 24px;
-			height: 19px;
-			right: 21px;
-			background-image: url(../img/icon-mobile-menu.svg);
-			background-repeat: no-repeat;
-			background-size: 100%;
-		}
-
-	}
-
-}
-
 @media screen and (min-width: $tablet) {
 
 	.nav__toggler {
@@ -107,6 +99,11 @@ NAVIGATION
 		flex-direction: row;
 		justify-content: space-between;
 		margin-top: 21px;
+
+		&--closed {
+			display: flex;
+		}
+
 	}
 
 	.nav__item {
