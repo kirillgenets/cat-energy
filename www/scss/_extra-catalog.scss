@@ -166,8 +166,9 @@ EXTRA CATALOG
 		text-align: center;
 
 		&::before {
-			left: 40px;
+			left: 50%;
 			top: 1px;
+			transform: translateX(-50%);
 		}
 
 	}
