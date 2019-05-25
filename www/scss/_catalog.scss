@@ -25,13 +25,15 @@ CATALOG SECTION
 @media screen and (min-width: $tablet) {
 
 	.catalog {
-		padding: 0 30px;
+		width: 708px;
+		margin: 0 auto;
 	}
 
 	.catalog__title {
 		margin-top: 56px;
 		margin-bottom: 78px;
 		padding: 0;
+		font-size: 60px;
 	}
 
 }
@@ -39,7 +41,8 @@ CATALOG SECTION
 @media screen and (min-width: $desktop) {
 
 	.catalog {
-		padding: 0 110px;
+		width: 1220px;
+		margin: 0 auto;
 	}
 	
 	.catalog__title {

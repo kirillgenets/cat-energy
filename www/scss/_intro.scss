@@ -115,7 +115,7 @@ INTRO
 	.intro {
 		padding-top: 0;
 		padding-bottom: 85px;
-		padding-left: 193px;
+		background-color: rgba(0,0,0,0);
 
 		&::before {
 			content: '';
@@ -124,19 +124,21 @@ INTRO
 			position: absolute;
 			right: 0;
 			top: -112px;
-			z-index: 1;
+			z-index: -1;
 			background-image: url(../img/index-background-desktop@1x.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
+			transform: translateX(8px);
 		}
 		
 	}
 
 	.intro__wrapper {
 		flex-wrap: wrap;
-		max-height: 500px;
-		margin-left: 0;
+		height: 500px;
+		width: 1220px;
 		padding-top: 0;
+		transform: translateX(80px);
 	}
 	
 	.intro__title {
@@ -150,8 +152,7 @@ INTRO
 
 	.intro__img-container {
 		margin-top: 29px;
-		margin-left: -104px;
-		z-index: 2;
+		margin-left: -245px;
 	}
 
 	.intro__img {

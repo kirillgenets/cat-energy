@@ -276,12 +276,7 @@ GOODS
 }
 
 @media screen and (min-width: $desktop) {
-
-	.goods {
-		width: 1220px;
-		margin: 0 auto;
-	}
-
+	
 	.goods__product {
 		min-height: 512px;
 		max-height: 513px;

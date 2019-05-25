@@ -248,10 +248,10 @@ EXAMPLE
 		&::after {
 			content: '';
 			height: 100%;
-			width: 100%;
+			width: 100vw;
 			position: absolute;
 			top: 0;
-			left: 50%;
+			left: 354px;
 			z-index: 0;
 			background-image: linear-gradient(to bottom, #fff, #fff 169px, #eaeaea 169px, #eaeaea);		
 		}
@@ -422,11 +422,12 @@ EXAMPLE
 
 		&::before {
 			width: 100vw;
-			left: calc(-100vw + 365px);
+			right: 0;
 			background-image: linear-gradient(to bottom, #fff, #fff 190px, $bg-grey 190px,  $bg-grey);
 		}
 
 		&::after {
+			left: 365px;
 			background-image: linear-gradient(to bottom, #fff, #fff 190px, #eaeaea 190px,  #eaeaea);
 		}
 
