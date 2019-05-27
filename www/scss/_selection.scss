@@ -19,7 +19,7 @@ SELECTION
 @media screen and (min-width: $tablet) {
 
 	.selection {
-		width: 708px;
+		max-width: 708px;
 		margin: 0 auto;
 	}
 
@@ -35,13 +35,15 @@ SELECTION
 @media screen and (min-width: $desktop) {
 
 	.selection {
-		width: 1220px;
+		max-width: 1300px;
+		width: 1300px;
 		margin: 0 auto;
 	}
 
 	.selection__title {
 		margin-top: 74px;
 		margin-bottom: 49px;
+		margin-left: 40px;
 	}
 	
 }

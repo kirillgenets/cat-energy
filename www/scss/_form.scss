@@ -302,7 +302,7 @@ FORM
 	.form__title {
 		max-width: 325px;
 		margin-bottom: 65px;
-		margin-left: 0;
+		margin-left: 40px;
 		font-size: 20px;
 		line-height: 1.5;
 	}
@@ -311,11 +311,18 @@ FORM
 		padding: 0;
 
 		&--type {
-			margin: 71px 70px 46px;
+			margin-top: 71px;
+			margin-bottom: 46px;
 			padding: 19px 0 31px 28px;
 			border: 1px solid #cdcdcd;
 		}
 
+	}
+
+	.form__cat, .form__owner, .form__comment {
+		max-width: 630px;
+		width: 630px;
+		margin: 0 auto;
 	}
 
 	.form__block-content {
@@ -323,15 +330,15 @@ FORM
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
-		margin-left: 70px;
-		padding-right: 238px;
+		margin-left: 40px;
+		padding-right: 100px;
 	}
 
 	.form__block-title {
 		margin-bottom: 75px;
 		margin-left: 0px;
 		padding-right: 37px;
-		padding-left: 37px;
+		padding-left: 40px;
 		font-size: 36px;
 
 		&::after {
@@ -490,12 +497,11 @@ FORM
 		align-items: center;
 		width: 708px;
 		margin-top: 27px;
-		margin-left: 70px;
 	}
 
 	.form__submit {
 		width: 283px;
-		margin: 0 61px 0 0;
+		margin: 0 61px 0 40px;
 		padding-top: 15px;
 		padding-bottom: 14px;
 		font-size: 20px;
@@ -512,6 +518,11 @@ FORM
 
 	.form {
 		padding-bottom: 80px;
+	}
+
+	.form__cat, .form__owner, .form__comment {
+		max-width: 1220px;
+		width: 1220px;
 	}
 
 	.form__cat {
@@ -586,7 +597,6 @@ FORM
 		max-width: 1440px;
 		margin-right: 0;
 		margin-bottom: 44px;
-		margin-left: 0;
 		padding-right: 0;
 	}
 
@@ -605,10 +615,6 @@ FORM
 
 		&--owner-info {
 			margin-top: 70px;
-		}
-
-		&::after {			
-			left: -72px;
 		}
 
 	}
