@@ -74,13 +74,13 @@ EXTRA CATALOG
 @media screen and (min-width: $tablet) {
 
 	.extra-catalog {
-		max-width: 768px;
+		max-width: 708px;
 		margin: 0 auto;
 	}
 	
 	.extra-catalog__title {
-		margin-top: 5px;
-		margin-bottom: 75px;
+		margin-top: 6px;
+		margin-bottom: 77px;
 		padding: 0 37px;
 		font-size: 36px;
 
@@ -105,10 +105,10 @@ EXTRA CATALOG
 
 	.extra-catalog__gift {
 		align-items: flex-start;
-		margin: 71px 30px 77px 30px;
+		margin: 68px 0 77px 0;
 		padding-top: 72px;
 		padding-bottom: 67px;
-		padding-left: 91px;
+		padding-left: 118px;
 		background-image: url(../img/gift-photo-tablet@1x.jpg);
 		background-size: cover;
 	}
@@ -116,7 +116,7 @@ EXTRA CATALOG
 	.extra-catalog__gift-text {
 		margin: 0;
 		padding-top: 0;
-		padding-left: 333px;
+		padding-left: 305px;
 		text-align: left;
 		line-height: 1.25;
 
