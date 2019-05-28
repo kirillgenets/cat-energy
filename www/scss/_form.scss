@@ -296,7 +296,7 @@ FORM
 @media screen and (min-width: $tablet) {
 
 	.form {
-		padding-bottom: 72px;
+		padding-bottom: 75px;
 	}
 
 	.form__title {
@@ -311,8 +311,8 @@ FORM
 		padding: 0;
 
 		&--type {
-			margin-top: 71px;
-			margin-bottom: 46px;
+			margin-top: 72px;
+			margin-bottom: 47px;
 			padding: 19px 0 31px 28px;
 			border: 1px solid #cdcdcd;
 		}
@@ -331,7 +331,7 @@ FORM
 		justify-content: space-between;
 		align-items: center;
 		margin-left: 40px;
-		padding-right: 100px;
+		padding-right: 137px;
 	}
 
 	.form__block-title {
@@ -373,7 +373,7 @@ FORM
 	}
 
 	.form__row {
-		margin-right: 67px;
+		margin-right: 0;
 		margin-bottom: 21px;
 		margin-left: 0;
 
@@ -400,7 +400,7 @@ FORM
 		}
 
 		&--comment {
-			margin-bottom: 67px;
+			margin-bottom: 66px;
 		}
 
 		&--checkbox {
@@ -448,12 +448,12 @@ FORM
 
 		&--email {
 			top: 21px;
-			right: 21px;
+			right: 17px;
 		}
 
 		&--phone {
 			top: 19px;
-			right: 17px;
+			right: 14px;
 		}
 	}
 
@@ -496,7 +496,7 @@ FORM
 		justify-content: flex-start;
 		align-items: center;
 		width: 708px;
-		margin-top: 27px;
+		margin-top: 25px;
 	}
 
 	.form__submit {
@@ -517,7 +517,7 @@ FORM
 @media screen and (min-width: $desktop) {
 
 	.form {
-		padding-bottom: 80px;
+		padding-bottom: 82px;
 	}
 
 	.form__cat, .form__owner, .form__comment {
@@ -573,7 +573,7 @@ FORM
 		}
 
 		&--comment {
-			margin-right: 111px;
+			margin-right: 0;
 			margin-bottom: 69px;
 		}
 
