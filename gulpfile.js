@@ -37,11 +37,10 @@ gulp.task('css', function () {
 
 gulp.task('images', function() {
 
-	return gulp.src('www/img/*.{png,jpg,svg}')
+	return gulp.src('www/img/*.{png,jpg}')
 		.pipe(imagemin([
 			imagemin.optipng({optimizationLevel: 3}),
- 			imagemin.jpegtran({progressive: true}),
- 			imagemin.svgo()  
+ 			imagemin.jpegtran({progressive: true})
 	 	]))
 		.pipe(gulp.dest('build/img'));
 
@@ -93,7 +92,7 @@ gulp.task('copy', function () {
 
 	return gulp.src([
 			'www/fonts/**/*.{woff,woff2}',
-			'www/img/**',
+			'www/img/*.svg',
 			'www/js/**'
 		], {
 			base: 'www'
@@ -122,6 +121,7 @@ gulp.task('js', function() {
 gulp.task('build', gulp.series(
 	'clean',
 	'copy',
+	'images',
 	'css',
 	'sprite',
 	'webp', 

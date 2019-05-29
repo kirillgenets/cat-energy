@@ -11,16 +11,13 @@ HEADER
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 14px 20px 14px 20px;
+	padding: 13px 20px 13px 20px;
 	border-bottom: 1px solid #cdcdcd;
 }
 
 .header__logo {
 	width: 190px;
 	height: 38px;
-	background-image: url(../img/logo-mobile.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
 
 	&:hover {
 		opacity: 0.7;
@@ -40,13 +37,12 @@ HEADER
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		padding: 24px 30px 0 30px;
+		padding: 24px 24px 0 30px;
 	}
 	
 	.header__logo {
 		height: 58px;
-		width: 173px;
-		background-image: url(../img/logo-tablet.svg);		
+		width: 173px;	
 	}
 
 	.header__higher-panel {
@@ -67,7 +63,6 @@ HEADER
 	.header__logo {
 		width: 202px;
 		height: 59px;
-		background-image: url(../img/logo-desktop.svg);
 	}
 
 }

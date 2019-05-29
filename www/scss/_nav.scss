@@ -98,6 +98,7 @@ NAVIGATION
 	.nav__list {
 		flex-direction: row;
 		justify-content: space-between;
+		width: 450px;
 		margin-top: 21px;
 
 		&--closed {
@@ -110,12 +111,11 @@ NAVIGATION
 		display: flex;
 		justify-content: center;
 		max-width: 165px;
-		margin-right: 36px;
 		padding: 0;
 		border: none;
 
-		&--choose-program {
-			margin-right: 0;
+		&--index {
+			max-width: 75px;
 		}
 
 	}
@@ -149,6 +149,10 @@ NAVIGATION
 
 @media screen and (min-width: $desktop) {
 
+	.nav__list {
+		width: 482px;
+	}
+
 	.nav__link {
 		z-index: 2;
 		font-size: 20px;
@@ -161,15 +165,6 @@ NAVIGATION
 
 	.nav__link--current.nav__link--main {
 		border-color: #fff;
-	}
-
-	.nav__item {
-		margin-right: 39px;
-
-		&--choose-program {
-			margin-right: 0;
-		}
-
 	}
 	
 }

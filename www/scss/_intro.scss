@@ -114,7 +114,7 @@ INTRO
 
 	.intro {
 		padding-top: 0;
-		padding-bottom: 85px;
+		padding-bottom: 82px;
 		background-color: rgba(0,0,0,0);
 
 		&::before {
@@ -123,11 +123,12 @@ INTRO
 			height: 696px;
 			position: absolute;
 			right: 0;
-			top: -112px;
+			top: -115px;
 			z-index: -1;
 			background-image: url(../img/index-background-desktop@1x.jpg);
 			background-repeat: no-repeat;
-			background-size: cover;
+			background-position: right top;
+			background-size: 100%;
 			transform: translateX(8px);
 		}
 		
@@ -142,7 +143,7 @@ INTRO
 	}
 	
 	.intro__title {
-		margin-top: 111px;
+		margin-top: 109px;
 		margin-bottom: 39px;
 	}
 

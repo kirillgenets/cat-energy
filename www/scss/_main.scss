@@ -3,10 +3,10 @@ MAIN
 *********/
 
 .main {
-	overflow: hidden;
+	overflow-x: hidden;
 
 	&--index {
-		overflow: visible;
+		overflow-x: visible;
 	}
 
 }
