@@ -25,7 +25,8 @@ GOODS
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 0.5px;
+	width: 280px;
+	margin: 0 auto 0.5px auto;
 }
 
 .goods__product-title {
@@ -70,6 +71,7 @@ GOODS
 }
 
 .goods__product-order {
+	max-width: 400px;
 	width: 100%;
 	padding-top: 11px;
 	padding-bottom: 11px;
@@ -174,6 +176,7 @@ GOODS
 	.goods__product-info {
 		flex-direction: column;
 		align-items: center;
+		width: 324px;
 	}
 
 	.goods__product-title {
@@ -284,6 +287,10 @@ GOODS
 	}
 	
 	.goods__product-image {
+		width: 245px;
+	}
+
+	.goods__product-info {
 		width: 245px;
 	}
 

@@ -29,7 +29,8 @@ EXAMPLE
 .example__indicators {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 20px 15px 20px;
+	width: 280px;
+	margin: 0 auto 15px auto;
 }
 
 .example__indicator {
@@ -192,6 +193,7 @@ EXAMPLE
 	}
 
 	.example__indicators {
+		width: 409px;
 		margin-left: 0;
 		margin-bottom: 0;
 	}
@@ -231,7 +233,7 @@ EXAMPLE
 	}
 
 	.example__changes-container {
-		padding-bottom: 67px;
+		padding-bottom: 69px;
 		position: relative;
 	
 		&::before {
@@ -399,6 +401,7 @@ EXAMPLE
 	}
 
 	.example__indicators {
+		width: 365px;
 		margin: 0 0 34px 0;
 		padding: 0;
 	}

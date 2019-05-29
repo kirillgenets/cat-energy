@@ -28,12 +28,14 @@ EXTRA CATALOG
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 42px 20px 33px 20px;
+	max-width: 450px;
+	margin: 42px auto 33px auto;
 	padding-top: 50px;
 	padding-bottom: 26px;
 	background-color: $green;
 	background-image: url(../img/gift-photo-mobile@1x.jpg);
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: 100%;
 }
 
@@ -105,6 +107,7 @@ EXTRA CATALOG
 
 	.extra-catalog__gift {
 		align-items: flex-start;
+		max-width: 100%;
 		margin: 68px 0 77px 0;
 		padding-top: 72px;
 		padding-bottom: 67px;
