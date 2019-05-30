@@ -157,8 +157,21 @@ EXAMPLE
 	.example {
 		padding: 41px 0 0 0;
 		border-top: 1px solid $bg-grey;
+		position: relative;
 		background-color: #fff;
-		overflow: hidden;
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0) 616px, #eaeaea 169px, #eaeaea);
+
+		&::before {
+			content: '';
+			height: 100%;
+			width: 50%;
+			position: absolute;
+			top: 0;
+			right: 50%;
+			z-index: 0;
+			background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0) 616px, $bg-grey 169px, $bg-grey);
+		}
+
 	}
 
 	.example__wrapper {
@@ -235,28 +248,6 @@ EXAMPLE
 	.example__changes-container {
 		padding-bottom: 69px;
 		position: relative;
-	
-		&::before {
-			content: '';
-			height: 100%;
-			width: 100%;
-			position: absolute;
-			top: 0;
-			right: 50%;
-			z-index: 0;
-			background-image: linear-gradient(to bottom, #fff, #fff 169px, $bg-grey 169px, $bg-grey);
-		}
-
-		&::after {
-			content: '';
-			height: 100%;
-			width: 100vw;
-			position: absolute;
-			top: 0;
-			left: 354px;
-			z-index: 0;
-			background-image: linear-gradient(to bottom, #fff, #fff 169px, #eaeaea 169px, #eaeaea);		
-		}
 	}
 
 	.example__cat-list {
@@ -358,12 +349,21 @@ EXAMPLE
 	.example {
 		padding-top: 0;
 		border: none;
+		background-image: linear-gradient(to bottom, #fff, #fff 190px, #eaeaea 190px, #eaeaea);
+
+		&::before {
+			width: 100%;
+			right: 50%;
+			background-image: linear-gradient(to bottom, #fff, #fff 190px, $bg-grey 190px,  $bg-grey);
+			transform: translateX(325px);
+		}
+
 	}
 
 	.example__wrapper {
 		display: flex;
 		justify-content: space-between;
-		width: 1440px;
+		width: 1300px;
 	}
 
 	.example__content {
@@ -373,20 +373,20 @@ EXAMPLE
 	.example__title {
 		margin-top: 48px;
 		margin-bottom: 140px;
-		margin-left: 110px;
+		margin-left: 40px;
 	}
 
 	.example__text {
 		max-width: 435px;
 		margin-bottom: 70px;
-		margin-left: 110px;
+		margin-left: 40px;
 	}
 
 	.example__info {
 		flex-direction: column;
 		align-items: flex-start;
-		margin-bottom: 0px;
-		margin-left: 110px;
+		margin-bottom: 0;
+		margin-left: 40px;
 	}
 
 	.example__expences {
@@ -419,21 +419,7 @@ EXAMPLE
 	}
 
 	.example__changes-container {
-		padding-right: 70px;
 		padding-bottom: 66px;
-		background-image: linear-gradient(to bottom, #fff, #fff 190px, #eaeaea 190px, #eaeaea);
-
-		&::before {
-			width: 100vw;
-			right: 0;
-			background-image: linear-gradient(to bottom, #fff, #fff 190px, $bg-grey 190px,  $bg-grey);
-		}
-
-		&::after {
-			left: 365px;
-			background-image: linear-gradient(to bottom, #fff, #fff 190px, #eaeaea 190px,  #eaeaea);
-		}
-
 	}
 
 	.example__cat-list {
