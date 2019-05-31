@@ -37,7 +37,10 @@ HEADER
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		padding: 24px 24px 0 30px;
+		width: 718px;
+		margin: 0 auto;
+		padding-top: 24px;
+		padding-bottom: 0;
 	}
 	
 	.header__logo {

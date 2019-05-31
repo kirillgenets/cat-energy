@@ -16,6 +16,8 @@ CONTACTS
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	max-width: 450px;
+	margin: 0 auto;
 	padding-top: 30px;
 	padding-right: 20px;
 	padding-bottom: 26px;
@@ -71,7 +73,8 @@ CONTACTS
 	}
 
 	.contacts__info {
-		padding: 63px 72px 59px 71px;
+		max-width: 630px;
+		padding: 63px 0 59px 0;
 	}
 
 	.contacts__adress {
@@ -113,9 +116,10 @@ CONTACTS
 		box-sizing: border-box;
 		padding: 66px 90px 59px 76px;
 		position: absolute;
-		left: 110px;
+		left: 50%;
 		top: 95px;
 		background-color: #fff;
+		transform: translateX(-610px);
 	}
 
 	.contacts__adress {

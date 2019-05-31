@@ -17,6 +17,7 @@ var include = require("posthtml-include");
 var server = require("browser-sync").create();
 
 var minify = require('gulp-minify');
+var concat = require('gulp-concat');
 
 var del = require("del");
 
@@ -92,8 +93,7 @@ gulp.task('copy', function () {
 
 	return gulp.src([
 			'www/fonts/**/*.{woff,woff2}',
-			'www/img/*.svg',
-			'www/js/**'
+			'www/img/*.svg'
 		], {
 			base: 'www'
 		})
@@ -109,7 +109,8 @@ gulp.task('clean', function () {
 
 gulp.task('js', function() {
 
-	return gulp.src('www/js/script.js')
+	return gulp.src('www/js/*.js')
+		.pipe(concat('main.js'))
 		.pipe(minify({
 			ext:{
 	            min:'.min.js'

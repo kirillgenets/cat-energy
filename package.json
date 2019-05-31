@@ -8,6 +8,7 @@
     "editorconfig-cli": "^0.3.0",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
+    "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-minify": "^3.1.0",

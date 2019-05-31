@@ -7,6 +7,11 @@ FOOTER
 	background-color: $bg-grey;
 }
 
+.footer__content-wrapper {
+	max-width: 450px;
+	margin: 0 auto;
+}
+
 .footer__logo-container {
 	width: 130px;
 	height: 25px;
@@ -109,12 +114,16 @@ FOOTER
 @media screen and (min-width: $tablet) {
 
 	.footer__content {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
 		padding-top: 44px;
 		padding-bottom: 58px;
 		padding-left: 30px;
+	}
+
+	.footer__content-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;		
+		max-width: 718px;
 	}
 
 	.footer__logo-container {
@@ -179,7 +188,11 @@ FOOTER
 @media screen and (min-width: $desktop) {
 
 	.footer__content {
-		padding: 48px 113px 45px 109px;
+		padding: 48px 0 45px 0;
+	}
+
+	.footer__content-wrapper {
+		max-width: 1220px;
 	}
 	
 }

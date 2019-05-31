@@ -13,7 +13,7 @@ EXTRA CATALOG
 	font-weight: normal;
 
 	&::after {
-		content: "";
+		content: '';
 	    width: 100vw;
 	    height: 3px;
 	    position: absolute;
@@ -29,7 +29,7 @@ EXTRA CATALOG
 	flex-direction: column;
 	align-items: center;
 	max-width: 450px;
-	margin: 42px auto 33px auto;
+	margin: 42px 20px 33px 20px;
 	padding-top: 50px;
 	padding-bottom: 26px;
 	background-color: $green;
@@ -73,6 +73,15 @@ EXTRA CATALOG
 	}
 }
 
+@media screen and (min-width: 490px) {
+
+	.extra-catalog__gift {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
 @media screen and (min-width: $tablet) {
 
 	.extra-catalog {
@@ -93,7 +102,7 @@ EXTRA CATALOG
 		}
 
 		&::before {
-			content: "";
+			content: '';
 		    width: 100vw;
 		    height: 3px;
 		    position: absolute;
