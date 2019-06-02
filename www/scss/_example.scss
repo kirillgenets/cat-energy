@@ -86,13 +86,18 @@ EXAMPLE
 	margin: 0 0 29px 0;
 	padding: 0;
 
+	&--after {
+		display: none;
+	}
+
 	&--hidden {
 		display: none;
 	}
 
-	&--after {
-		display: none;
+	&--shown {
+		display: block;
 	}
+
 }
 
 .example__changes {
@@ -123,6 +128,7 @@ EXAMPLE
 	&:active {
 		border-bottom: 1px solid rgba(0,0,0,0);
 	}
+	
 }
 
 .example__slider {
@@ -268,6 +274,14 @@ EXAMPLE
 
 		&--after {
 			display: block;
+		}
+
+		&--hidden {
+			clip: rect(auto, 0px, auto, auto);
+		}
+
+		&--shown {
+			clip: rect(auto, 690px, auto, auto);
 		}
 
 	}
@@ -431,6 +445,14 @@ EXAMPLE
 		&--before {
 			background-image: linear-gradient(to bottom, #fff, #fff 190px, $bg-grey 190px,  $bg-grey);
 			clip: rect(auto, 365px, auto, auto);
+		}
+
+		&--hidden {
+			clip: rect(auto, 0, auto, auto);
+		}
+
+		&--shown {
+			clip: rect(auto, 690px, auto, auto);
 		}
 
 	}
