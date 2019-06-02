@@ -2,26 +2,24 @@
 EXTRA CATALOG
 **********/
 
+.extra-catalog {
+	margin-top: 39px;
+	padding-top: 41px;
+	border-top: 3px solid $green;
+	position: relative;
+}
+
 .extra-catalog__title {
 	display: inline-block;
 	vertical-align: baseline;
-	margin: 26px 0 31px 0;
+	margin: 0;
 	padding: 0 20px;
-	position: relative;
+	position: absolute;
+	left: 0;
+	top: -16px;
 	background-color: #fff;
 	font-size: 24px;
 	font-weight: normal;
-
-	&::after {
-		content: '';
-	    width: 100vw;
-	    height: 3px;
-	    position: absolute;
-	    top: 50%;
-	    z-index: -1;
-	    background-color: $green;
-	}
-
 }
 
 .extra-catalog__gift {
@@ -85,39 +83,27 @@ EXTRA CATALOG
 @media screen and (min-width: $tablet) {
 
 	.extra-catalog {
-		max-width: 708px;
+		margin-top: 30px;
+		padding-top: 91px;
+	}
+
+	.extra-catalog__goods-container {
+		width: 708px;
 		margin: 0 auto;
 	}
 	
 	.extra-catalog__title {
-		margin-top: 6px;
-		margin-bottom: 77px;
 		padding: 0 37px;
+		left: 50%;
+		top: -26px;
 		font-size: 36px;
-
-		&::after {
-		    width: 100vw;
-		    top: 22px;
-		    left: -30px;
-		}
-
-		&::before {
-			content: '';
-		    width: 100vw;
-		    height: 3px;
-		    position: absolute;
-		    top: 22px;
-		    right: 0;
-		    z-index: -1;
-		    background-color: $green;
-		}
-
+		transform: translateX(-354px);
 	}
 
 	.extra-catalog__gift {
 		align-items: flex-start;
 		max-width: 100%;
-		margin: 68px 0 77px 0;
+		margin: 68px 0 78px 0;
 		padding-top: 72px;
 		padding-bottom: 67px;
 		padding-left: 118px;
@@ -152,23 +138,12 @@ EXTRA CATALOG
 @media screen and (min-width: $desktop) {
 
 	.extra-catalog {
-		max-width: 1300px;
+		margin-top: 37px;
 		padding-bottom: 84px;
 	}
 
 	.extra-catalog__title {
-		margin-top: 13px;
-		margin-bottom: 77px;
-
-		&::after {
-			left: -80px;
-			top: 23px;
-		}
-
-		&::before {
-			top: 23px;
-		}
-
+		transform: translateX(-648px);
 	}
 
 	.extra-catalog__goods-container {
