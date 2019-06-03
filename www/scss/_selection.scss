@@ -18,12 +18,9 @@ SELECTION
 
 @media screen and (min-width: $tablet) {
 
-	.selection {
-		max-width: 708px;
-		margin: 0 auto;
-	}
-
 	.selection__title {
+		width: 708px;
+		margin: 0 auto;
 		margin-top: 53px;
 		margin-bottom: 51px;
 		padding: 0;
@@ -33,12 +30,6 @@ SELECTION
 }
 
 @media screen and (min-width: $desktop) {
-
-	.selection {
-		max-width: 1300px;
-		width: 1300px;
-		margin: 0 auto;
-	}
 
 	.selection__title {
 		margin-top: 71px;
