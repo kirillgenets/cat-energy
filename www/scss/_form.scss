@@ -304,13 +304,29 @@ FORM
 	}
 	
 	.form__block {
-		padding: 0;
+		margin-top: 97px;
+		padding-top: 87px;
+		padding-left: 0;
 
 		&--type {
 			margin-top: 72px;
 			margin-bottom: 47px;
 			padding: 19px 0 31px 28px;
 			border: 1px solid #cdcdcd;
+		}
+
+		&--cat-info {
+			margin-top: 41px;
+			padding-top: 0;
+		}
+
+		&--comment {
+			margin-top: 20px;
+		}
+
+		&--extra {
+			margin-top: 20px;
+			padding-top: 65px;
 		}
 
 	}
@@ -325,21 +341,19 @@ FORM
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
-		margin-left: 40px;
-		padding-right: 137px;
+		width: 630px;
+		box-sizing: border-box;
+		margin: 0 auto;
+		padding-right: 97px;
 	}
 
 	.form__block-title {
-		margin-bottom: 75px;
-		margin-left: 0px;
-		padding-right: 37px;
-		padding-left: 40px;
+		padding: 0 37px;
+		left: 50%;
+		top: -23px;
 		font-size: 36px;
-
-		&::after {
-			top: 20px;
-			left: 0;
-		}
+		transform: translateX(-354px);
+		white-space: nowrap;
 
 		&--comment {
 			margin-top: 0;
@@ -348,17 +362,6 @@ FORM
 		&--extra-goods {
 			margin-top: 0;
 			margin-bottom: 50px;
-		}
-
-		&::before {
-			content: '';
-		    width: 100vw;
-		    height: 3px;
-		    position: absolute;
-		    top: 20px;
-		    right: 0;
-		    z-index: -1;
-		    background-color: $green;
 		}
 
 	}
@@ -515,6 +518,14 @@ FORM
 		padding-bottom: 82px;
 	}
 
+	.form__title {
+		margin-left: 0;
+	}
+
+	.form__title-container {
+		width: 1220px;
+	}
+
 	.form__cat, .form__owner, .form__comment {
 		max-width: 1220px;
 		width: 1220px;
@@ -528,14 +539,22 @@ FORM
 	.form__owner {
 		display: flex;
 		justify-content: space-between;
-		padding: 0 0 67px 0;
 	}
 
 	.form__block {
+		margin-top: 90px;
+
+		&--cat-info {
+			margin-top: 0;
+		}
 
 		&--type {
 			width: 540px;
 			margin: 0;
+		}
+
+		&--extra {
+			padding-top: 63px;
 		}
 
 	}
@@ -569,7 +588,7 @@ FORM
 
 		&--comment {
 			margin-right: 0;
-			margin-bottom: 69px;
+			margin-bottom: 0;
 		}
 
 		&--sugar-substitute {
@@ -589,8 +608,7 @@ FORM
 	.form__block-content {
 		flex-wrap: nowrap;
 		justify-content: flex-start;
-		max-width: 1440px;
-		margin-right: 0;
+		width: 1220px;
 		margin-bottom: 44px;
 		padding-right: 0;
 	}
@@ -598,20 +616,16 @@ FORM
 	.form__submit {
 		width: 570px;
 		margin-right: 81px;
+		margin-left: 0;
 	}
 
 	.form__send {
 		width: 1220px;
-		margin-left: 0;
 	}
 
 	.form__block-title {
 		margin-left: 0;
-
-		&--owner-info {
-			margin-top: 70px;
-		}
-
+		transform: translateX(-648px);
 	}
 
 }
