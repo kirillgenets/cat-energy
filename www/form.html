@@ -66,7 +66,7 @@
 				<div class="selection__info-wrapper">
 					<fieldset class="cat-info">
 						<legend class="visually-hidden">
-							Информация о коте
+							Напишите информацию о своем коте
 						</legend>
 						<ul class="cat-info__list">
 							<li class="cat-info__item">
@@ -83,28 +83,30 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset class="form__block form__block--type">
+					<fieldset class="product-type">
 						<legend class="visually-hidden">
-							Тип питания
+							Выберите тип питания Cat Energy
 						</legend>
-						<div class="form__row form__row--radio">
-							<input class="form__radio-input" type="radio" id="slim" checked name="type">
-							<label class="form__label form__label--radio" for="slim">
-								похудение
-							</label>
-						</div>
-						<div class="form__row form__row--radio">
-							<input class="form__radio-input" type="radio" id="pro" name="type">
-							<label class="form__label form__label--radio" for="pro">
-								набор массы
-							</label>
-						</div>
-						<div class="form__row form__row--radio form__row--radio-last">
-							<input class="form__radio-input" id="dont-know" type="radio" name="type">
-							<label class="form__label form__label--radio" for="dont-know">
-								не знаю (нужен ваш совет)
-							</label>
-						</div>
+						<ul class="product-type__list">
+							<li class="product-type__item">
+								<input class="product-type__radio-button visually-hidden" type="radio" id="slim" checked name="type">
+								<label class="product-type__explanation" for="slim">
+									похудение
+								</label>
+							</li>
+							<li class="product-type__item">
+								<input class="product-type__radio-button visually-hidden" type="radio" id="pro" name="type">
+								<label class="product-type__explanation" for="pro">
+									набор массы
+								</label>
+							</li>
+							<li class="product-type__item">
+								<input class="product-type__radio-button visually-hidden" id="dont-know" type="radio" name="type">
+								<label class="product-type__explanation" for="dont-know">
+									не знаю (нужен ваш совет)
+								</label>
+							</li>
+						</ul>
 					</fieldset>
 				</div>
 				<fieldset class="form__block form__block--owner-info">

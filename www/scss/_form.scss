@@ -21,14 +21,6 @@ FORM
 		padding-bottom: 0px;
 	}
 
-	&--type {
-		margin: 0;
-		padding-top: 15px;
-		padding-bottom: 25px; 
-		border-top: 1px solid $bg-grey;
-		border-bottom: 1px solid $bg-grey;
-	}
-
 	&--cat-info {
 		padding-top: 0;
 		border: none;
@@ -49,10 +41,6 @@ FORM
 
 	&--age {
 		margin-bottom: 23px;
-	}
-
-	&--radio {
-		margin-bottom: 13px;
 	}
 
 	&--radio, &--checkbox {
@@ -106,17 +94,6 @@ FORM
 	    }
 
 	}
-	
-	&--radio {
-
-		&::before {
-	    	padding: 8px;
-	    	border-radius: 50%;
-	    	top: 6px;
-	    	left: 0;
-	    }
-
-	}
 
 	&--checkbox {
 
@@ -150,12 +127,6 @@ FORM
 
 .form__radio-input, .form__checkbox-input {
 	display: none;
-}
-
-.form__radio-input:checked + .form__label--radio::before {
-	content: '';
-	background-color: $green;
-	background-clip: content-box;
 }
 
 .form__checkbox-input:checked + .form__label--checkbox::before {
@@ -287,13 +258,6 @@ FORM
 		padding-top: 87px;
 		padding-left: 0;
 
-		&--type {
-			margin-top: 72px;
-			margin-bottom: 47px;
-			padding: 19px 0 31px 28px;
-			border: 1px solid #cdcdcd;
-		}
-
 		&--cat-info {
 			margin-top: 41px;
 			padding-top: 0;
@@ -353,12 +317,6 @@ FORM
 		margin-right: 0;
 		margin-bottom: 21px;
 		margin-left: 0;
-
-		&--radio {
-			margin-right: 0;
-			margin-bottom: 17px;
-			margin-left: 0;
-		}
 
 		&--radio-last {
 			margin-bottom: 0;
@@ -445,14 +403,6 @@ FORM
 			&::before {
 				width: 40px;
 				height: 40px;
-			}
-
-		}
-
-		&--radio {
-
-			&::before {
-				padding: 11px;
 			}
 
 		}
