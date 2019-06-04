@@ -40,14 +40,6 @@ FORM
 
 }
 
-.form__title {
-	margin: 0 50px 39px 20px;
-	font-size: 14px;
-	font-weight: normal;
-	text-transform: uppercase;
-	line-height: 1.29;
-}
-
 .form__row {
 	display: flex;
 	justify-content: space-between;
@@ -289,19 +281,6 @@ FORM
 	.form {
 		padding-bottom: 75px;
 	}
-
-	.form__title-container {
-		width: 708px;
-		margin: 0 auto;
-	}
-
-	.form__title {
-		max-width: 325px;
-		margin-bottom: 65px;
-		margin-left: 40px;
-		font-size: 20px;
-		line-height: 1.5;
-	}
 	
 	.form__block {
 		margin-top: 97px;
@@ -518,16 +497,7 @@ FORM
 		padding-bottom: 82px;
 	}
 
-	.form__title {
-		margin-left: 0;
-	}
-
-	.form__title-container {
-		width: 1220px;
-	}
-
 	.form__cat, .form__owner, .form__comment {
-		max-width: 1220px;
 		width: 1220px;
 	}
 

@@ -2,10 +2,6 @@
 SELECTION
 ***********/
 
-.selection {
-	padding: 0;
-}
-
 .selection__title {
 	margin-top: 25px;
 	margin-bottom: 34px;
@@ -14,26 +10,65 @@ SELECTION
 	font-weight: normal;
 }
 
+.selection__description {
+	margin: 0 50px 39px 20px;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.29;
+}
+
 /*RESPONSIVE*/
 
 @media screen and (min-width: $tablet) {
 
-	.selection__title {
+	.selection__title-container {
 		width: 708px;
 		margin: 0 auto;
+	}
+
+	.selection__title {
 		margin-top: 53px;
 		margin-bottom: 51px;
 		padding: 0;
 		font-size: 60px;
+	}
+
+	.selection__description {
+		max-width: 325px;
+		margin-bottom: 65px;
+		margin-left: 40px;
+		font-size: 20px;
+		line-height: 1.5;
+	}
+
+	.selection__info-wrapper {
+		width: 630px;
+		margin: 0 auto;
 	}
 	
 }
 
 @media screen and (min-width: $desktop) {
 
+	.selection__title-container {
+		width: 1220px;
+	}
+
 	.selection__title {
 		width: 1220px;
 		margin: 71px auto 49px auto;
 	}
-	
+
+	.selection__description {
+		margin-left: 0;
+	}
+
+	.selection__info-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 1220px;
+	}
+
 }
