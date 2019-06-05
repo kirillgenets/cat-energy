@@ -63,9 +63,9 @@ PRODUCT TYPE
 @media screen and (min-width: $tablet) {
 
 	.product-type {
-		margin-top: 72px;
+		margin-top: 50px;
 		margin-bottom: 47px;
-		padding: 19px 0 31px 28px;
+		padding: 19px 0 16px 28px;
 		border: 1px solid #cdcdcd;
 	}
 
@@ -74,6 +74,9 @@ PRODUCT TYPE
 	}
 
 	.product-type__explanation {
+		padding-top: 14px;
+		padding-left: 60px;
+		font-size: 20px;
 
 		&::before {
 			width: 40px;
@@ -81,6 +84,15 @@ PRODUCT TYPE
 			padding: 11px;
 		}
 
+	}
+
+}
+
+@media screen and (min-width: $desktop) {
+
+	.product-type {
+		width: 540px;
+		margin: 0;
 	}
 
 }
