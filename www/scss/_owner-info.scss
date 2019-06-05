@@ -1,0 +1,104 @@
+/********
+OWNER INFO
+********/
+
+.owner-info {
+	margin: 41px 0 0 0;
+	padding: 65px 20px 0 20px;
+	border-top: 3px solid $green;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	position: relative;
+}
+
+.owner-info__title {
+	display: inline-block;
+	vertical-align: baseline;
+	max-width: 181px;
+	margin: 0;
+	padding: 0 20px;
+	position: absolute;
+	left: 0;
+	top: -14px;
+	background-color: #fff;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.owner-info__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.owner-info__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 14px 0;
+	padding: 0;
+	position: relative;
+}
+
+.owner-info__explanation {
+	max-width: 50%;
+	margin-right: 11px;
+	color: #222222;
+	font-size: 16px;
+	font-weight: normal;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.owner-info__field {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 13px 15px 11px 15px;
+	border: 1px solid rgba(205,205,205,.5);
+	color: $light-grey;
+	font-size: 16px;
+	text-transform: uppercase;
+
+	&:active,
+	&:focus {
+		border-color: #212735;
+    	box-shadow: inset 0 0 0 1px #212735;
+    	outline: 0;
+	}
+
+	&:invalid {
+		box-shadow: inset 0 0 0 1px #ff8282;
+		border-color: #ff8282;
+	}
+
+	&:hover {
+		border-color: #cdcdcd;
+	}
+	
+}
+
+.owner-info__field-icon {
+	position: absolute;
+	fill: $dark-grey;
+
+	&--email {
+		right: 15px;
+		top: 16px;
+	}
+
+	&--phone {
+		right: 12px;
+		top: 13px;
+	}
+
+}
+
+.owner-info__field:focus + .owner-info__field-icon {
+	fill: $green;
+}
+
+.owner-info__field:invalid + .owner-info__field-icon {
+	fill: #ff8282;
+}
