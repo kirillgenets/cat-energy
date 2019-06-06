@@ -2,6 +2,10 @@
 SELECTION
 ***********/
 
+.selection {
+	padding: 0 0 30px 0;
+}
+
 .selection__title {
 	margin-top: 25px;
 	margin-bottom: 34px;
@@ -25,7 +29,7 @@ SELECTION
 
 .selection__submit {
 	width: 280px;
-	margin: 0 0 20px 0;
+	margin: 0 0 18px 0;
 	padding: 12px 0 11px 0;
 	font-size: 16px;
 	cursor: pointer;
@@ -46,6 +50,10 @@ SELECTION
 /*RESPONSIVE*/
 
 @media screen and (min-width: $tablet) {
+
+	.selection {
+		padding: 0 0 74px 0;
+	}
 
 	.selection__title-container {
 		width: 708px;
@@ -71,10 +79,34 @@ SELECTION
 		width: 630px;
 		margin: 0 auto;
 	}
+
+	.selection__submit-container {
+		display: flex;
+		align-items: center;
+		width: 630px;
+	}
+
+	.selection__submit {
+		width: 283px;
+		margin-right: 63px;
+		margin-bottom: 0;
+		padding-top: 15px;
+		padding-bottom: 14px;
+		font-size: 20px;
+	}
+
+	.selection__hint {		
+		font-size: 16px;
+		line-height: 1.5;
+	}
 	
 }
 
 @media screen and (min-width: $desktop) {
+
+	.selection {
+		padding: 0 0 83px 0;
+	}
 
 	.selection__title-container {
 		width: 1220px;
@@ -94,6 +126,17 @@ SELECTION
 		justify-content: space-between;
 		align-items: flex-start;
 		width: 1220px;
+	}
+
+	.selection__submit-container {
+		width: 1220px;
+		margin-top: 69px;
+	}
+
+	.selection__submit {		
+		width: 570px;
+		margin-right: 81px;
+		margin-left: 0;
 	}
 
 }
