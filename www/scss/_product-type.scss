@@ -17,17 +17,13 @@ PRODUCT TYPE
 }
 
 .product-type__item {
-	display: flex;
-	justify-content: flex-start;
 	margin-bottom: 13px;
 }
 
 .product-type__explanation {
 	display: block;
-	max-width: 100%;
-	margin-right: 14px;
-    padding-top: 11px;	
-    padding-left: 45px;
+	margin: 0 14px 0 0;
+	padding: 11px 0 0 45px;
 	position: relative;
 	color: #222222;
 	font-size: 16px;
@@ -48,6 +44,18 @@ PRODUCT TYPE
     	left: 0;
     	top: 6px;
 	    cursor: pointer;
+    }
+
+    &:hover {
+
+    	&::before {
+			border-color: #bababa;
+		}
+
+    }
+
+    &:active {
+    	opacity: 0.3;
     }
 
 }

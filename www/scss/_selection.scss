@@ -18,6 +18,30 @@ SELECTION
 	line-height: 1.29;
 }
 
+.selection__submit-container {	
+	width: 280px;
+	margin: 27px auto 0 auto;
+}
+
+.selection__submit {
+	width: 280px;
+	margin: 0 0 20px 0;
+	padding: 12px 0 11px 0;
+	font-size: 16px;
+}
+
+.selection__hint {
+	margin: 0;
+	padding: 0;
+	color: $light-grey;
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 14px;
+	line-height: 1.29;
+	font-weight: normal;
+	text-align: center;
+}
+
+
 /*RESPONSIVE*/
 
 @media screen and (min-width: $tablet) {

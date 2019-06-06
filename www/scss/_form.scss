@@ -172,22 +172,6 @@ FORM
 
 }
 
-.form__field-icon {
-	position: absolute;
-	fill: $dark-grey;
-
-	&--email {
-		right: 15px;
-		top: 16px;
-	}
-
-	&--phone {
-		right: 12px;
-		top: 13px;
-	}
-
-}
-
 .form__field:focus + .form__field-icon {
 	fill: $green;
 }

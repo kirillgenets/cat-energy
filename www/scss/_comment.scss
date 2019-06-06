@@ -75,3 +75,19 @@ COMMENT
 	}
 
 }
+
+@media screen and (min-width: $desktop) {
+
+	.comment {
+		margin: 69px 0 0 0;
+	}
+
+	.comment__title {
+		transform: translateX(-648px);
+	}
+
+	.comment__field {
+		width: 1220px;
+	}
+
+}
