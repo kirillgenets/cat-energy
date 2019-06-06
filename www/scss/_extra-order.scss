@@ -3,8 +3,8 @@ EXTRA ORDER
 ********/
 
 .extra-order {
-	margin: 36px 0 0 0;
-	padding: 38px 20px 0 20px;
+	margin: 39px 0 0 0;
+	padding: 36px 20px 0 20px;
 	border: none;
 	border-top: 3px solid $green;
 	position: relative;
@@ -69,5 +69,87 @@ EXTRA ORDER
     &:active {
     	opacity: 0.3;
     }
+
+}
+
+.extra-order__checkbox:checked + .extra-order__explanation::before {
+	content: '';
+	background-image: url(../img/icon-tick.svg);
+	background-size: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: $tablet) {
+
+	.extra-order {
+		margin-top: 88px;
+		padding: 63px 0 0 0;
+	}
+
+	.extra-order__title {
+		padding: 0 37px;
+		left: 50%;
+		top: -23px;
+		font-size: 36px;
+		transform: translateX(-354px);
+	}
+
+	.extra-order__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 630px;
+		box-sizing: border-box;
+		margin: 0 auto;
+		padding: 0 67px 0 0;
+	}
+
+	.extra-order__item {
+		width: 220px;
+		margin-bottom: 35px;
+	}
+
+	.extra-order__explanation {
+		padding: 14px 0 0 60px;
+		font-size: 20px;
+
+		&::before {
+			width: 40px;
+			height: 40px;
+		}
+
+	}
+
+	.extra-order__checkbox:checked + .extra-order__explanation::before {
+		background-size: 50%;
+	}
+
+}
+
+@media screen and (min-width: $desktop) {
+
+	.extra-order__title {
+		transform: translateX(-648px);
+	}
+
+	.extra-order__list {
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+		width: 1300px;
+		padding: 0;
+	}
+
+	.extra-order__item {
+		width: 245px;
+		margin: 0 40px;
+	}
+
+	.extra-order__explanation {
+		padding: 15px 0 0 58px;
+	}
 
 }
