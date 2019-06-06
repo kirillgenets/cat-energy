@@ -15,7 +15,7 @@ OWNER INFO
 .owner-info__title {
 	display: inline-block;
 	vertical-align: baseline;
-	max-width: 181px;
+	width: 181px;
 	margin: 0;
 	padding: 0 20px;
 	position: absolute;
@@ -101,4 +101,106 @@ OWNER INFO
 
 .owner-info__field:invalid + .owner-info__field-icon {
 	fill: #ff8282;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: $tablet) {
+
+	.owner-info {
+		margin: 96px 0 0 0;
+		padding: 88px 0 0 0;
+	}
+
+	.owner-info__title {
+		width: 520px;
+		padding: 0 37px;
+		left: 50%;
+		top: -23px;
+		font-size: 36px;
+		white-space: nowrap;
+		transform: translateX(-352px);
+	}
+
+	.owner-info__title-explanation {
+		display: inline-block;
+	}
+
+	.owner-info__list {
+		width: 630px;
+		margin: 0 auto;
+	}
+
+	.owner-info__item {
+		margin: 0 0 19px 0;
+	}
+
+	.owner-info__explanation {
+		margin-right: 20px;
+		font-size: 20px;
+
+		&--phone {
+			margin-right: 15px;
+		}
+
+	}
+
+	.owner-info__field {
+		padding: 14px 18px;
+		font-size: 20px;
+	}
+
+	.owner-info__field-icon {
+
+		&--email {
+			right: 17px;
+			top: 21px;
+		}
+
+		&--phone {
+			right: 14px;
+			top: 19px;
+		}
+
+	}
+
+}
+
+@media screen and (min-width: $desktop) {
+
+	.owner-info {
+		margin: 60px 0 0 0;
+	}
+
+	.owner-info__title {
+		transform: translateX(-648px);
+	}
+
+	.owner-info__list {
+		display: flex;
+		justify-content: space-between;
+		width: 1220px;
+	}
+
+	.owner-info__field {
+
+		&--email {
+			width: 486px;
+		}
+
+		&--phone {
+			width: 472px;
+		}
+
+	}
+
+	.owner-info__field-icon {
+
+		&--phone {
+			right: 19px;
+			top: 17px;
+		}
+
+	}
+
 }

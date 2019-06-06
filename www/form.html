@@ -111,35 +111,30 @@
 				</div>
 				<fieldset class="owner-info">
 					<h3 class="owner-info__title">
-						Контактные данные
-						<span class="owner-info__title-explanation">(владельца кота)</span>
+						Контактные данные (владельца кота)
 					</h3>
 					<ul class="owner-info__list">
 						<li class="owner-info__item">
 							<label for="email" class="owner-info__explanation">E-mail:*</label>
-							<input class="owner-info__field" type="email" id="email" placeholder="kuklachev@gmail.com" name="owner-email" required>
+							<input class="owner-info__field owner-info__field--email" type="email" id="email" placeholder="kuklachev@gmail.com" name="owner-email" required>
 							<svg class="owner-info__field-icon owner-info__field-icon--email" width="17" height="13" aria-hidden="true">
 								<use xlink:href="#icon-mail"></use>
 							</svg>
 						</li>
 						<li class="owner-info__item">
-							<label for="phone" class="owner-info__explanation">Телефон:*</label>
-							<input class="owner-info__field" type="tel" id="phone" placeholder="8 (960) 900-60-90" name="owner-phone" required>
+							<label for="phone" class="owner-info__explanation owner-info__explanation--phone">Телефон:*</label>
+							<input class="owner-info__field owner-info__field--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" name="owner-phone" required>
 							<svg class="owner-info__field-icon owner-info__field-icon--phone" width="20" height="20" aria-hidden="true">
 								<use xlink:href="#icon-phone"></use>
 							</svg>
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset class="form__block form__block--comment">
-					<h3 class="form__block-title form__block-title--comment">
+				<fieldset class="comment">
+					<h3 class="comment__title">
 						Комментарий
 					</h3>
-					<div class="form__comment">
-						<div class="form__row form__row--comment">
-							<textarea class="form__field form__field--comment" id="comment" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
-						</div>
-					</div>
+					<textarea class="comment__field" id="comment" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
 				</fieldset>
 				<fieldset class="form__block form__block--extra">
 					<h3 class="form__block-title form__block-title--extra-goods">
