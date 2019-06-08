@@ -26,19 +26,9 @@ CATEGORIES
 	}	
 }
 
-.categories__item-heading {
-	display: flex;
-	align-items: center;
-	margin-bottom: 24px;
-
-	&--pro {
-		margin-bottom: 23px;
-	}
-}
-
 .categories__item-title {
 	margin-top: 0;
-	margin-bottom: 10px;
+	margin-bottom: 33px;
 	padding-top: 12px;
 	padding-left: 71px;
 	position: relative;
@@ -197,7 +187,7 @@ CATEGORIES
 	}
 
 	.categories__item-title {
-		margin-bottom: 0;
+		margin-bottom: 20px;
 		padding: 0;
 		font-size: 36px;
 
@@ -208,6 +198,7 @@ CATEGORIES
 		&::after {
 			display: none;
 		}
+
 	}
 
 	.categories__item-heading {
@@ -265,8 +256,9 @@ CATEGORIES
 	.categories__item {
 		min-width: 570px;
 		max-width: 570px;
-		height: 372px;
+		min-height: 372px;
 		box-sizing: border-box;
+		margin-bottom: 0;
 		padding: 50px 56px 62px 52px;
 
 		&::before {
