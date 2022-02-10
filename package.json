@@ -19,7 +19,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "postcss-reporter": "^6.0.1",
     "postcss-scss": "^2.0.0",
     "posthtml-include": "^1.2.0",
