@@ -2,7 +2,7 @@
   "name": "cat-energy",
   "devDependencies": {
     "autoprefixer": "^9.5.1",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.10",
     "del": "^4.1.0",
     "editorconfig": "^0.15.3",
     "editorconfig-cli": "^0.3.0",
